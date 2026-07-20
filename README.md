@@ -8,13 +8,11 @@
 
 访问地址：
 
-[点击进入化学实验台](serphen591.github.io/chem-game/)
-
-> 请将上面的地址替换成实际 GitHub Pages 地址。
+[点击进入化学实验台](https://serphen591.github.io/chem-game/)
 
 ## 当前版本
 
-当前版本：化学实验台第七版-3
+当前版本：化学实验台第七版
 
 当前为前端原型版本，主要使用：
 
