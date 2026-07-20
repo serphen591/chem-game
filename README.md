@@ -8,7 +8,7 @@
 
 访问地址：
 
-[点击进入化学实验台](https://你的GitHub用户名.github.io/chem-lab-game/)
+[点击进入化学实验台](serphen591.github.io/chem-game/)
 
 > 请将上面的地址替换成实际 GitHub Pages 地址。
 
