@@ -21,7 +21,7 @@ if (configured) {
     apiBaseUrl: `${url}/functions/v1/chem-lab-api`,
     apiPath: '',
     syncEnabled: true,
-    appVersion: '7.3-supabase-foundation',
+    appVersion: '7.4-realtime-replay',
     requestTimeoutMs: 10000,
     queueLimit: 1200
   }, null, 2)});\n`;
@@ -39,4 +39,3 @@ if (!html.includes('assets/js/student-account.js')) {
 console.log(configured
   ? `静态站点已生成，使用 GitHub Repository Variables：${url}`
   : '静态站点已生成，使用仓库中的浏览器公开配置。');
-

@@ -26,6 +26,44 @@
 
   const esc = (value) => String(value ?? '').replace(/[&<>"']/g, (char) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
   const setMessage = (text, kind = '') => { message.textContent = text || ''; message.dataset.kind = kind; };
+  const replayEventNames = {attempt_started:'开始实验',step_error:'步骤出错',answer_revealed:'公开答案',step_completed:'完成步骤',attempt_completed:'完成实验',attempt_abandoned:'退出实验',hint_opened:'查看提示'};
+  const formatReplayTime = (value) => { const date = new Date(value || 0); return Number.isNaN(date.getTime()) ? '' : date.toLocaleString('zh-CN', { month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit' }); };
+
+  function experimentTitle(code) {
+    const item = (window.CHEM_LAB_EXPERIMENTS || []).find((entry) => entry.code === code);
+    return item?.title || code || '实验';
+  }
+
+  function replayItems() {
+    const local = window.ChemLabConnection?.getLocalReplays?.(10) || [];
+    const cloud = Array.isArray(context?.replays) ? context.replays : [];
+    const merged = new Map();
+    cloud.forEach((item) => merged.set(item.id, { attemptId:item.id, experimentCode:item.experiment_code, experimentTitle:experimentTitle(item.experiment_code), completedAt:item.completed_at, cloudSaved:true, localSaved:false, events:[] }));
+    local.forEach((item) => merged.set(item.attemptId, { ...(merged.get(item.attemptId) || {}), ...item, cloudSaved:Boolean(item.cloudSyncedAt || merged.get(item.attemptId)?.cloudSaved), localSaved:true }));
+    return [...merged.values()].filter((item) => item.completedAt).sort((a, b) => String(b.completedAt).localeCompare(String(a.completedAt))).slice(0, 10);
+  }
+
+  function replayTimeline(events) {
+    return events.map((event) => {
+      const eventType = event.eventType || event.event_type || '';
+      const stepKey = event.stepKey || event.step_key || event.stage || '';
+      const tags = Array.isArray(event.tags) ? event.tags.join('、') : '';
+      const expected = event.expected || null, actual = event.actual || null;
+      return `<div class="student-replay-event" data-severity="${esc(event.severity || '')}"><small>${esc(formatReplayTime(event.occurredAt || event.occurred_at))}</small><div><strong>${esc(replayEventNames[eventType] || eventType)}${stepKey ? ` · ${esc(stepKey)}` : ''}</strong><p>${esc(tags || event.message || '关键步骤已记录')}</p>${expected || actual ? `<pre>期望：${esc(JSON.stringify(expected, null, 2))}\n实际：${esc(JSON.stringify(actual, null, 2))}</pre>` : ''}</div></div>`;
+    }).join('') || '<p class="student-replay-empty">暂无关键步骤。</p>';
+  }
+
+  async function showStudentReplay(attemptId) {
+    const detail = body.querySelector('#student-replay-detail');
+    if (!detail) return;
+    detail.hidden = false; detail.innerHTML = '<p class="student-replay-empty">正在读取关键回放…</p>';
+    try {
+      const local = window.ChemLabConnection?.getLocalReplay?.(attemptId);
+      const data = local?.events?.length ? { attempt:{ experiment_code:local.experimentCode }, events:local.events } : await client.api(`/student/attempts/${encodeURIComponent(attemptId)}/replay`);
+      detail.innerHTML = `<div class="student-replay-detail-head"><strong>${esc(experimentTitle(data.attempt?.experiment_code || local?.experimentCode))}</strong><button type="button" id="student-replay-close">收起</button></div><div class="student-replay-timeline">${replayTimeline(data.events || [])}</div>`;
+      detail.querySelector('#student-replay-close').onclick = () => { detail.hidden = true; detail.innerHTML = ''; };
+    } catch (error) { detail.innerHTML = `<p class="student-replay-empty">${esc(error.message || '暂时无法读取回放。')}</p>`; }
+  }
 
   function authMarkup(mode = 'login') {
     const register = mode === 'register';
@@ -61,12 +99,18 @@
   function accountMarkup() {
     const profile = context?.profile || {};
     const memberships = Array.isArray(context?.memberships) ? context.memberships : [];
+    const replays = replayItems();
     body.innerHTML = `
       <section class="account-summary">
         <span class="account-avatar">化</span>
         <div><strong>${esc(profile.display_alias || '实验员')}</strong><small>${memberships.length ? `已加入 ${memberships.length} 个班级` : '尚未加入班级'}</small></div>
       </section>
       <div class="membership-list">${memberships.map((item) => `<span><b>${esc(item.class_name)}</b><small>${esc(item.invite_code)}</small></span>`).join('') || '<p>输入教师提供的班级邀请码，之后的实验记录会归入该班级。</p>'}</div>
+      <section class="student-replays">
+        <div class="student-replays-head"><div><strong>关键回放</strong><small>实验完成后本机保存，并立即同步到云端</small></div><span>${replays.length}</span></div>
+        <div class="student-replay-list">${replays.map((item) => `<button type="button" data-student-replay="${esc(item.attemptId)}"><span><strong>${esc(item.experimentCode)} · ${esc(item.experimentTitle || experimentTitle(item.experimentCode))}</strong><small>${esc(formatReplayTime(item.completedAt))}</small></span><i data-saved="${item.cloudSaved ? 'cloud' : 'local'}">${item.cloudSaved ? '云端已保存' : '本机待同步'}</i></button>`).join('') || '<p class="student-replay-empty">完成第一个实验后，这里会保存关键步骤。</p>'}</div>
+        <div id="student-replay-detail" hidden></div>
+      </section>
       <form id="join-class-form" class="join-form">
         <input name="inviteCode" maxlength="16" required placeholder="班级邀请码">
         <button class="account-primary" type="submit">加入班级</button>
@@ -76,6 +120,7 @@
         ${profile.role === 'teacher' || profile.role === 'admin' ? '<a href="./teacher/">进入教师端</a>' : ''}
         <button id="account-signout" type="button">退出</button>
       </div>`;
+    body.querySelectorAll('[data-student-replay]').forEach((button) => button.onclick = () => showStudentReplay(button.dataset.studentReplay));
     body.querySelector('#join-class-form').onsubmit = async (event) => {
       event.preventDefault(); setMessage('正在加入班级…');
       try {
@@ -106,8 +151,8 @@
 
   async function loadContext() {
     if (!client.session) return null;
-    const result = await client.api('/me');
-    context = result;
+    const [result, replays] = await Promise.all([client.api('/me'), client.api('/student/replays?limit=10').catch(() => [])]);
+    context = { ...result, replays };
     const firstClass = result.memberships?.[0];
     window.ChemLabConnection?.setStudentIdentity({
       studentId: result.profile?.id,
@@ -115,7 +160,7 @@
       displayName: result.profile?.display_alias || null
     }, client.session.access_token);
     await window.ChemLabConnection?.syncNow();
-    return result;
+    return context;
   }
 
   fab.onclick = () => { modal.hidden = false; renderAccount(); };
@@ -128,4 +173,3 @@
     renderAccount();
   });
 })();
-

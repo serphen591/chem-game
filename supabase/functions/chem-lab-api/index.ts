@@ -72,6 +72,38 @@ Deno.serve(async (request) => {
       return error ? dbFailure(request, error) : json(request, data);
     }
 
+    if (request.method === 'GET' && route === '/student/replays') {
+      const limit = Math.max(1, Math.min(30, Number(url.searchParams.get('limit') || 10)));
+      const { data, error } = await supabase
+        .from('experiment_attempts')
+        .select('id,experiment_code,module,difficulty,status,completion_mode,total_errors,max_step_errors,needs_redo,duration_ms,started_at,completed_at')
+        .eq('student_id', authData.user.id)
+        .eq('status', 'completed')
+        .order('completed_at', { ascending: false })
+        .limit(limit);
+      return error ? dbFailure(request, error) : json(request, data || []);
+    }
+
+    const studentReplayMatch = route.match(/^\/student\/attempts\/([^/]+)\/replay$/);
+    if (request.method === 'GET' && studentReplayMatch) {
+      const attemptId = decodeURIComponent(studentReplayMatch[1]);
+      const { data: attempt, error: attemptError } = await supabase
+        .from('experiment_attempts')
+        .select('id,experiment_code,module,difficulty,status,completion_mode,total_errors,max_step_errors,needs_redo,duration_ms,started_at,completed_at')
+        .eq('id', attemptId)
+        .eq('student_id', authData.user.id)
+        .maybeSingle();
+      if (attemptError) return dbFailure(request, attemptError);
+      if (!attempt) return json(request, { error: '没有找到该实验回放。' }, 404);
+      const { data: events, error: eventsError } = await supabase
+        .from('step_events')
+        .select('event_id,event_type,step_key,stage,step_error_count,severity,tags,expected,actual,message,occurred_at')
+        .eq('attempt_id', attemptId)
+        .eq('student_id', authData.user.id)
+        .order('occurred_at', { ascending: true });
+      return eventsError ? dbFailure(request, eventsError) : json(request, { attempt, events: events || [] });
+    }
+
     if (request.method === 'POST' && route === '/events/batch') {
       const body = await readBody(request);
       const events = Array.isArray(body.events) ? body.events.slice(0, 200) : [];
@@ -145,4 +177,3 @@ Deno.serve(async (request) => {
     return json(request, { error: error instanceof Error ? error.message : '服务器处理失败。' }, 400);
   }
 });
-

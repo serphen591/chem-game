@@ -11,10 +11,9 @@ const config = {
   apiBaseUrl: `${url}/functions/v1/chem-lab-api`,
   apiPath: '',
   syncEnabled: true,
-  appVersion: '7.3-supabase-foundation',
+  appVersion: '7.4-realtime-replay',
   requestTimeoutMs: 10000,
   queueLimit: 1200
 };
 await writeFile(new URL('../config.js', import.meta.url), `/* Supabase publishable key 是浏览器公开配置；RLS 负责数据权限。 */\nwindow.CHEM_LAB_CONFIG=Object.freeze(${JSON.stringify(config, null, 2)});\n`, 'utf8');
 console.log(`已连接 ${url}，公开密钥前缀 ${key.slice(0, 18)}…`);
-
