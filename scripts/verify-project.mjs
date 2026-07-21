@@ -33,6 +33,8 @@ for (const file of filesToScan) {
 
 if (experiments.length !== 323) throw new Error(`实验目录数量异常：${experiments.length}`);
 if (!html.includes('window.CHEM_LAB_EXPERIMENTS')) throw new Error('实验目录尚未从 index.html 独立出来。');
+if (!html.includes("supabaseClient.api('/events/batch'")) throw new Error('实验事件上传没有复用 Supabase 登录客户端。');
+if (!html.includes('headers.apikey=NETWORK_CONFIG.supabasePublishableKey')) throw new Error('同步降级请求缺少 Supabase apikey。');
 for (const tag of ['反应物混淆','仪器用途混淆','现象混淆','方程式物质错误','配平错误','步骤顺序错误']) {
   if (!migration.includes(tag)) throw new Error(`迁移文件缺少标签：${tag}`);
 }
@@ -42,7 +44,7 @@ for (const htmlFile of ['index.html', 'teacher/index.html']) {
   const links = [...source.matchAll(/(?:src|href)="([^"#]+)"/g)].map((match) => match[1]);
   for (const link of links) {
     if (/^(?:https?:|mailto:|data:)/.test(link)) continue;
-    const target = path.resolve(path.dirname(htmlFile), link);
+    const target = path.resolve(path.dirname(htmlFile), link.split(/[?#]/, 1)[0]);
     await access(target).catch(() => { throw new Error(`${htmlFile} 引用的文件不存在：${link}`); });
   }
 }

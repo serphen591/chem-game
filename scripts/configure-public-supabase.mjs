@@ -11,7 +11,7 @@ const config = {
   apiBaseUrl: `${url}/functions/v1/chem-lab-api`,
   apiPath: '',
   syncEnabled: true,
-  appVersion: '7.4-realtime-replay',
+  appVersion: '7.4.1-sync-hotfix',
   requestTimeoutMs: 10000,
   queueLimit: 1200
 };

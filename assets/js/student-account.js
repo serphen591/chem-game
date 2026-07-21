@@ -28,6 +28,12 @@
   const setMessage = (text, kind = '') => { message.textContent = text || ''; message.dataset.kind = kind; };
   const replayEventNames = {attempt_started:'开始实验',step_error:'步骤出错',answer_revealed:'公开答案',step_completed:'完成步骤',attempt_completed:'完成实验',attempt_abandoned:'退出实验',hint_opened:'查看提示'};
   const formatReplayTime = (value) => { const date = new Date(value || 0); return Number.isNaN(date.getTime()) ? '' : date.toLocaleString('zh-CN', { month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit' }); };
+  const syncFailureText = (result) => {
+    if (result?.reason === 'auth-required') return '登录状态已过期，请退出后重新登录。';
+    if (result?.reason === 'timeout') return '同步请求超时，请检查网络后重试。';
+    if (result?.reason === 'sync-disabled') return '云端同步配置尚未启用。';
+    return `同步失败${result?.error ? `：${result.error}。` : '，请检查网络后重试。'}记录仍安全保存在本机。`;
+  };
 
   function experimentTitle(code) {
     const item = (window.CHEM_LAB_EXPERIMENTS || []).find((entry) => entry.code === code);
@@ -132,7 +138,8 @@
     body.querySelector('#sync-now').onclick = async () => {
       setMessage('正在上传离线记录…');
       const result = await window.ChemLabConnection?.syncNow();
-      setMessage(result?.ok ? `同步完成，已上传 ${result.sent || 0} 条记录。` : '暂时无法同步，记录仍安全保存在本机。', result?.ok ? 'success' : 'error');
+      if (result?.ok) { await loadContext(); renderAccount(); }
+      setMessage(result?.ok ? `同步完成，已上传 ${result.sent || 0} 条记录。` : syncFailureText(result), result?.ok ? 'success' : 'error');
     };
     body.querySelector('#account-signout').onclick = async () => { await client.signOut(); context = null; renderAccount(); };
   }
