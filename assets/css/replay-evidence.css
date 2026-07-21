@@ -8,7 +8,7 @@
 .student-evidence-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 12px}
 .student-evidence-head span{font-size:11px;font-weight:1000}
 .student-evidence-head small{color:#718079;font-size:9px}
-.student-error-evidence>img{display:block;width:100%;aspect-ratio:9/5;object-fit:cover;border-block:1px solid #e1ece7;background:#eef8f3}
+.student-error-evidence>img{display:block;width:100%;height:auto;object-fit:contain;border-block:1px solid #e1ece7;background:#eef8f3}
 .student-cause{padding:13px}
 .student-cause>strong{font-size:14px}
 .student-cause>p{margin:6px 0 10px;color:#596a63;font-size:11px;line-height:1.65}
@@ -26,7 +26,7 @@
 .teacher-evidence-head strong{font-size:13px}
 .teacher-evidence-head small{color:var(--muted);font-size:10px}
 .knowledge-tag{display:inline-block;padding:5px 8px;border-radius:999px;background:#eaf8f1;color:#08785a;font-size:10px;font-weight:1000}
-.teacher-error-evidence>img{display:block;width:100%;aspect-ratio:9/5;object-fit:cover;border-block:1px solid var(--line);background:#eef8f3}
+.teacher-error-evidence>img{display:block;width:100%;height:auto;object-fit:contain;border-block:1px solid var(--line);background:#eef8f3}
 .teacher-evidence-analysis{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:14px}
 .teacher-evidence-analysis section{padding:12px;border-radius:13px;background:#f5f9f7}
 .teacher-evidence-analysis h3{margin:0 0 5px;font-size:13px}
@@ -37,6 +37,6 @@
 
 @media(max-width:650px){
   .student-evidence-head,.teacher-evidence-head{align-items:flex-start;flex-direction:column}
-  .student-error-evidence>img,.teacher-error-evidence>img{aspect-ratio:auto;min-height:190px}
+  .student-error-evidence>img,.teacher-error-evidence>img{min-height:190px}
   .teacher-evidence-analysis{grid-template-columns:1fr}
 }

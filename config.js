@@ -5,7 +5,7 @@ window.CHEM_LAB_CONFIG=Object.freeze({
   "apiBaseUrl": "https://odcnrtafzcvirmzxzsfx.supabase.co/functions/v1/chem-lab-api",
   "apiPath": "",
   "syncEnabled": true,
-  "appVersion": "7.5.2-replay-rollback",
+  "appVersion": "7.5.3-replay-full-text",
   "requestTimeoutMs": 10000,
   "queueLimit": 1200
 });

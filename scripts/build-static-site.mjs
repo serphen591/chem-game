@@ -21,7 +21,7 @@ if (configured) {
     apiBaseUrl: `${url}/functions/v1/chem-lab-api`,
     apiPath: '',
     syncEnabled: true,
-    appVersion: '7.5.2-replay-rollback',
+    appVersion: '7.5.3-replay-full-text',
     requestTimeoutMs: 10000,
     queueLimit: 1200
   }, null, 2)});\n`;

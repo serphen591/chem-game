@@ -6,11 +6,11 @@
   <meta name="referrer" content="no-referrer">
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self' https://*.supabase.co https://*.supabase.in http://localhost:* http://127.0.0.1:*; object-src 'none'; base-uri 'none'; form-action 'self'">
   <title>化学实验台</title>
-  <script src="./config.js?v=7.5.2"></script>
-  <script src="./assets/js/replay-evidence.js?v=7.5.2"></script>
+  <script src="./config.js?v=7.5.3"></script>
+  <script src="./assets/js/replay-evidence.js?v=7.5.3"></script>
   <link rel="stylesheet" href="./assets/css/student-account.css">
-  <link rel="stylesheet" href="./assets/css/replay-evidence.css?v=7.5.2">
-  <link rel="stylesheet" href="./assets/css/interface-fixes.css?v=7.5.2">
+  <link rel="stylesheet" href="./assets/css/replay-evidence.css?v=7.5.3">
+  <link rel="stylesheet" href="./assets/css/interface-fixes.css?v=7.5.3">
   <script>
     try{
       const progressResetVersion='chem-lab-v7-1-reset-20260720-1';
@@ -334,7 +334,7 @@
     ];
     const app=document.getElementById('app');
     let currentModule='home',difficultyFilter=0,currentLab=null,labState=null,quickState=null,drawerModule='inorganic'
-    const NETWORK_CONFIG=Object.freeze({apiBaseUrl:'',apiPath:'/api/v1',syncEnabled:false,appVersion:'7.5.2-replay-rollback',requestTimeoutMs:8000,queueLimit:800,replayLimit:30,...(window.CHEM_LAB_CONFIG||{})});
+    const NETWORK_CONFIG=Object.freeze({apiBaseUrl:'',apiPath:'/api/v1',syncEnabled:false,appVersion:'7.5.3-replay-full-text',requestTimeoutMs:8000,queueLimit:800,replayLimit:30,...(window.CHEM_LAB_CONFIG||{})});
     const DATA_KEYS={identity:'chemLabStudentIdentity',token:'chemLabAccessToken',eventQueue:'chemLabEventQueue',replayArchive:'chemLabReplayArchive'};
     const dataSessionId=createClientId('session');
     let syncPromise=null,syncState=NETWORK_CONFIG.syncEnabled&&NETWORK_CONFIG.apiBaseUrl?'waiting':'local',syncError='';
@@ -733,7 +733,7 @@
     renderHome();
   })();
   </script>
-  <script src="./assets/js/supabase-rest.js?v=7.5.2"></script>
-  <script src="./assets/js/student-account.js?v=7.5.2"></script>
+  <script src="./assets/js/supabase-rest.js?v=7.5.3"></script>
+  <script src="./assets/js/student-account.js?v=7.5.3"></script>
 </body>
 </html>

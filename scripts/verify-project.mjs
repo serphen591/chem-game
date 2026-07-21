@@ -46,7 +46,9 @@ if (!html.includes('equation-mode') || !html.includes('equation-workspace')) thr
 const studentAccount = await readFile('assets/js/student-account.js', 'utf8');
 const teacherDashboard = await readFile('teacher/teacher.js', 'utf8');
 const replayEvidence = await readFile('assets/js/replay-evidence.js', 'utf8');
-if (replayEvidence.includes('version:2') || !replayEvidence.includes('系统提示</text>') || !replayEvidence.includes('正确目标（完成实验后解锁回看）')) throw new Error('关键回放尚未还原为上一版。');
+const replayStyles = await readFile('assets/css/replay-evidence.css', 'utf8');
+if (!replayEvidence.includes('version:4') || !replayEvidence.includes('showAll') || !replayEvidence.includes('系统提示</text>') || !replayEvidence.includes('正确目标（完成实验后解锁回看）')) throw new Error('关键回放没有启用完整文字自适应布局。');
+if (/aspect-ratio\s*:\s*9\/5|object-fit\s*:\s*cover/.test(replayStyles)) throw new Error('关键回放图片仍会按固定比例裁切。');
 if (!studentAccount.includes('student-error-evidence')) throw new Error('学生端没有展示错误截图与错因分析。');
 if (!teacherDashboard.includes('teacher-error-evidence')) throw new Error('教师端没有展示错误截图与六类知识标签。');
 for (const tag of ['反应物混淆','仪器用途混淆','现象混淆','方程式物质错误','配平错误','步骤顺序错误']) {
