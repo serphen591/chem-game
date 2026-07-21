@@ -11,7 +11,7 @@ const config = {
   apiBaseUrl: `${url}/functions/v1/chem-lab-api`,
   apiPath: '',
   syncEnabled: true,
-  appVersion: '7.5-error-evidence-replay',
+  appVersion: '7.5.1-interface-cleanup',
   requestTimeoutMs: 10000,
   queueLimit: 1200
 };
