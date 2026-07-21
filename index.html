@@ -378,7 +378,7 @@
       syncState='syncing';
       syncPromise=(async()=>{let sent=0;try{
         while(true){
-          const events=readEventQueue();if(!events.length)break;
+          const events=readEventQueue().slice(0,200);if(!events.length)break;
           const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),Math.max(2000,Number(NETWORK_CONFIG.requestTimeoutMs)||8000));
           try{
             const response=await fetch(endpoint,{method:'POST',headers:{'Content-Type':'application/json',Authorization:`Bearer ${token}`},body:JSON.stringify({clientVersion:NETWORK_CONFIG.appVersion,identity:publicStudentIdentity(),events}),signal:controller.signal,credentials:'omit'});
