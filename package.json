@@ -1,0 +1,17 @@
+{
+  "name": "chem-game",
+  "version": "7.3.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-static-site.mjs",
+    "build:catalog-migration": "node scripts/build-experiment-migration.mjs",
+    "configure:supabase": "node scripts/configure-public-supabase.mjs",
+    "extract:data": "node scripts/extract-experiment-catalog.mjs",
+    "check": "node scripts/verify-project.mjs",
+    "sync:experiments": "node scripts/sync-experiments.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

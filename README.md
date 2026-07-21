@@ -12,16 +12,41 @@
 
 ## 当前版本
 
-当前版本：化学实验台第七版
+当前版本：化学实验台第七版-3 · Supabase 后端基础版
 
-当前为前端原型版本，主要使用：
+当前包含学生前端原型和可部署的 Supabase 后端基础，主要使用：
 
 - HTML
 - CSS
 - JavaScript
 - 浏览器 LocalStorage
+- Supabase Auth
+- PostgreSQL + Row Level Security
+- Supabase Edge Functions
 
-无需安装客户端，可以直接在现代浏览器中运行。
+未配置 Supabase 时仍可纯本地运行；配置后会启用学生登录、班级、离线补传和教师端。
+
+教师端地址：`https://serphen591.github.io/chem-game/teacher/`
+
+生产后端：Supabase 项目 `odcnrtafzcvirmzxzsfx`，数据库迁移和 `chem-lab-api` 已部署。分支与发布规范见 [docs/BRANCHING.md](docs/BRANCHING.md)。
+
+## 后端开发状态
+
+- [x] 学生邮箱登录与实验员昵称
+- [x] 班级邀请码与教师创建班级
+- [x] 批量上传学生步骤事件
+- [x] 六类知识标签识别与服务端颜色重算
+- [x] 每一步独立3次机会，下一步重置
+- [x] 实验过程关键回放
+- [x] 班级完成率、答案公开率和常见错点
+- [x] 待重做实验与跨关标签推荐
+- [x] 断网队列、恢复网络自动补传和事件去重
+- [x] 323条实验目录从 `index.html` 独立到 `data/experiments.json`
+- [ ] 将装置步骤、用品模型和动画参数继续拆分为独立数据文件
+- [ ] 使用真实3D仪器资源替换部分CSS模型
+- [ ] 针对小屏手机和平板继续做实验台交互专项适配
+
+数据库和 GitHub Pages 的完整配置步骤见 [docs/SUPABASE_SETUP.md](docs/SUPABASE_SETUP.md)，数据定义见 [docs/DATA_DICTIONARY.md](docs/DATA_DICTIONARY.md)。
 
 ## 核心模块
 

@@ -1,0 +1,21 @@
+# Supabase CLI local state and credentials
+.supabase/
+supabase/.temp/
+supabase/.branches/
+
+# Runtime configuration generated locally or by GitHub Actions
+.env
+.env.*
+!.env.example
+config.local.js
+
+# Build output and dependencies
+_site/
+node_modules/
+
+# Student/teacher data exports must never enter Git
+private-data/
+exports/
+*.student-data.json
+*.teacher-export.csv
+

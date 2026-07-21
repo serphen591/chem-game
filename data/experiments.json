@@ -1,0 +1,3232 @@
+[
+  {
+    "module": "inorganic",
+    "code": "B1-001",
+    "chapter": "B1",
+    "title": "酸碱中和",
+    "detail": "HCl＋NaOH＝NaCl＋H₂O；离子式：H⁺＋OH⁻＝H₂O。载体：中和热、滴定、未知液鉴别（E01、E12）。",
+    "reactantFeatures": "盐酸和氢氧化钠分别提供H⁺、OH⁻，均为无色强电解质溶液",
+    "productFeatures": "生成稳定的液态水和可溶性氯化钠",
+    "phenomenon": "通常无肉眼可见变化，但溶液温度升高，指示剂颜色或pH在终点附近突变。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-002",
+    "chapter": "B1",
+    "title": "硫酸根检验",
+    "detail": "Na₂SO₄＋BaCl₂＝BaSO₄↓＋2NaCl；离子式：Ba²⁺＋SO₄²⁻＝BaSO₄↓。先酸化排除CO₃²⁻/SO₃²⁻干扰（E01、E07、E12）。",
+    "reactantFeatures": "Na₂SO₄、BaCl₂均易溶，关键粒子是SO₄²⁻与Ba²⁺",
+    "productFeatures": "BaSO₄为白色、难溶于水和稀酸的沉淀",
+    "phenomenon": "混合后立即出现白色沉淀，预先酸化可排除碳酸盐、亚硫酸盐干扰。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-003",
+    "chapter": "B1",
+    "title": "氯离子检验",
+    "detail": "AgNO₃＋NaCl＝AgCl↓＋NaNO₃；离子式：Ag⁺＋Cl⁻＝AgCl↓。白色沉淀、避光（E01、E05、E12）。",
+    "reactantFeatures": "Ag⁺与Cl⁻在溶液中均无色",
+    "productFeatures": "AgCl是白色难溶、见光易分解的沉淀",
+    "phenomenon": "立即生成白色沉淀，久置或受光后逐渐变灰紫。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-004",
+    "chapter": "B1",
+    "title": "铜离子沉淀",
+    "detail": "CuSO₄＋2NaOH＝Cu(OH)₂↓＋Na₂SO₄；离子式：Cu²⁺＋2OH⁻＝Cu(OH)₂↓。蓝色沉淀（E01、E20）。",
+    "reactantFeatures": "Cu²⁺溶液呈蓝色，OH⁻来自强碱",
+    "productFeatures": "Cu(OH)₂是蓝色、难溶的絮状固体",
+    "phenomenon": "出现蓝色絮状沉淀，溶液中Cu²⁺浓度降低、蓝色变浅。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-005",
+    "chapter": "B1",
+    "title": "碳酸盐与强酸",
+    "detail": "Na₂CO₃＋2HCl＝2NaCl＋H₂O＋CO₂↑；离子式：CO₃²⁻＋2H⁺＝H₂O＋CO₂↑（E01、E03）。",
+    "reactantFeatures": "CO₃²⁻具有碱性，强酸提供大量H⁺",
+    "productFeatures": "生成可溶性盐、水和无色CO₂气体",
+    "phenomenon": "溶液迅速冒出大量无色气泡，逸出气体可使澄清石灰水变浑浊。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-006",
+    "chapter": "B1",
+    "title": "难溶碳酸盐与酸",
+    "detail": "CaCO₃＋2HCl＝CaCl₂＋H₂O＋CO₂↑；离子式：CaCO₃＋2H⁺＝Ca²⁺＋H₂O＋CO₂↑（E01、E03、E10）。",
+    "reactantFeatures": "CaCO₃是白色难溶固体，盐酸提供H⁺",
+    "productFeatures": "Ca²⁺进入无色溶液，同时生成水和CO₂",
+    "phenomenon": "白色固体逐渐溶解并持续放出无色气泡。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-007",
+    "chapter": "B1",
+    "title": "锌置换氢",
+    "detail": "Zn＋2HCl＝ZnCl₂＋H₂↑；离子式：Zn＋2H⁺＝Zn²⁺＋H₂↑（E01、E11、E13）。",
+    "reactantFeatures": "Zn是较活泼的银灰色金属，非氧化性酸提供H⁺",
+    "productFeatures": "Zn²⁺溶液无色，H₂为无色可燃气体",
+    "phenomenon": "锌逐渐溶解、表面有气泡并伴随放热，气体点燃可听到轻微爆鸣声。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-008",
+    "chapter": "B1",
+    "title": "铁置换铜",
+    "detail": "Fe＋CuSO₄＝FeSO₄＋Cu；离子式：Fe＋Cu²⁺＝Fe²⁺＋Cu（E01、E06、E10、E13）。",
+    "reactantFeatures": "Fe的还原性强于Cu，Cu²⁺溶液呈蓝色",
+    "productFeatures": "Fe²⁺溶液浅绿色，析出红色铜",
+    "phenomenon": "铁表面覆盖红色固体，铁逐渐溶解，溶液蓝色变浅并趋于浅绿色。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-009",
+    "chapter": "B1",
+    "title": "氢气还原氧化铜",
+    "detail": "CuO＋H₂→Cu＋H₂O（加热）。黑色固体变红，先通氢后加热（E01、E10）。",
+    "reactantFeatures": "H₂具有还原性，CuO为黑色固体",
+    "productFeatures": "Cu为红色金属，水蒸气冷凝为液滴",
+    "phenomenon": "加热后黑色固体逐渐变红，试管冷端出现水珠。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-010",
+    "chapter": "B1",
+    "title": "一氧化碳炼铁",
+    "detail": "Fe₂O₃＋3CO→2Fe＋3CO₂（高温）。尾气须处理（E06、E10）。",
+    "reactantFeatures": "Fe₂O₃是红棕色固体，CO是无色、有毒的还原性气体",
+    "productFeatures": "生成灰黑色铁和CO₂",
+    "phenomenon": "固体颜色由红棕变深并生成金属铁，逸出气体可使石灰水变浑浊，过量CO须作尾气处理。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-011",
+    "chapter": "B1",
+    "title": "氯气置换碘",
+    "detail": "Cl₂＋2KI＝2KCl＋I₂；离子式：Cl₂＋2I⁻＝2Cl⁻＋I₂（E01、E05）。",
+    "reactantFeatures": "Cl₂是黄绿色强氧化性气体，I⁻无色且具有还原性",
+    "productFeatures": "I₂在水中呈棕黄色、遇淀粉显蓝色",
+    "phenomenon": "氯气颜色减弱，溶液出现棕黄色，加入淀粉后显蓝色。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-012",
+    "chapter": "B1",
+    "title": "二氧化锰氧化浓盐酸",
+    "detail": "MnO₂＋4HCl(浓)→MnCl₂＋Cl₂↑＋2H₂O；离子式：MnO₂＋4H⁺＋2Cl⁻→Mn²⁺＋Cl₂↑＋2H₂O（E04）。",
+    "reactantFeatures": "MnO₂为黑色氧化性固体，浓盐酸中的Cl⁻在强酸、加热条件下被氧化",
+    "productFeatures": "Mn²⁺溶液近无色，Cl₂为黄绿色有刺激性气味的气体",
+    "phenomenon": "黑色固体逐渐溶解并放出黄绿色气体。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-013",
+    "chapter": "B1",
+    "title": "钠在空气中缓慢氧化",
+    "detail": "4Na＋O₂＝2Na₂O。银白色切面很快变暗（E02）。",
+    "reactantFeatures": "Na切面银白、还原性很强，空气中的O₂作氧化剂",
+    "productFeatures": "Na₂O是白色碱性氧化物",
+    "phenomenon": "钠的银白色切面很快失去光泽并形成灰白色氧化膜。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-014",
+    "chapter": "B1",
+    "title": "钠燃烧",
+    "detail": "2Na＋O₂→Na₂O₂（点燃）。黄色火焰、淡黄色固体（E02）。",
+    "reactantFeatures": "Na受热点燃后与O₂剧烈反应",
+    "productFeatures": "Na₂O₂为淡黄色固体并具有强氧化性",
+    "phenomenon": "钠燃烧发出黄色火焰，生成淡黄色固体。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-015",
+    "chapter": "B1",
+    "title": "钠与水",
+    "detail": "2Na＋2H₂O＝2NaOH＋H₂↑；离子式：2Na＋2H₂O＝2Na⁺＋2OH⁻＋H₂↑。浮、熔、游、响、红（E02）。",
+    "reactantFeatures": "Na密度小、熔点低且还原性强，水提供可被还原的氢",
+    "productFeatures": "生成强碱NaOH和可燃性H₂",
+    "phenomenon": "钠浮在水面、熔成小球、快速游动并嘶响，滴有酚酞时溶液变红，剧烈时可燃烧。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-016",
+    "chapter": "B1",
+    "title": "氧化钠与水",
+    "detail": "Na₂O＋H₂O＝2NaOH（E02）。",
+    "reactantFeatures": "Na₂O是白色强碱性氧化物，能直接与水化合",
+    "productFeatures": "NaOH是无色、易溶的强碱",
+    "phenomenon": "固体溶解并明显放热，一般无气体或沉淀。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-017",
+    "chapter": "B1",
+    "title": "过氧化钠与水",
+    "detail": "2Na₂O₂＋2H₂O＝4NaOH＋O₂↑（E02、E21）。",
+    "reactantFeatures": "Na₂O₂为淡黄色过氧化物，兼有碱性和氧化性",
+    "productFeatures": "生成无色NaOH溶液和O₂",
+    "phenomenon": "固体逐渐溶解、放热并有气泡，所得气体可使带火星木条复燃。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-018",
+    "chapter": "B1",
+    "title": "过氧化钠与二氧化碳",
+    "detail": "2Na₂O₂＋2CO₂＝2Na₂CO₃＋O₂（E02、E21）。",
+    "reactantFeatures": "Na₂O₂能吸收CO₂并发生氧化还原反应",
+    "productFeatures": "Na₂CO₃为白色固体，同时释放O₂",
+    "phenomenon": "通常无明显颜色变化，可检测到氧气使带火星木条复燃。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-019",
+    "chapter": "B1",
+    "title": "过氧化钠氧化二氧化硫",
+    "detail": "Na₂O₂＋SO₂＝Na₂SO₄。Na₂O₂兼具供氧与强氧化性（E02、E07）。",
+    "reactantFeatures": "Na₂O₂是强氧化剂，SO₂具有还原性且有刺激性气味",
+    "productFeatures": "Na₂SO₄是白色稳定固体",
+    "phenomenon": "SO₂被吸收、刺激性气味减弱，反应通常放热且无气体生成。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-020",
+    "chapter": "B1",
+    "title": "碳酸氢钠受热分解",
+    "detail": "2NaHCO₃→Na₂CO₃＋H₂O＋CO₂↑（加热）（E03）。",
+    "reactantFeatures": "NaHCO₃是受热不稳定的白色固体",
+    "productFeatures": "生成更稳定的Na₂CO₃、水和CO₂",
+    "phenomenon": "加热时放出气体，管壁出现水珠，气体可使石灰水变浑浊，固体质量减小。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-021",
+    "chapter": "B1",
+    "title": "碳酸氢钠与酸",
+    "detail": "NaHCO₃＋HCl＝NaCl＋H₂O＋CO₂↑；离子式：HCO₃⁻＋H⁺＝H₂O＋CO₂↑（E03）。",
+    "reactantFeatures": "HCO₃⁻兼具酸碱性，遇强酸易生成不稳定碳酸",
+    "productFeatures": "碳酸随即分解为水和CO₂",
+    "phenomenon": "立即产生大量无色气泡，气体可使石灰水变浑浊。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-022",
+    "chapter": "B1",
+    "title": "碳酸钠逐滴加酸第一步",
+    "detail": "Na₂CO₃＋HCl＝NaHCO₃＋NaCl；离子式：CO₃²⁻＋H⁺＝HCO₃⁻（E03、E12）。",
+    "reactantFeatures": "CO₃²⁻可分步接受H⁺，少量酸只完成第一步质子化",
+    "productFeatures": "生成仍可溶的HCO₃⁻，未产生CO₂",
+    "phenomenon": "通常无气泡、无沉淀，仅pH下降。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-023",
+    "chapter": "B1",
+    "title": "碳酸氢根转化为碳酸根",
+    "detail": "NaHCO₃＋NaOH＝Na₂CO₃＋H₂O；离子式：HCO₃⁻＋OH⁻＝CO₃²⁻＋H₂O（E03、E12）。",
+    "reactantFeatures": "HCO₃⁻可向强碱提供H⁺，OH⁻促其转化",
+    "productFeatures": "生成CO₃²⁻和水，均无色",
+    "phenomenon": "一般无肉眼可见变化，溶液碱性增强。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-024",
+    "chapter": "B1",
+    "title": "碳酸钠吸收二氧化碳",
+    "detail": "Na₂CO₃＋CO₂＋H₂O＝2NaHCO₃（E03）。",
+    "reactantFeatures": "CO₃²⁻呈碱性，CO₂是酸性氧化物",
+    "productFeatures": "生成可溶性NaHCO₃",
+    "phenomenon": "通入CO₂时通常无明显现象，若原体系含碳酸盐沉淀则可伴随溶解。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-025",
+    "chapter": "B1",
+    "title": "碳酸钠与石灰水",
+    "detail": "Na₂CO₃＋Ca(OH)₂＝CaCO₃↓＋2NaOH；离子式：CO₃²⁻＋Ca²⁺＝CaCO₃↓（E03、E10）。",
+    "reactantFeatures": "Na₂CO₃和石灰水分别提供CO₃²⁻、Ca²⁺",
+    "productFeatures": "CaCO₃为白色难溶固体，NaOH留在溶液中",
+    "phenomenon": "迅速出现白色沉淀，溶液保持碱性。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-026",
+    "chapter": "B1",
+    "title": "侯氏制碱析晶",
+    "detail": "NaCl＋NH₃＋CO₂＋H₂O＝NaHCO₃↓＋NH₄Cl；焙烧见B1-020（E03、E08、E10）。",
+    "reactantFeatures": "浓盐水提供Na⁺、Cl⁻，NH₃提高碱性，CO₂与水形成含碳酸体系",
+    "productFeatures": "NaHCO₃在低温浓盐水中溶解度较小，NH₄Cl留在母液",
+    "phenomenon": "通气、冷却后析出白色NaHCO₃晶体。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-027",
+    "chapter": "B1",
+    "title": "氯气与钠",
+    "detail": "2Na＋Cl₂→2NaCl（点燃）。产生白烟（E04）。",
+    "reactantFeatures": "Na是强还原剂，Cl₂是强氧化剂",
+    "productFeatures": "NaCl为白色离子晶体",
+    "phenomenon": "钠在氯气中剧烈燃烧，出现黄色火焰并生成大量白烟。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-028",
+    "chapter": "B1",
+    "title": "氯气与铁",
+    "detail": "2Fe＋3Cl₂→2FeCl₃（点燃）。棕褐色烟（E04、E06）。",
+    "reactantFeatures": "Fe在Cl₂强氧化性作用下被氧化至＋3价",
+    "productFeatures": "无水FeCl₃易升华，呈棕褐色烟状颗粒",
+    "phenomenon": "铁丝剧烈燃烧、常伴火星，生成棕褐色烟。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-029",
+    "chapter": "B1",
+    "title": "氯气与铜",
+    "detail": "Cu＋Cl₂→CuCl₂（点燃）。棕黄色烟，加水得蓝绿色溶液（E04）。",
+    "reactantFeatures": "红色Cu被Cl₂氧化，Cl₂呈黄绿色",
+    "productFeatures": "无水CuCl₂呈棕黄色，溶于水形成蓝绿色溶液",
+    "phenomenon": "铜丝燃烧并产生棕黄色烟，加水后得到蓝绿色溶液。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-030",
+    "chapter": "B1",
+    "title": "氢气在氯气中燃烧",
+    "detail": "H₂＋Cl₂→2HCl（点燃或光照）。苍白色火焰，潮湿空气中白雾（E04）。",
+    "reactantFeatures": "H₂和Cl₂的混合物受光可迅速反应，具有爆炸风险",
+    "productFeatures": "HCl是无色、极易溶于水的气体",
+    "phenomenon": "氢气在氯气中发出苍白色火焰，潮湿空气中出现白雾，强光下混合气可能爆炸。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-031",
+    "chapter": "B1",
+    "title": "氯气与水",
+    "detail": "Cl₂＋H₂O⇌HCl＋HClO；离子式：Cl₂＋H₂O⇌H⁺＋Cl⁻＋HClO（E04）。",
+    "reactantFeatures": "Cl₂既可被还原为Cl⁻又可被氧化为HClO，反应可逆",
+    "productFeatures": "HCl使溶液呈酸性，HClO具有弱酸性、强氧化性和漂白性",
+    "phenomenon": "氯水呈浅黄绿色并有刺激性气味，可使有色物质先变色后褪色。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-032",
+    "chapter": "B1",
+    "title": "次氯酸光解",
+    "detail": "2HClO→2HCl＋O₂↑（光照）。解释氯水久置失效（E04）。",
+    "reactantFeatures": "HClO见光易分解且不稳定",
+    "productFeatures": "生成HCl和无色O₂",
+    "phenomenon": "久置氯水黄绿色和漂白性逐渐消失，可能有少量气泡但通常不明显。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-033",
+    "chapter": "B1",
+    "title": "氯气与冷稀碱",
+    "detail": "Cl₂＋2NaOH＝NaCl＋NaClO＋H₂O；离子式：Cl₂＋2OH⁻＝Cl⁻＋ClO⁻＋H₂O（E04）。",
+    "reactantFeatures": "Cl₂在冷、稀强碱中发生歧化",
+    "productFeatures": "生成无色的Cl⁻、ClO⁻溶液和水，ClO⁻仍具氧化漂白性",
+    "phenomenon": "氯气黄绿色和刺激性气味迅速消失，反应放热。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-034",
+    "chapter": "B1",
+    "title": "氯气与石灰乳",
+    "detail": "2Cl₂＋2Ca(OH)₂＝CaCl₂＋Ca(ClO)₂＋2H₂O。漂白粉制备（E04）。",
+    "reactantFeatures": "Cl₂与石灰乳中的Ca(OH)₂反应并发生歧化",
+    "productFeatures": "得到含CaCl₂、Ca(ClO)₂的漂白粉体系，后者具氧化性",
+    "phenomenon": "黄绿色氯气被乳白色悬浊液吸收，气体颜色和气味减弱。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-035",
+    "chapter": "B1",
+    "title": "漂白粉生效",
+    "detail": "Ca(ClO)₂＋CO₂＋H₂O＝CaCO₃↓＋2HClO（E04）。",
+    "reactantFeatures": "ClO⁻盐遇CO₂和水后体系酸性增强",
+    "productFeatures": "生成白色CaCO₃沉淀和漂白性更强的HClO",
+    "phenomenon": "出现白色沉淀，溶液漂白、消毒作用增强。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-036",
+    "chapter": "B1",
+    "title": "84消毒液与酸禁混",
+    "detail": "ClO⁻＋Cl⁻＋2H⁺＝Cl₂↑＋H₂O（E04）。",
+    "reactantFeatures": "酸化后ClO⁻氧化性增强，Cl⁻可被氧化",
+    "productFeatures": "生成有毒的黄绿色Cl₂和水",
+    "phenomenon": "产生黄绿色、有刺激性气味的气体，因此含氯消毒剂不能与酸性清洁剂混用。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-037",
+    "chapter": "B1",
+    "title": "氯气置换溴",
+    "detail": "Cl₂＋2Br⁻＝2Cl⁻＋Br₂（E05）。",
+    "reactantFeatures": "Cl₂氧化性强于Br₂，Br⁻溶液本身无色",
+    "productFeatures": "Br₂在水中呈橙黄色至棕红色",
+    "phenomenon": "氯气颜色减弱，溶液出现橙黄色，加入有机溶剂萃取后有机层呈橙红色。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-038",
+    "chapter": "B1",
+    "title": "溴置换碘",
+    "detail": "Br₂＋2I⁻＝2Br⁻＋I₂（E05）。",
+    "reactantFeatures": "Br₂氧化性强于I₂，I⁻无色且易被氧化",
+    "productFeatures": "I₂在水中呈棕黄色，在有机溶剂中呈紫色",
+    "phenomenon": "溴水颜色改变并出现碘的棕色，遇淀粉显蓝色。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-039",
+    "chapter": "B1",
+    "title": "氯碱工业",
+    "detail": "2NaCl＋2H₂O→2NaOH＋H₂↑＋Cl₂↑（电解）；阴极：2H₂O＋2e⁻＝H₂↑＋2OH⁻；阳极：2Cl⁻－2e⁻＝Cl₂↑（E04、E13）。",
+    "reactantFeatures": "饱和食盐水含高浓度Cl⁻，水在阴极比Na⁺更易放电",
+    "productFeatures": "阴极生成H₂和OH⁻，阳极生成Cl₂，溶液得到NaOH",
+    "phenomenon": "两极均有气泡，阳极气体黄绿色且有刺激性气味，阴极气体可燃，阴极附近溶液显碱性。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-040",
+    "chapter": "B1",
+    "title": "铁与氧气",
+    "detail": "3Fe＋2O₂→Fe₃O₄（点燃）（E06）。",
+    "reactantFeatures": "铁在点燃条件下可被O₂氧化",
+    "productFeatures": "Fe₃O₄为黑色磁性固体",
+    "phenomenon": "铁丝剧烈燃烧、火星四射，生成黑色固体。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-041",
+    "chapter": "B1",
+    "title": "铁与硫",
+    "detail": "Fe＋S→FeS（加热）（E06）。",
+    "reactantFeatures": "铁粉与硫粉混合，加热引发固相氧化还原反应",
+    "productFeatures": "FeS为黑色固体，铁为＋2价",
+    "phenomenon": "局部加热后混合物发光并继续反应，冷却得到黑色固体。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-042",
+    "chapter": "B1",
+    "title": "铁与水蒸气",
+    "detail": "3Fe＋4H₂O(g)→Fe₃O₄＋4H₂（高温）（E06、E10）。",
+    "reactantFeatures": "高温铁能还原水蒸气中的氢，液态冷水不能表现同样反应",
+    "productFeatures": "生成黑色Fe₃O₄和可燃H₂",
+    "phenomenon": "灼热铁粉逐渐变黑并放出气体，气体点燃有淡蓝色火焰或爆鸣声。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-043",
+    "chapter": "B1",
+    "title": "铁与非氧化性酸",
+    "detail": "Fe＋2HCl＝FeCl₂＋H₂↑；离子式：Fe＋2H⁺＝Fe²⁺＋H₂↑（E06）。",
+    "reactantFeatures": "Fe可还原非氧化性酸中的H⁺，但还原性弱于Zn",
+    "productFeatures": "Fe²⁺溶液呈浅绿色，H₂无色可燃",
+    "phenomenon": "铁逐渐溶解、表面产生气泡，溶液变为浅绿色。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-044",
+    "chapter": "B1",
+    "title": "氧化亚铁溶酸",
+    "detail": "FeO＋2H⁺＝Fe²⁺＋H₂O（E06）。",
+    "reactantFeatures": "FeO为黑色碱性氧化物，能被酸溶解",
+    "productFeatures": "生成浅绿色Fe²⁺溶液和水",
+    "phenomenon": "黑色固体逐渐溶解，溶液呈浅绿色，无气体产生。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-045",
+    "chapter": "B1",
+    "title": "氧化铁溶酸",
+    "detail": "Fe₂O₃＋6H⁺＝2Fe³⁺＋3H₂O（E06、E10）。",
+    "reactantFeatures": "Fe₂O₃为红棕色碱性氧化物",
+    "productFeatures": "Fe³⁺溶液呈黄色至棕黄色",
+    "phenomenon": "红棕色固体逐渐溶解，形成黄色溶液，无气泡。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-046",
+    "chapter": "B1",
+    "title": "四氧化三铁溶酸",
+    "detail": "Fe₃O₄＋8H⁺＝Fe²⁺＋2Fe³⁺＋4H₂O（E06）。",
+    "reactantFeatures": "Fe₃O₄是含Fe²⁺、Fe³⁺的黑色混合价氧化物",
+    "productFeatures": "酸溶后同时得到Fe²⁺和Fe³⁺",
+    "phenomenon": "黑色固体溶解，所得溶液呈黄绿色至棕黄色，颜色取决于两种离子比例。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-047",
+    "chapter": "B1",
+    "title": "亚铁离子沉淀",
+    "detail": "Fe²⁺＋2OH⁻＝Fe(OH)₂↓。白色絮状物迅速变灰绿（E06）。",
+    "reactantFeatures": "Fe²⁺溶液浅绿色，遇OH⁻生成易被空气氧化的氢氧化物",
+    "productFeatures": "纯Fe(OH)₂为白色絮状沉淀，实际常迅速变灰绿",
+    "phenomenon": "出现白色沉淀并很快转为灰绿色，继续放置会变红褐色。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-048",
+    "chapter": "B1",
+    "title": "氢氧化亚铁氧化",
+    "detail": "4Fe(OH)₂＋O₂＋2H₂O＝4Fe(OH)₃。最终红褐色（E06、E13）。",
+    "reactantFeatures": "Fe(OH)₂具有还原性，空气中的O₂作氧化剂",
+    "productFeatures": "Fe(OH)₃为红褐色絮状沉淀",
+    "phenomenon": "灰绿色沉淀从表面开始逐渐变为红褐色。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-049",
+    "chapter": "B1",
+    "title": "铁(Ⅲ)离子沉淀",
+    "detail": "Fe³⁺＋3OH⁻＝Fe(OH)₃↓。红褐色（E06）。",
+    "reactantFeatures": "Fe³⁺水溶液呈黄色，OH⁻促使其生成难溶氢氧化物",
+    "productFeatures": "Fe(OH)₃为红褐色胶状或絮状沉淀",
+    "phenomenon": "立即出现红褐色沉淀，溶液黄色变浅。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-050",
+    "chapter": "B1",
+    "title": "氢氧化铁受热",
+    "detail": "2Fe(OH)₃→Fe₂O₃＋3H₂O（加热）（E06）。",
+    "reactantFeatures": "Fe(OH)₃为含结晶水性质的红褐色沉淀，受热脱水",
+    "productFeatures": "Fe₂O₃为红棕色固体并生成水蒸气",
+    "phenomenon": "加热时固体失水、质量减小，颜色由红褐转为较深红棕。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-051",
+    "chapter": "B1",
+    "title": "亚铁离子被氯气氧化",
+    "detail": "2Fe²⁺＋Cl₂＝2Fe³⁺＋2Cl⁻（E04、E06）。",
+    "reactantFeatures": "Fe²⁺具有还原性，Cl₂具有强氧化性",
+    "productFeatures": "Fe³⁺溶液呈黄色，Cl₂被还原为无色Cl⁻",
+    "phenomenon": "氯气黄绿色褪去，溶液由浅绿色转为黄色。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-052",
+    "chapter": "B1",
+    "title": "铁还原铁(Ⅲ)离子",
+    "detail": "Fe＋2Fe³⁺＝3Fe²⁺（E06、E13）。",
+    "reactantFeatures": "Fe单质可把Fe³⁺还原为Fe²⁺",
+    "productFeatures": "产物只有浅绿色Fe²⁺，避免引入其他金属离子",
+    "phenomenon": "铁逐渐溶解，黄色Fe³⁺溶液褪色并转浅绿色。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-053",
+    "chapter": "B1",
+    "title": "铜还原铁(Ⅲ)离子",
+    "detail": "Cu＋2Fe³⁺＝Cu²⁺＋2Fe²⁺（E06、E13）。",
+    "reactantFeatures": "Cu具有还原性，Fe³⁺具有氧化性",
+    "productFeatures": "生成蓝色Cu²⁺和浅绿色Fe²⁺",
+    "phenomenon": "红色铜逐渐溶解，黄色溶液转为蓝绿色。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-054",
+    "chapter": "B1",
+    "title": "铁(Ⅲ)离子显色",
+    "detail": "Fe³⁺＋SCN⁻⇌[Fe(SCN)]²⁺。溶液呈血红色（E06、E11、E20）。",
+    "reactantFeatures": "Fe³⁺是中心离子，SCN⁻是可配位的无色配体",
+    "productFeatures": "[Fe(SCN)]²⁺呈血红色且处于可逆平衡",
+    "phenomenon": "溶液迅速显血红色，改变浓度或加入能消耗Fe³⁺的试剂时红色深浅随之变化。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-055",
+    "chapter": "B1",
+    "title": "铝表面氧化",
+    "detail": "4Al＋3O₂＝2Al₂O₃（E06）。",
+    "reactantFeatures": "Al还原性强，但常被表面氧化膜保护",
+    "productFeatures": "Al₂O₃为致密、附着性强的白色氧化膜",
+    "phenomenon": "新鲜铝表面很快失去金属光泽，随后因钝化反应显著变慢。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-056",
+    "chapter": "B1",
+    "title": "铝与酸",
+    "detail": "2Al＋6HCl＝2AlCl₃＋3H₂↑；离子式：2Al＋6H⁺＝2Al³⁺＋3H₂↑（E06）。",
+    "reactantFeatures": "Al表面有氧化膜，膜被酸溶解后铝可还原H⁺",
+    "productFeatures": "Al³⁺溶液无色，H₂可燃",
+    "phenomenon": "开始可能有诱导期，随后铝逐渐溶解并大量放出气泡，反应放热。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-057",
+    "chapter": "B1",
+    "title": "铝与强碱",
+    "detail": "2Al＋2NaOH＋6H₂O＝2Na[Al(OH)₄]＋3H₂↑；离子式：2Al＋2OH⁻＋6H₂O＝2[Al(OH)₄]⁻＋3H₂↑（E06）。",
+    "reactantFeatures": "Al具有两性，在强碱和水中可形成四羟基合铝酸根",
+    "productFeatures": "[Al(OH)₄]⁻溶液无色并放出H₂",
+    "phenomenon": "铝逐渐溶解、产生无色气泡并明显放热。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-058",
+    "chapter": "B1",
+    "title": "氧化铝溶酸",
+    "detail": "Al₂O₃＋6H⁺＝2Al³⁺＋3H₂O（E06、E10）。",
+    "reactantFeatures": "Al₂O₃是白色两性氧化物，与酸发生中和",
+    "productFeatures": "生成无色Al³⁺溶液和水",
+    "phenomenon": "白色固体逐渐溶解，无气体产生。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-059",
+    "chapter": "B1",
+    "title": "氧化铝溶碱",
+    "detail": "Al₂O₃＋2OH⁻＋3H₂O＝2[Al(OH)₄]⁻（E06、E10）。",
+    "reactantFeatures": "Al₂O₃表现酸性氧化物一面，可与强碱、水形成配离子",
+    "productFeatures": "[Al(OH)₄]⁻无色且可溶",
+    "phenomenon": "白色固体逐渐溶解，通常无气泡。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-060",
+    "chapter": "B1",
+    "title": "氢氧化铝溶酸",
+    "detail": "Al(OH)₃＋3H⁺＝Al³⁺＋3H₂O（E06）。",
+    "reactantFeatures": "Al(OH)₃为白色胶状两性氢氧化物",
+    "productFeatures": "酸过量时转化为无色Al³⁺溶液",
+    "phenomenon": "白色沉淀逐渐溶解，溶液澄清。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-061",
+    "chapter": "B1",
+    "title": "氢氧化铝溶碱",
+    "detail": "Al(OH)₃＋OH⁻＝[Al(OH)₄]⁻（E06）。",
+    "reactantFeatures": "Al(OH)₃能与强碱形成可溶配离子",
+    "productFeatures": "[Al(OH)₄]⁻为无色溶液中的主要形态",
+    "phenomenon": "白色胶状沉淀在过量强碱中逐渐溶解。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-062",
+    "chapter": "B1",
+    "title": "铝盐与少量碱",
+    "detail": "Al³⁺＋3OH⁻＝Al(OH)₃↓（E06、E12）。",
+    "reactantFeatures": "Al³⁺水解倾向强，少量OH⁻促成沉淀",
+    "productFeatures": "Al(OH)₃为白色胶状沉淀",
+    "phenomenon": "出现白色絮状或胶状沉淀。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-063",
+    "chapter": "B1",
+    "title": "铝盐与过量碱",
+    "detail": "Al³⁺＋4OH⁻＝[Al(OH)₄]⁻（E06、E12）。",
+    "reactantFeatures": "Al³⁺遇过量OH⁻最终形成稳定可溶配离子",
+    "productFeatures": "[Al(OH)₄]⁻无色、可溶",
+    "phenomenon": "若逐滴加碱，先出现白色沉淀，继续加至过量后沉淀溶解。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-064",
+    "chapter": "B1",
+    "title": "四羟基合铝酸根酸化",
+    "detail": "[Al(OH)₄]⁻＋H⁺＝Al(OH)₃↓＋H₂O；酸过量：[Al(OH)₄]⁻＋4H⁺＝Al³⁺＋4H₂O（E06、E12）。",
+    "reactantFeatures": "[Al(OH)₄]⁻存在于碱性溶液中，分步接受H⁺",
+    "productFeatures": "少量酸生成白色Al(OH)₃，过量酸又使其转为无色Al³⁺",
+    "phenomenon": "先出现白色胶状沉淀，继续加酸后沉淀消失。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-065",
+    "chapter": "B1",
+    "title": "铝盐与氨水",
+    "detail": "Al³⁺＋3NH₃·H₂O＝Al(OH)₃↓＋3NH₄⁺。氨水过量沉淀不溶（E06）。",
+    "reactantFeatures": "NH₃·H₂O是弱碱，可提供足够OH⁻沉淀Al³⁺但不能形成高浓度强碱环境",
+    "productFeatures": "Al(OH)₃为白色胶状沉淀，NH₄⁺留在溶液",
+    "phenomenon": "生成白色沉淀，氨水过量时沉淀不溶。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-066",
+    "chapter": "B1",
+    "title": "氢氧化铝受热",
+    "detail": "2Al(OH)₃→Al₂O₃＋3H₂O（加热）（E06、E10）。",
+    "reactantFeatures": "Al(OH)₃受热易脱水",
+    "productFeatures": "生成白色Al₂O₃和水蒸气",
+    "phenomenon": "加热时固体失水、质量减小，外观仍主要为白色。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-067",
+    "chapter": "B1",
+    "title": "铝热反应",
+    "detail": "2Al＋Fe₂O₃→Al₂O₃＋2Fe（高温）（E06、E10）。",
+    "reactantFeatures": "Al粉是强还原剂，Fe₂O₃提供可还原的Fe³⁺，反应需高温引发",
+    "productFeatures": "生成高熔点Al₂O₃和熔融铁",
+    "phenomenon": "反应放出大量热，发出耀眼白光、火星四射，并生成熔融铁。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-068",
+    "chapter": "B1",
+    "title": "明矾水解净水",
+    "detail": "Al³⁺＋3H₂O⇌Al(OH)₃(胶体)＋3H⁺（E06、E12）。",
+    "reactantFeatures": "Al³⁺电荷高、极化水分子能力强，易发生水解",
+    "productFeatures": "生成吸附性强的Al(OH)₃胶体并释放H⁺",
+    "phenomenon": "水中形成白色胶状絮体，可吸附悬浮杂质使其聚沉，溶液pH下降。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-069",
+    "chapter": "B1",
+    "title": "铝工业制备",
+    "detail": "2Al₂O₃(熔融)→4Al＋3O₂↑（电解、冰晶石）（E10、E13）。",
+    "reactantFeatures": "熔融Al₂O₃提供可自由移动的Al³⁺、O²⁻，冰晶石用于降低熔点并改善导电性",
+    "productFeatures": "阴极得到液态Al，阳极生成O₂并常进一步消耗碳阳极",
+    "phenomenon": "阴极析出熔融铝，阳极有气体生成。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-070",
+    "chapter": "B1",
+    "title": "锂与氧气",
+    "detail": "4Li＋O₂→2Li₂O（点燃）（E02、E20）。",
+    "reactantFeatures": "Li为活泼碱金属，但还原性表现和反应剧烈程度弱于Na、K",
+    "productFeatures": "Li₂O是白色碱性氧化物",
+    "phenomenon": "锂燃烧呈洋红色火焰并生成白色固体。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-071",
+    "chapter": "B1",
+    "title": "钾与水",
+    "detail": "2K＋2H₂O＝2KOH＋H₂↑（E02、E20）。",
+    "reactantFeatures": "K密度小、熔点低且比Na更活泼",
+    "productFeatures": "生成强碱KOH和可燃H₂",
+    "phenomenon": "钾在水面迅速熔化游动，常燃烧呈紫色火焰，剧烈时发生爆炸，指示剂显示溶液呈强碱性。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-072",
+    "chapter": "B1",
+    "title": "镁与热水",
+    "detail": "Mg＋2H₂O→Mg(OH)₂＋H₂↑（加热）（E10、E20）。",
+    "reactantFeatures": "Mg表面有氧化膜，与冷水反应很慢，加热可促进",
+    "productFeatures": "Mg(OH)₂为白色难溶固体并生成H₂",
+    "phenomenon": "热水中镁表面产生气泡并逐渐覆有白色沉淀或白膜。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-073",
+    "chapter": "B1",
+    "title": "镁与二氧化碳",
+    "detail": "2Mg＋CO₂→2MgO＋C（点燃）。说明CO₂不一定支持燃烧（E10、E20）。",
+    "reactantFeatures": "燃烧的Mg还原性极强，可从CO₂中夺氧",
+    "productFeatures": "MgO为白色固体，C为黑色固体",
+    "phenomenon": "镁在CO₂中继续发出耀眼白光，生成白烟并留下黑色碳粒。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-074",
+    "chapter": "B1",
+    "title": "氧化镁与水",
+    "detail": "MgO＋H₂O＝Mg(OH)₂（缓慢）（E10、E20）。",
+    "reactantFeatures": "MgO为白色碱性氧化物，与水化合较慢",
+    "productFeatures": "Mg(OH)₂为白色难溶固体",
+    "phenomenon": "反应不剧烈，逐渐形成白色浑浊或悬浊液。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-075",
+    "chapter": "B1",
+    "title": "氧化钙与水",
+    "detail": "CaO＋H₂O＝Ca(OH)₂（E10、E20）。",
+    "reactantFeatures": "CaO是白色强碱性氧化物，对水有很强亲和力",
+    "productFeatures": "Ca(OH)₂为白色微溶固体",
+    "phenomenon": "反应剧烈放热、发出嘶嘶声并可能冒白雾，块状生石灰膨胀粉化。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B1-076",
+    "chapter": "B1",
+    "title": "卤素氧化性递变证据链",
+    "detail": "Cl₂＋2Br⁻＝2Cl⁻＋Br₂；Br₂＋2I⁻＝2Br⁻＋I₂（与B1-037、B1-038同反应，作为周期律实验再索引）（E05、E20）。",
+    "reactantFeatures": "氧化性顺序为Cl₂强于Br₂强于I₂，Br⁻、I⁻均为无色还原性离子",
+    "productFeatures": "Br₂呈橙黄色至棕红色，I₂呈棕色且遇淀粉显蓝",
+    "phenomenon": "依次出现溴或碘的特征颜色，萃取后颜色更明显。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-001",
+    "chapter": "B2",
+    "title": "硫与铁",
+    "detail": "Fe＋S→FeS（加热）。铁被氧化为＋2价（E07）。",
+    "reactantFeatures": "铁粉与硫粉在加热时发生固相氧化还原，硫将铁氧化为＋2价",
+    "productFeatures": "FeS为黑色固体",
+    "phenomenon": "局部受热后混合物发光并继续反应，黄色硫和灰黑铁逐渐转为黑色固体。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-002",
+    "chapter": "B2",
+    "title": "硫与铜",
+    "detail": "2Cu＋S→Cu₂S（加热）（E07、E10）。",
+    "reactantFeatures": "红色Cu可被S氧化，反应需加热",
+    "productFeatures": "Cu₂S为黑色固体",
+    "phenomenon": "混合物受热发光，红色铜和黄色硫逐渐消失并生成黑色固体。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-003",
+    "chapter": "B2",
+    "title": "硫燃烧",
+    "detail": "S＋O₂→SO₂（点燃）。空气中淡蓝色、氧气中蓝紫色火焰（E07）。",
+    "reactantFeatures": "S为淡黄色固体，点燃后与O₂反应",
+    "productFeatures": "SO₂是无色、有刺激性气味且有毒的气体",
+    "phenomenon": "硫在空气中发淡蓝色火焰，在纯氧中呈更明亮的蓝紫色火焰，并产生刺激性气味。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-004",
+    "chapter": "B2",
+    "title": "二氧化硫与水",
+    "detail": "SO₂＋H₂O⇌H₂SO₃（E07）。",
+    "reactantFeatures": "SO₂是易溶于水的酸性气体",
+    "productFeatures": "H₂SO₃为弱酸且不稳定，体系存在可逆平衡",
+    "phenomenon": "气体被水吸收、刺激性气味减弱，溶液显酸性，通常无沉淀。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-005",
+    "chapter": "B2",
+    "title": "二氧化硫与少量碱",
+    "detail": "SO₂＋OH⁻＝HSO₃⁻（E07、E12）。",
+    "reactantFeatures": "SO₂为二元酸性氧化物，少量OH⁻只完成第一步中和",
+    "productFeatures": "生成可溶性HSO₃⁻",
+    "phenomenon": "SO₂被吸收、刺激性气味减弱，通常无肉眼可见变化。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-006",
+    "chapter": "B2",
+    "title": "二氧化硫与过量碱",
+    "detail": "SO₂＋2OH⁻＝SO₃²⁻＋H₂O（E07、E12）。",
+    "reactantFeatures": "SO₂遇过量OH⁻可被完全中和",
+    "productFeatures": "生成无色、可溶的SO₃²⁻和水",
+    "phenomenon": "SO₂气体被充分吸收，气味消失，一般无沉淀或气泡。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-007",
+    "chapter": "B2",
+    "title": "二氧化硫与石灰水",
+    "detail": "SO₂＋Ca(OH)₂＝CaSO₃↓＋H₂O；SO₂过量：CaSO₃＋SO₂＋H₂O＝Ca(HSO₃)₂（E07）。",
+    "reactantFeatures": "SO₂与石灰水中的Ca(OH)₂先中和，过量SO₂又可使亚硫酸盐酸式化",
+    "productFeatures": "先生成白色CaSO₃沉淀，后转为可溶Ca(HSO₃)₂",
+    "phenomenon": "石灰水先变浑浊，继续通入过量SO₂后沉淀逐渐溶解、溶液复清。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-008",
+    "chapter": "B2",
+    "title": "二氧化硫与硫化氢",
+    "detail": "SO₂＋2H₂S＝3S↓＋2H₂O（E07）。",
+    "reactantFeatures": "SO₂在该反应中作氧化剂，H₂S作还原剂，两者均有刺激性气味",
+    "productFeatures": "单质硫为黄色难溶固体",
+    "phenomenon": "两种气体的气味减弱并出现黄色沉淀或乳浊。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-009",
+    "chapter": "B2",
+    "title": "二氧化硫还原氯水",
+    "detail": "SO₂＋Cl₂＋2H₂O＝H₂SO₄＋2HCl；离子式：SO₂＋Cl₂＋2H₂O＝SO₄²⁻＋4H⁺＋2Cl⁻（E04、E07）。",
+    "reactantFeatures": "SO₂具有还原性，氯水中的Cl₂、HClO具有氧化性",
+    "productFeatures": "生成无色的硫酸、盐酸，氧化性物种被还原为Cl⁻",
+    "phenomenon": "氯水黄绿色和漂白性消失，SO₂气味也减弱。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-010",
+    "chapter": "B2",
+    "title": "二氧化硫还原溴水",
+    "detail": "SO₂＋Br₂＋2H₂O＝H₂SO₄＋2HBr（E05、E07）。",
+    "reactantFeatures": "SO₂是还原剂，Br₂是橙黄色氧化剂",
+    "productFeatures": "生成无色H₂SO₄和HBr",
+    "phenomenon": "溴水橙黄色迅速褪去，通常无沉淀。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-011",
+    "chapter": "B2",
+    "title": "二氧化硫被酸性高锰酸钾氧化",
+    "detail": "5SO₂＋2MnO₄⁻＋2H₂O＝5SO₄²⁻＋2Mn²⁺＋4H⁺。紫色褪去（E07、E11）。",
+    "reactantFeatures": "SO₂还原性较强，酸性MnO₄⁻呈紫色且氧化性强",
+    "productFeatures": "生成近无色Mn²⁺和SO₄²⁻",
+    "phenomenon": "酸性高锰酸钾溶液的紫色迅速褪去。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-012",
+    "chapter": "B2",
+    "title": "亚硫酸盐被氧化",
+    "detail": "2Na₂SO₃＋O₂＝2Na₂SO₄（E07）。",
+    "reactantFeatures": "SO₃²⁻易被空气中的O₂氧化",
+    "productFeatures": "SO₄²⁻中硫处于更稳定的＋6价",
+    "phenomenon": "通常无明显颜色或状态变化，可通过硫酸根检验或耗氧量证明反应。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-013",
+    "chapter": "B2",
+    "title": "硫酸工业第一步",
+    "detail": "4FeS₂＋11O₂→2Fe₂O₃＋8SO₂（高温）（E07、E10）。",
+    "reactantFeatures": "FeS₂为含低价硫的矿石，O₂在高温下作氧化剂",
+    "productFeatures": "Fe₂O₃为红棕色固体，SO₂为有刺激性气味的气体",
+    "phenomenon": "焙烧时矿石灼热，生成红棕色固体并放出刺激性气体。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-014",
+    "chapter": "B2",
+    "title": "硫酸工业第二步",
+    "detail": "2SO₂＋O₂⇌2SO₃（V₂O₅、约450 ℃）（E07、E11）。",
+    "reactantFeatures": "SO₂、O₂均为气体，V₂O₅只加快速率，反应放热且可逆",
+    "productFeatures": "SO₃为无色、易形成酸雾的气体",
+    "phenomenon": "通常无直接可见颜色变化，气体总体积减小，平衡组成随温度和压强改变。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-015",
+    "chapter": "B2",
+    "title": "三氧化硫生成硫酸",
+    "detail": "SO₃＋H₂O＝H₂SO₄；工业上先吸收成发烟硫酸以避免酸雾（E07、E10）。",
+    "reactantFeatures": "SO₃是强酸性氧化物，对水有强烈亲和力",
+    "productFeatures": "生成强酸H₂SO₄并放出大量热",
+    "phenomenon": "直接与水反应十分剧烈，易形成大量硫酸酸雾而非易收集的液滴。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-016",
+    "chapter": "B2",
+    "title": "铜与浓硫酸",
+    "detail": "Cu＋2H₂SO₄(浓)→CuSO₄＋SO₂↑＋2H₂O（加热）（E07）。",
+    "reactantFeatures": "热的浓H₂SO₄具有强氧化性，Cu在此条件下可被氧化",
+    "productFeatures": "生成蓝色CuSO₄溶液和无色、有刺激性气味的SO₂",
+    "phenomenon": "铜逐渐溶解，溶液变蓝并放出刺激性气体。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-017",
+    "chapter": "B2",
+    "title": "碳与浓硫酸",
+    "detail": "C＋2H₂SO₄(浓)→CO₂↑＋2SO₂↑＋2H₂O（加热）（E07）。",
+    "reactantFeatures": "C具有还原性，热浓H₂SO₄是强氧化剂",
+    "productFeatures": "生成无色CO₂和有刺激性气味的SO₂",
+    "phenomenon": "黑色碳逐渐减少并放出气体，气体混合物可分别表现石灰水变浑浊和使品红褪色等性质。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-018",
+    "chapter": "B2",
+    "title": "氮氧化",
+    "detail": "N₂＋O₂⇌2NO（高温或放电）（E08、E21）。",
+    "reactantFeatures": "N₂三键牢固、O₂较稳定，反应需高温或放电并可逆",
+    "productFeatures": "NO是无色气体且易被空气氧化",
+    "phenomenon": "生成阶段无明显颜色，冷却接触空气后因生成NO₂而出现红棕色。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-019",
+    "chapter": "B2",
+    "title": "一氧化氮氧化",
+    "detail": "2NO＋O₂＝2NO₂。无色气体迅速变红棕（E08）。",
+    "reactantFeatures": "NO为无色还原性气体，O₂为氧化剂",
+    "productFeatures": "NO₂是红棕色、有刺激性气味的有毒气体",
+    "phenomenon": "无色NO一接触空气便迅速变成红棕色。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-020",
+    "chapter": "B2",
+    "title": "二氧化氮溶于水",
+    "detail": "3NO₂＋H₂O＝2HNO₃＋NO（E08）。",
+    "reactantFeatures": "NO₂为红棕色酸性、氧化性气体，能与水发生歧化",
+    "productFeatures": "生成无色HNO₃和无色NO",
+    "phenomenon": "红棕色气体被水吸收、颜色变浅，残余无色气体接触空气又会变棕。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-021",
+    "chapter": "B2",
+    "title": "二氧化氮、氧气完全吸收",
+    "detail": "4NO₂＋O₂＋2H₂O＝4HNO₃（E08、E21）。",
+    "reactantFeatures": "O₂可把NO₂溶水时产生的低价氮继续氧化",
+    "productFeatures": "氮最终全部转为无色HNO₃溶液",
+    "phenomenon": "红棕色NO₂被完全吸收，气体体积明显减小，所得溶液显强酸性。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-022",
+    "chapter": "B2",
+    "title": "一氧化氮、氧气完全吸收",
+    "detail": "4NO＋3O₂＋2H₂O＝4HNO₃（E08、E21）。",
+    "reactantFeatures": "NO无色且难直接被水完全吸收，O₂可将其逐步氧化",
+    "productFeatures": "最终得到无色HNO₃",
+    "phenomenon": "吸收过程中可短暂出现红棕色NO₂，随后气体颜色消失、总体积减小。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-023",
+    "chapter": "B2",
+    "title": "工业合成氨",
+    "detail": "N₂＋3H₂⇌2NH₃（高温、高压、铁催化剂）（E08、E11）。",
+    "reactantFeatures": "N₂、H₂均为无色气体，N₂键能高，需高温、高压和铁催化剂",
+    "productFeatures": "NH₃为无色、有刺激性气味、易液化且易溶于水的气体",
+    "phenomenon": "体系通常无颜色变化，达到平衡后气体总物质的量减小，可检出氨的刺激性气味和碱性。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-024",
+    "chapter": "B2",
+    "title": "氨溶于水",
+    "detail": "NH₃＋H₂O⇌NH₃·H₂O⇌NH₄⁺＋OH⁻（E08、E12）。",
+    "reactantFeatures": "NH₃分子有孤电子对、极易溶于水并表现弱碱性",
+    "productFeatures": "NH₄⁺、OH⁻只部分生成，平衡不完全",
+    "phenomenon": "氨气迅速溶解，溶液使红色石蕊变蓝或酚酞变红，可出现喷泉现象。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-025",
+    "chapter": "B2",
+    "title": "氨与氯化氢",
+    "detail": "NH₃＋HCl＝NH₄Cl。产生白烟（E08）。",
+    "reactantFeatures": "NH₃、HCl均为无色气体且极易溶于水，分别表现碱性和酸性",
+    "productFeatures": "NH₄Cl是白色离子晶体微粒",
+    "phenomenon": "两气体相遇立即产生浓厚白烟。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-026",
+    "chapter": "B2",
+    "title": "铵盐检验",
+    "detail": "NH₄⁺＋OH⁻→NH₃↑＋H₂O（加热）（E08、E12）。",
+    "reactantFeatures": "NH₄⁺具有弱酸性，强碱和加热推动其释放NH₃",
+    "productFeatures": "NH₃为有刺激性气味的碱性气体",
+    "phenomenon": "加热放出有刺激性气味的气体，使湿润红色石蕊试纸变蓝。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-027",
+    "chapter": "B2",
+    "title": "实验室制氨",
+    "detail": "2NH₄Cl＋Ca(OH)₂→CaCl₂＋2NH₃↑＋2H₂O（加热）（E08）。",
+    "reactantFeatures": "NH₄Cl与Ca(OH)₂均为固体，受热发生酸碱反应",
+    "productFeatures": "生成无色NH₃、CaCl₂和水",
+    "phenomenon": "加热放出有刺激性气味的气体，湿润红色石蕊试纸变蓝。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-028",
+    "chapter": "B2",
+    "title": "氨催化氧化",
+    "detail": "4NH₃＋5O₂→4NO＋6H₂O（Pt/Rh、加热）（E08、E10）。",
+    "reactantFeatures": "NH₃具有还原性，O₂在Pt/Rh表面将氮选择性氧化为NO",
+    "productFeatures": "NO无色，水为无色",
+    "phenomenon": "催化网受热发红，生成气体本身无色，但接触空气后迅速变红棕色。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-029",
+    "chapter": "B2",
+    "title": "氨在氧气中燃烧",
+    "detail": "4NH₃＋3O₂→2N₂＋6H₂O（点燃）（E08）。",
+    "reactantFeatures": "NH₃可燃但需较高氧浓度，O₂不足以把氮氧化为NO时主要生成N₂",
+    "productFeatures": "N₂和水均无色",
+    "phenomenon": "氨在氧气中燃烧，火焰较淡，并有水生成。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-030",
+    "chapter": "B2",
+    "title": "氨还原氧化铜",
+    "detail": "2NH₃＋3CuO→N₂＋3Cu＋3H₂O（加热）（E08）。",
+    "reactantFeatures": "NH₃具有还原性，CuO为黑色氧化性固体",
+    "productFeatures": "生成红色Cu、无色N₂和水",
+    "phenomenon": "黑色CuO逐渐变红，管壁出现水珠并有无色气体逸出。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-031",
+    "chapter": "B2",
+    "title": "铜与浓硝酸",
+    "detail": "Cu＋4HNO₃(浓)＝Cu(NO₃)₂＋2NO₂↑＋2H₂O；离子式：Cu＋4H⁺＋2NO₃⁻＝Cu²⁺＋2NO₂↑＋2H₂O（E08）。",
+    "reactantFeatures": "浓HNO₃氧化性强，能氧化不与非氧化性酸反应的Cu",
+    "productFeatures": "Cu²⁺溶液呈蓝色，NO₂为红棕色有毒气体",
+    "phenomenon": "铜剧烈溶解，溶液变蓝并产生大量红棕色气体。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-032",
+    "chapter": "B2",
+    "title": "铜与稀硝酸",
+    "detail": "3Cu＋8HNO₃(稀)＝3Cu(NO₃)₂＋2NO↑＋4H₂O；离子式：3Cu＋8H⁺＋2NO₃⁻＝3Cu²⁺＋2NO↑＋4H₂O（E08）。",
+    "reactantFeatures": "稀HNO₃仍具氧化性，但主要还原产物为NO",
+    "productFeatures": "Cu²⁺溶液蓝色，NO无色且易被空气氧化",
+    "phenomenon": "铜溶解、溶液变蓝，逸出的无色气体在瓶口接触空气后变红棕色。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-033",
+    "chapter": "B2",
+    "title": "碳与浓硝酸",
+    "detail": "C＋4HNO₃(浓)→CO₂↑＋4NO₂↑＋2H₂O（加热）（E08）。",
+    "reactantFeatures": "C是还原剂，热浓HNO₃是强氧化剂",
+    "productFeatures": "生成无色CO₂和红棕色NO₂",
+    "phenomenon": "黑色碳逐渐减少并放出大量红棕色气体。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-034",
+    "chapter": "B2",
+    "title": "硝酸光解",
+    "detail": "4HNO₃→4NO₂↑＋O₂↑＋2H₂O（光照）（E08）。",
+    "reactantFeatures": "浓HNO₃见光、受热易分解",
+    "productFeatures": "NO₂为红棕色气体，O₂无色",
+    "phenomenon": "无色硝酸久置受光逐渐变黄，容器上方可见红棕色气体。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-035",
+    "chapter": "B2",
+    "title": "硅与氧气",
+    "detail": "Si＋O₂→SiO₂（加热）（E09）。",
+    "reactantFeatures": "Si为灰黑色有金属光泽的固体，常温表面有稳定氧化膜",
+    "productFeatures": "SiO₂为白色、熔点高的网络固体",
+    "phenomenon": "加热或点燃后硅表面被氧化，生成白色固体，反应不如活泼金属燃烧剧烈。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-036",
+    "chapter": "B2",
+    "title": "硅与强碱",
+    "detail": "Si＋2NaOH＋H₂O＝Na₂SiO₃＋2H₂↑（E09）。",
+    "reactantFeatures": "Si可与强碱和水反应，表现还原性",
+    "productFeatures": "Na₂SiO₃可溶，H₂为可燃气体",
+    "phenomenon": "硅逐渐溶解并产生无色气泡，反应通常需加热或较浓碱液。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-037",
+    "chapter": "B2",
+    "title": "二氧化硅与氢氟酸",
+    "detail": "SiO₂＋4HF＝SiF₄↑＋2H₂O。刻蚀玻璃（E09）。",
+    "reactantFeatures": "SiO₂通常耐酸，但HF能破坏Si—O网络",
+    "productFeatures": "SiF₄是无色易水解气体",
+    "phenomenon": "玻璃表面被腐蚀、失去光滑透明性，并可能产生白雾。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-038",
+    "chapter": "B2",
+    "title": "二氧化硅与碱",
+    "detail": "SiO₂＋2NaOH＝Na₂SiO₃＋H₂O；离子式：SiO₂＋2OH⁻＝SiO₃²⁻＋H₂O（E09）。",
+    "reactantFeatures": "SiO₂是难溶酸性氧化物，能被强碱侵蚀",
+    "productFeatures": "Na₂SiO₃为可溶性硅酸盐",
+    "phenomenon": "加热时二氧化硅或玻璃逐渐被溶解、腐蚀，通常无气体。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-039",
+    "chapter": "B2",
+    "title": "二氧化硅与碱性氧化物",
+    "detail": "SiO₂＋CaO→CaSiO₃（高温）（E09、E10）。",
+    "reactantFeatures": "SiO₂为酸性氧化物，CaO为碱性氧化物，固相反应需高温",
+    "productFeatures": "CaSiO₃为高熔点硅酸盐",
+    "phenomenon": "高温下固体烧结或熔融成渣，通常无气体和明显颜色变化。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-040",
+    "chapter": "B2",
+    "title": "制玻璃",
+    "detail": "SiO₂＋Na₂CO₃→Na₂SiO₃＋CO₂↑；SiO₂＋CaCO₃→CaSiO₃＋CO₂↑（高温）（E09、E10）。",
+    "reactantFeatures": "SiO₂与Na₂CO₃、CaCO₃在高温熔融条件下反应",
+    "productFeatures": "生成硅酸盐熔体并放出CO₂",
+    "phenomenon": "炉料逐渐熔融并持续冒出气泡，冷却后形成玻璃态固体。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-041",
+    "chapter": "B2",
+    "title": "硅酸制备",
+    "detail": "Na₂SiO₃＋2HCl＝H₂SiO₃↓＋2NaCl；离子式：SiO₃²⁻＋2H⁺＝H₂SiO₃↓（E09）。",
+    "reactantFeatures": "可溶性硅酸盐遇强酸后生成弱酸",
+    "productFeatures": "H₂SiO₃是白色胶状难溶物",
+    "phenomenon": "溶液出现白色胶状沉淀或凝胶。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-042",
+    "chapter": "B2",
+    "title": "二氧化碳制硅酸",
+    "detail": "SiO₃²⁻＋CO₂＋H₂O＝H₂SiO₃↓＋CO₃²⁻（CO₂少量）（E09）。",
+    "reactantFeatures": "CO₂与水形成的碳酸酸性强于硅酸，能从硅酸盐中析出硅酸",
+    "productFeatures": "H₂SiO₃为白色胶体",
+    "phenomenon": "通入适量CO₂后溶液逐渐变浑浊并形成白色凝胶。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-043",
+    "chapter": "B2",
+    "title": "工业制粗硅",
+    "detail": "SiO₂＋2C→Si＋2CO↑（高温电炉）（E09、E10）。",
+    "reactantFeatures": "SiO₂在高温电炉中被C还原",
+    "productFeatures": "粗Si为灰黑色有金属光泽的固体，CO为无色有毒气体",
+    "phenomenon": "高温下炉料反应并放出气体，冷却得到含杂质的灰黑硅。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-044",
+    "chapter": "B2",
+    "title": "粗硅提纯中间体",
+    "detail": "Si＋2Cl₂→SiCl₄（高温）（E09、E10）。",
+    "reactantFeatures": "粗Si被Cl₂氧化并转化为挥发性氯化物",
+    "productFeatures": "SiCl₄是无色易挥发、遇湿空气发烟的液体",
+    "phenomenon": "硅逐渐被消耗，生成物挥发，接触湿空气时出现白雾。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-045",
+    "chapter": "B2",
+    "title": "四氯化硅还原",
+    "detail": "SiCl₄＋2H₂→Si＋4HCl（高温）（E09、E10）。",
+    "reactantFeatures": "H₂在高温下还原挥发性SiCl₄",
+    "productFeatures": "高纯Si为灰黑色固体，HCl为无色有刺激性、遇湿成白雾的气体",
+    "phenomenon": "加热区沉积出硅，同时放出遇湿空气形成白雾的气体。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-046",
+    "chapter": "B2",
+    "title": "过氧化氢分解",
+    "detail": "2H₂O₂→2H₂O＋O₂↑（MnO₂或FeCl₃催化）（E11、E21）。",
+    "reactantFeatures": "H₂O₂中氧为－1价、既可氧化也可还原，受催化易歧化",
+    "productFeatures": "水稳定，O₂能助燃",
+    "phenomenon": "加入MnO₂或FeCl₃后迅速产生大量气泡，带火星木条复燃，催化剂本身不被消耗。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-047",
+    "chapter": "B2",
+    "title": "锌—铜原电池总反应",
+    "detail": "Zn＋Cu²⁺＝Zn²⁺＋Cu；负极：Zn－2e⁻＝Zn²⁺；正极：Cu²⁺＋2e⁻＝Cu（E13）。",
+    "reactantFeatures": "Zn比Cu活泼，易失电子；Cu²⁺呈蓝色并在正极得电子",
+    "productFeatures": "Zn²⁺无色，Cu为红色固体",
+    "phenomenon": "锌电极逐渐溶解、质量减小，铜电极析出红色铜、质量增加，蓝色溶液变浅并产生电流。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-048",
+    "chapter": "B2",
+    "title": "锌—酸原电池",
+    "detail": "Zn＋2H⁺＝Zn²⁺＋H₂↑；正极：2H⁺＋2e⁻＝H₂↑（E13）。",
+    "reactantFeatures": "Zn作负极失电子，酸中H⁺在较惰性正极得电子",
+    "productFeatures": "Zn²⁺进入溶液，H₂为可燃气体",
+    "phenomenon": "锌片逐渐溶解，正极表面连续产生气泡，外电路有电流。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-049",
+    "chapter": "B2",
+    "title": "氢氧燃料电池总反应",
+    "detail": "2H₂＋O₂＝2H₂O；酸性正极：O₂＋4H⁺＋4e⁻＝2H₂O；碱性负极：2H₂＋4OH⁻－4e⁻＝4H₂O（E13）。",
+    "reactantFeatures": "H₂为燃料、O₂为氧化剂，电极上分步传递电子",
+    "productFeatures": "总产物只有水，属于清洁转化",
+    "phenomenon": "正常工作时通常无明显颜色变化，外电路持续有电流并放热，气体逐渐被消耗。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-050",
+    "chapter": "B2",
+    "title": "吸氧腐蚀",
+    "detail": "负极：Fe－2e⁻＝Fe²⁺；正极：O₂＋2H₂O＋4e⁻＝4OH⁻；2Fe＋O₂＋2H₂O＝2Fe(OH)₂（E13）。",
+    "reactantFeatures": "潮湿、中性或弱碱性环境中Fe作负极，溶解氧在正极还原",
+    "productFeatures": "先生成白色Fe(OH)₂，易继续被氧化",
+    "phenomenon": "铁逐渐腐蚀，局部形成灰绿色沉积，随后可转为红褐色铁锈。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-051",
+    "chapter": "B2",
+    "title": "铁锈形成",
+    "detail": "4Fe(OH)₂＋O₂＋2H₂O＝4Fe(OH)₃；2Fe(OH)₃→Fe₂O₃·xH₂O＋(3－x)H₂O（E13）。",
+    "reactantFeatures": "Fe(OH)₂易被O₂氧化，Fe(OH)₃又可缓慢失水",
+    "productFeatures": "铁锈主要是疏松的Fe₂O₃·xH₂O",
+    "phenomenon": "灰绿色沉积逐渐变红褐色，表面形成疏松锈层。"
+  },
+  {
+    "module": "organic",
+    "code": "B2-052",
+    "chapter": "B2",
+    "title": "甲烷燃烧",
+    "detail": "CH₄＋2O₂→CO₂＋2H₂O（点燃）（E14）。",
+    "reactantFeatures": "CH₄为无色可燃气体，O₂充足时完全氧化",
+    "productFeatures": "CO₂和水均为最高氧化态产物",
+    "phenomenon": "甲烷燃烧呈淡蓝色火焰，生成水蒸气，尾气可使石灰水变浑浊。"
+  },
+  {
+    "module": "organic",
+    "code": "B2-053",
+    "chapter": "B2",
+    "title": "甲烷一氯取代",
+    "detail": "CH₄＋Cl₂→CH₃Cl＋HCl（光照）；继续取代可依次生成CH₂Cl₂、CHCl₃、CCl₄（E14）。",
+    "reactantFeatures": "CH₄中的C—H键在光照下发生自由基取代，Cl₂有颜色且反应可连续",
+    "productFeatures": "生成多种氯代甲烷和HCl，通常是混合物",
+    "phenomenon": "氯气黄绿色逐渐变浅，潮湿空气中可见HCl白雾。"
+  },
+  {
+    "module": "organic",
+    "code": "B2-054",
+    "chapter": "B2",
+    "title": "乙烯燃烧",
+    "detail": "C₂H₄＋3O₂→2CO₂＋2H₂O（点燃）（E14）。",
+    "reactantFeatures": "C₂H₄含C＝C、易燃，O₂充足时完全燃烧",
+    "productFeatures": "生成CO₂和水",
+    "phenomenon": "乙烯燃烧火焰较明亮并伴少量黑烟，产物可分别用石灰水和无水硫酸铜检验。"
+  },
+  {
+    "module": "organic",
+    "code": "B2-055",
+    "chapter": "B2",
+    "title": "乙烯加溴",
+    "detail": "CH₂＝CH₂＋Br₂→CH₂Br—CH₂Br。溴水褪色（E14、E21）。",
+    "reactantFeatures": "乙烯的C＝C含活泼π键，Br₂有橙黄色",
+    "productFeatures": "1,2-二溴乙烷为无色、难溶于水的油状液体",
+    "phenomenon": "溴水或溴的有机溶液迅速褪色，常可见无色油状产物。"
+  },
+  {
+    "module": "organic",
+    "code": "B2-056",
+    "chapter": "B2",
+    "title": "乙烯加氢",
+    "detail": "CH₂＝CH₂＋H₂→CH₃CH₃（Ni、加热）（E14）。",
+    "reactantFeatures": "乙烯含不饱和C＝C，H₂在Ni表面发生加成",
+    "productFeatures": "乙烷是饱和无色气体",
+    "phenomenon": "通常无颜色变化，体系气体体积减小，乙烯使溴水褪色的性质消失。"
+  },
+  {
+    "module": "organic",
+    "code": "B2-057",
+    "chapter": "B2",
+    "title": "乙烯水合",
+    "detail": "CH₂＝CH₂＋H₂O→CH₃CH₂OH（催化剂、加热加压）（E14、E17）。",
+    "reactantFeatures": "乙烯C＝C可被质子化并加成水，需催化、高温高压",
+    "productFeatures": "乙醇为无色、有特殊气味、可与水互溶的液体",
+    "phenomenon": "工业反应器中通常无直接可见现象，气体乙烯被消耗并生成可冷凝液体。"
+  },
+  {
+    "module": "organic",
+    "code": "B2-058",
+    "chapter": "B2",
+    "title": "聚乙烯",
+    "detail": "nCH₂＝CH₂→[—CH₂—CH₂—]ₙ（催化剂）（E19）。",
+    "reactantFeatures": "乙烯单体含C＝C，催化后π键打开并连续成链",
+    "productFeatures": "聚乙烯是白色固体、无C＝C且相对稳定",
+    "phenomenon": "单体逐渐转化为白色树脂，体系黏度增大，产物不再使溴水褪色。"
+  },
+  {
+    "module": "organic",
+    "code": "B2-059",
+    "chapter": "B2",
+    "title": "乙炔燃烧",
+    "detail": "2C₂H₂＋5O₂→4CO₂＋2H₂O（点燃）（E14）。",
+    "reactantFeatures": "乙炔含碳量高且易燃，完全燃烧需要较多O₂",
+    "productFeatures": "生成CO₂和水",
+    "phenomenon": "空气中燃烧火焰明亮并带浓烟，氧气中可形成高温火焰。"
+  },
+  {
+    "module": "organic",
+    "code": "B2-060",
+    "chapter": "B2",
+    "title": "苯燃烧",
+    "detail": "2C₆H₆＋15O₂→12CO₂＋6H₂O（点燃，明亮火焰伴浓烟）（E14）。",
+    "reactantFeatures": "苯含碳量高、易燃，芳香环较稳定",
+    "productFeatures": "完全燃烧生成CO₂和水",
+    "phenomenon": "苯燃烧火焰明亮，伴有大量黑烟。"
+  },
+  {
+    "module": "organic",
+    "code": "B2-061",
+    "chapter": "B2",
+    "title": "苯溴代",
+    "detail": "C₆H₆＋Br₂→C₆H₅Br＋HBr（FeBr₃）（E14）。",
+    "reactantFeatures": "苯环稳定，需FeBr₃活化Br₂后发生取代而非普通加成",
+    "productFeatures": "溴苯为无色油状液体，HBr遇湿空气成白雾",
+    "phenomenon": "溴的红棕色逐渐变浅，可见分层油状产物和酸雾。"
+  },
+  {
+    "module": "organic",
+    "code": "B2-062",
+    "chapter": "B2",
+    "title": "苯硝化",
+    "detail": "C₆H₆＋HNO₃→C₆H₅NO₂＋H₂O（浓H₂SO₄、50～60 ℃）（E14、E17）。",
+    "reactantFeatures": "苯与浓HNO₃在浓H₂SO₄作用下发生芳香取代",
+    "productFeatures": "硝基苯是淡黄色油状、有苦杏仁气味且有毒的液体",
+    "phenomenon": "加热后形成与水分层的油状液体。"
+  },
+  {
+    "module": "organic",
+    "code": "B2-063",
+    "chapter": "B2",
+    "title": "乙醇燃烧",
+    "detail": "C₂H₅OH＋3O₂→2CO₂＋3H₂O（点燃）（E15）。",
+    "reactantFeatures": "乙醇是无色易燃液体，可被O₂完全氧化",
+    "productFeatures": "生成CO₂和水",
+    "phenomenon": "乙醇燃烧呈淡蓝色火焰，放热，冷表面可出现水珠。"
+  },
+  {
+    "module": "organic",
+    "code": "B2-064",
+    "chapter": "B2",
+    "title": "乙醇与钠",
+    "detail": "2C₂H₅OH＋2Na＝2C₂H₅ONa＋H₂↑（E15）。",
+    "reactantFeatures": "乙醇羟基中的H可被Na置换，但酸性弱于水",
+    "productFeatures": "乙醇钠可溶并生成H₂",
+    "phenomenon": "钠逐渐溶解并产生气泡，反应比钠与水缓和。"
+  },
+  {
+    "module": "organic",
+    "code": "B2-065",
+    "chapter": "B2",
+    "title": "乙醇催化氧化",
+    "detail": "2CH₃CH₂OH＋O₂→2CH₃CHO＋2H₂O（Cu或Ag、加热）（E15、E17）。",
+    "reactantFeatures": "乙醇可被表面CuO或活性氧温和氧化，Cu/Ag起催化作用",
+    "productFeatures": "乙醛为无色、有刺激性气味、易挥发的液体",
+    "phenomenon": "灼热铜丝可经历红—黑—红的颜色变化，并闻到乙醛刺激性气味。"
+  },
+  {
+    "module": "organic",
+    "code": "B2-066",
+    "chapter": "B2",
+    "title": "乙酸电离",
+    "detail": "CH₃COOH⇌CH₃COO⁻＋H⁺（E12、E15）。",
+    "reactantFeatures": "乙酸含羧基，是弱电解质，只部分电离",
+    "productFeatures": "CH₃COO⁻与H⁺共存于平衡中",
+    "phenomenon": "无肉眼可见变化，但溶液显酸性并使指示剂变色，稀释时电离度增大。"
+  },
+  {
+    "module": "organic",
+    "code": "B2-067",
+    "chapter": "B2",
+    "title": "乙酸与碱",
+    "detail": "CH₃COOH＋NaOH＝CH₃COONa＋H₂O；离子式：CH₃COOH＋OH⁻＝CH₃COO⁻＋H₂O（E12、E15）。",
+    "reactantFeatures": "乙酸是弱酸，NaOH是强碱",
+    "productFeatures": "生成可溶性乙酸钠和水",
+    "phenomenon": "通常无沉淀或气泡，反应放热，指示剂在等量点附近发生颜色变化。"
+  },
+  {
+    "module": "organic",
+    "code": "B2-068",
+    "chapter": "B2",
+    "title": "乙酸与碳酸氢钠",
+    "detail": "CH₃COOH＋NaHCO₃＝CH₃COONa＋CO₂↑＋H₂O（E15）。",
+    "reactantFeatures": "乙酸酸性强于碳酸，HCO₃⁻遇酸放出CO₂",
+    "productFeatures": "乙酸钠可溶，同时生成水和CO₂",
+    "phenomenon": "迅速产生大量无色气泡，可用于区分乙酸与乙醇。"
+  },
+  {
+    "module": "organic",
+    "code": "B2-069",
+    "chapter": "B2",
+    "title": "乙酸乙酯制备",
+    "detail": "CH₃COOH＋C₂H₅OH⇌CH₃COOC₂H₅＋H₂O（浓H₂SO₄、加热）（E15、E17）。",
+    "reactantFeatures": "乙酸和乙醇在浓H₂SO₄催化、吸水及加热条件下发生可逆酯化",
+    "productFeatures": "乙酸乙酯为有香味、难溶于水的无色油状液体",
+    "phenomenon": "反应液出现酯香，冷却或洗涤后可见分层。"
+  },
+  {
+    "module": "organic",
+    "code": "B2-070",
+    "chapter": "B2",
+    "title": "葡萄糖发酵",
+    "detail": "C₆H₁₂O₆→2C₂H₅OH＋2CO₂↑（酒化酶）（E18）。",
+    "reactantFeatures": "葡萄糖在缺氧和酶作用下可发酵",
+    "productFeatures": "乙醇可溶于水，CO₂为无色气体",
+    "phenomenon": "发酵液持续冒泡并逐渐出现酒精气味。"
+  },
+  {
+    "module": "organic",
+    "code": "B2-071",
+    "chapter": "B2",
+    "title": "葡萄糖供能",
+    "detail": "C₆H₁₂O₆＋6O₂→6CO₂＋6H₂O（E18）。",
+    "reactantFeatures": "葡萄糖是可氧化的多羟基醛糖，O₂充足时完全氧化",
+    "productFeatures": "生成CO₂和水并释放能量",
+    "phenomenon": "生理条件下无火焰等宏观现象，但伴随耗氧、放热和CO₂生成。"
+  },
+  {
+    "module": "organic",
+    "code": "B2-072",
+    "chapter": "B2",
+    "title": "蔗糖水解",
+    "detail": "C₁₂H₂₂O₁₁＋H₂O→C₆H₁₂O₆(葡萄糖)＋C₆H₁₂O₆(果糖)（酸或酶）（E18）。",
+    "reactantFeatures": "蔗糖是非还原性二糖，糖苷键在酸或酶作用下水解",
+    "productFeatures": "生成葡萄糖和果糖，两者均为还原糖",
+    "phenomenon": "水解本身通常无明显现象，水解后经中和可出现银镜或砖红色Cu₂O。"
+  },
+  {
+    "module": "organic",
+    "code": "B2-073",
+    "chapter": "B2",
+    "title": "淀粉/纤维素水解",
+    "detail": "(C₆H₁₀O₅)ₙ＋nH₂O→nC₆H₁₂O₆（酸或酶）（E18）。",
+    "reactantFeatures": "淀粉或纤维素是多糖，糖苷键需酸或酶催化断裂",
+    "productFeatures": "最终生成可溶性葡萄糖",
+    "phenomenon": "水解过程通常无气泡，淀粉体系的碘蓝色逐渐减弱，完全水解后可呈还原糖阳性。"
+  },
+  {
+    "module": "organic",
+    "code": "B2-074",
+    "chapter": "B2",
+    "title": "油脂氢化",
+    "detail": "含C＝C的不饱和油脂＋H₂→饱和脂肪（Ni、加热）（E18）。",
+    "reactantFeatures": "不饱和油脂含C＝C，H₂在Ni表面发生加成",
+    "productFeatures": "饱和脂肪熔点通常较高",
+    "phenomenon": "液态油逐渐变稠或固化，产物使溴水褪色的能力减弱或消失。"
+  },
+  {
+    "module": "organic",
+    "code": "B2-075",
+    "chapter": "B2",
+    "title": "油脂皂化",
+    "detail": "油脂＋3NaOH→甘油＋3RCOONa（加热）（E18）。",
+    "reactantFeatures": "油脂是高级脂肪酸甘油酯，强碱加热使酯键不可逆水解",
+    "productFeatures": "生成可溶的甘油和具有表面活性的脂肪酸钠",
+    "phenomenon": "油层逐渐消失，体系乳化、变稠，盐析后可得到肥皂。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-076",
+    "chapter": "B2",
+    "title": "海水提镁沉淀",
+    "detail": "Mg²⁺＋2OH⁻＝Mg(OH)₂↓（E10）。",
+    "reactantFeatures": "Mg²⁺无色，遇OH⁻形成难溶氢氧化物",
+    "productFeatures": "Mg(OH)₂为白色沉淀",
+    "phenomenon": "溶液迅速出现白色沉淀或浑浊。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-077",
+    "chapter": "B2",
+    "title": "氢氧化镁酸化",
+    "detail": "Mg(OH)₂＋2HCl＝MgCl₂＋2H₂O（E10）。",
+    "reactantFeatures": "Mg(OH)₂是白色碱性难溶固体，能与盐酸中和",
+    "productFeatures": "MgCl₂可溶、溶液无色",
+    "phenomenon": "白色沉淀逐渐溶解，溶液恢复澄清，无气体。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-078",
+    "chapter": "B2",
+    "title": "电解熔融氯化镁",
+    "detail": "MgCl₂(熔融)→Mg＋Cl₂↑（电解）（E10、E13）。",
+    "reactantFeatures": "熔融MgCl₂含可自由移动的Mg²⁺、Cl⁻，水溶液电解不能直接得到Mg",
+    "productFeatures": "阴极生成金属Mg，阳极生成Cl₂",
+    "phenomenon": "阴极析出银白色镁，阳极放出黄绿色有刺激性气味的气体。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-079",
+    "chapter": "B2",
+    "title": "铝土矿碱溶",
+    "detail": "Al₂O₃＋2NaOH＋3H₂O＝2Na[Al(OH)₄]（E10）。",
+    "reactantFeatures": "Al₂O₃是两性氧化物，可溶于浓NaOH并形成配离子",
+    "productFeatures": "Na[Al(OH)₄]可溶、溶液无色",
+    "phenomenon": "铝土矿中的含铝固体逐渐溶解，难溶杂质留作残渣。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-080",
+    "chapter": "B2",
+    "title": "铝酸盐碳化",
+    "detail": "[Al(OH)₄]⁻＋CO₂＝Al(OH)₃↓＋HCO₃⁻（E10）。",
+    "reactantFeatures": "[Al(OH)₄]⁻存在于碱性溶液，CO₂逐步降低碱性",
+    "productFeatures": "Al(OH)₃为白色胶状沉淀，HCO₃⁻留在溶液",
+    "phenomenon": "通入CO₂后逐渐析出白色胶状沉淀。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-081",
+    "chapter": "B2",
+    "title": "高炉造渣",
+    "detail": "CaCO₃→CaO＋CO₂↑；CaO＋SiO₂→CaSiO₃（高温）（E10）。",
+    "reactantFeatures": "CaCO₃高温分解生成碱性CaO，SiO₂为酸性脉石",
+    "productFeatures": "CaSiO₃形成熔融炉渣，CO₂逸出",
+    "phenomenon": "高温下石灰石放气并生成流动炉渣，炉料分层。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-082",
+    "chapter": "B2",
+    "title": "焦炭生成还原剂",
+    "detail": "C＋O₂→CO₂；CO₂＋C→2CO（高温）（E10）。",
+    "reactantFeatures": "焦炭先完全燃烧放热，生成的CO₂再与炽热C反应",
+    "productFeatures": "CO为无色有毒且有还原性的高炉还原剂",
+    "phenomenon": "焦炭炽热燃烧，气体穿过高温焦层后CO含量增加，肉眼通常无颜色变化。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-083",
+    "chapter": "B2",
+    "title": "火法炼铜",
+    "detail": "Cu₂S＋O₂→2Cu＋SO₂（高温）（E10）。",
+    "reactantFeatures": "Cu₂S中的S为低价，O₂在高温下氧化硫并使铜自还原析出",
+    "productFeatures": "生成红色Cu和有刺激性气味的SO₂",
+    "phenomenon": "高温反应后出现红色金属铜并放出刺激性气体。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-084",
+    "chapter": "B2",
+    "title": "电解精炼铜",
+    "detail": "粗铜阳极：Cu－2e⁻＝Cu²⁺；纯铜阴极：Cu²⁺＋2e⁻＝Cu（E10、E13）。",
+    "reactantFeatures": "粗铜阳极含Cu及杂质，Cu优先失电子",
+    "productFeatures": "阴极沉积高纯红色铜，不活泼杂质形成阳极泥",
+    "phenomenon": "粗铜阳极逐渐溶解，纯铜阴极增厚，槽底出现阳极泥。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-085",
+    "chapter": "B2",
+    "title": "水煤气",
+    "detail": "C＋H₂O(g)→CO＋H₂（高温）（E10、E11）。",
+    "reactantFeatures": "炽热C具有还原性，水蒸气在高温下被还原",
+    "productFeatures": "CO和H₂均为无色可燃气体",
+    "phenomenon": "高温下产生可燃气体混合物，外观无色，点燃呈蓝色火焰。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-086",
+    "chapter": "B2",
+    "title": "汽车尾气催化净化",
+    "detail": "2CO＋2NO→2CO₂＋N₂（催化剂）（E07、E08、E10）。",
+    "reactantFeatures": "CO和NO均是有毒气体，CO作还原剂、NO作氧化剂",
+    "productFeatures": "CO₂和N₂相对无害且无色",
+    "phenomenon": "催化器工作时通常无肉眼可见变化，但尾气中CO、NO浓度下降。"
+  },
+  {
+    "module": "inorganic",
+    "code": "B2-087",
+    "chapter": "B2",
+    "title": "石灰石脱硫",
+    "detail": "CaCO₃→CaO＋CO₂；CaO＋SO₂＝CaSO₃；2CaSO₃＋O₂＝2CaSO₄（E07、E10）。",
+    "reactantFeatures": "石灰石煅烧生成碱性CaO，能吸收酸性SO₂，CaSO₃再被O₂氧化",
+    "productFeatures": "最终形成较稳定的白色CaSO₄固体",
+    "phenomenon": "煅烧阶段放出CO₂，脱硫时SO₂气味和浓度降低，固体逐渐转化并增重。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-001",
+    "chapter": "X1",
+    "title": "强酸强碱中和热",
+    "detail": "H⁺(aq)＋OH⁻(aq)＝H₂O(l) ΔH＝－57.3 kJ·mol⁻¹（稀溶液、生成1 mol液态水）（E11、E12）。",
+    "reactantFeatures": "稀强酸、强碱完全电离，实质粒子是H⁺与OH⁻",
+    "productFeatures": "生成1 mol液态水时摩尔焓变具有规定值，旁观离子不影响实质",
+    "phenomenon": "通常无肉眼可见变化，但温度明显升高，滴定指示剂在终点附近变色。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-002",
+    "chapter": "X1",
+    "title": "氢气生成液态水",
+    "detail": "H₂(g)＋1/2O₂(g)＝H₂O(l) ΔH＜0；生成气态水时ΔH数值不同（E11）。",
+    "reactantFeatures": "H₂是还原性可燃气体，O₂是氧化剂",
+    "productFeatures": "液态水比气态水能量更低，因此物态会影响ΔH数值",
+    "phenomenon": "点燃时氢气呈淡蓝色火焰并放热，混合气比例合适时可爆炸，冷处出现水珠。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-003",
+    "chapter": "X1",
+    "title": "碳完全燃烧",
+    "detail": "C(s，石墨)＋O₂(g)＝CO₂(g) ΔH＜0（E11）。",
+    "reactantFeatures": "石墨是较稳定的碳单质，O₂充足时发生完全氧化",
+    "productFeatures": "CO₂中碳为最高常见氧化态，反应放热",
+    "phenomenon": "碳灼热或燃烧，生成无色气体使澄清石灰水变浑浊。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-004",
+    "chapter": "X1",
+    "title": "碳不完全燃烧",
+    "detail": "C(s，石墨)＋1/2O₂(g)＝CO(g)；CO(g)＋1/2O₂(g)＝CO₂(g)，可用盖斯定律组合（E11）。",
+    "reactantFeatures": "缺氧时C只部分氧化为CO，CO仍具可燃性和还原性",
+    "productFeatures": "CO有毒且可继续氧化为稳定CO₂",
+    "phenomenon": "碳在缺氧条件下不完全燃烧，CO燃烧呈蓝色火焰，最终气体可使石灰水变浑浊。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-005",
+    "chapter": "X1",
+    "title": "甲烷燃烧热",
+    "detail": "CH₄(g)＋2O₂(g)＝CO₂(g)＋2H₂O(l) ΔH＜0（E11、E14）。",
+    "reactantFeatures": "CH₄为无色可燃气体，O₂足量时完全氧化",
+    "productFeatures": "按燃烧热定义生成CO₂和液态水，反应强烈放热",
+    "phenomenon": "甲烷呈淡蓝色火焰，冷表面出现水滴，尾气使石灰水变浑浊。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-006",
+    "chapter": "X1",
+    "title": "乙醇燃烧热",
+    "detail": "C₂H₅OH(l)＋3O₂(g)＝2CO₂(g)＋3H₂O(l) ΔH＜0（E11、E15）。",
+    "reactantFeatures": "液态乙醇易挥发、易燃，O₂为氧化剂",
+    "productFeatures": "完全燃烧生成CO₂和液态水并放热",
+    "phenomenon": "乙醇燃烧呈淡蓝色火焰，放出热量，产物可检出水和CO₂。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-007",
+    "chapter": "X1",
+    "title": "氢氧化钡晶体与氯化铵",
+    "detail": "Ba(OH)₂·8H₂O＋2NH₄Cl＝BaCl₂＋2NH₃↑＋10H₂O，显著吸热（E11）。",
+    "reactantFeatures": "Ba(OH)₂·8H₂O和NH₄Cl均为固体，混合后发生显著吸热反应",
+    "productFeatures": "生成含水体系、可溶BaCl₂和NH₃",
+    "phenomenon": "固体混合物迅速变湿甚至液化，温度显著下降，容器外可结霜并有氨味。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-008",
+    "chapter": "X1",
+    "title": "合成氨热化学方程式",
+    "detail": "N₂(g)＋3H₂(g)⇌2NH₃(g) ΔH＜0（E08、E11）。",
+    "reactantFeatures": "N₂、H₂均无色，N₂键能高",
+    "productFeatures": "NH₃为无色、易液化、易溶的碱性气体，正反应放热且气体物质的量减少",
+    "phenomenon": "体系无颜色变化，达到平衡后可检出氨味，升温使平衡产率降低。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-009",
+    "chapter": "X1",
+    "title": "一氧化碳制甲醇",
+    "detail": "CO(g)＋2H₂(g)⇌CH₃OH(g) ΔH＜0（E11）。",
+    "reactantFeatures": "CO和H₂均为无色可燃气体，需催化和一定温压",
+    "productFeatures": "CH₃OH为无色易挥发液体或气体，正反应放热且气体物质的量减少",
+    "phenomenon": "通常无直接颜色变化，反应后气体体积减少并可冷凝得到甲醇。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-010",
+    "chapter": "X1",
+    "title": "热化学循环示例",
+    "detail": "CaCO₃(s)＝CaO(s)＋CO₂(g) ΔH＞0；逆反应ΔH变号（E10、E11）。",
+    "reactantFeatures": "CaCO₃为白色稳定固体，高温分解需要吸热",
+    "productFeatures": "CaO为白色碱性氧化物，CO₂为无色气体",
+    "phenomenon": "加热时固体质量减小并放出能使石灰水变浑浊的气体，逆反应则放热。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-011",
+    "chapter": "X1",
+    "title": "过氧化氢分解测速",
+    "detail": "2H₂O₂→2H₂O＋O₂↑；以单位时间内O₂体积或质量变化表征速率（E11、E21）。",
+    "reactantFeatures": "H₂O₂不稳定，催化剂能降低活化能而不改变化学计量",
+    "productFeatures": "生成水和助燃性O₂",
+    "phenomenon": "产生气泡，带火星木条复燃，可记录氧气体积、压强或体系质量随时间的变化。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-012",
+    "chapter": "X1",
+    "title": "硫代硫酸钠酸化",
+    "detail": "Na₂S₂O₃＋H₂SO₄＝Na₂SO₄＋SO₂↑＋S↓＋H₂O；离子式：S₂O₃²⁻＋2H⁺＝SO₂↑＋S↓＋H₂O（E11）。",
+    "reactantFeatures": "S₂O₃²⁻在酸性条件下不稳定",
+    "productFeatures": "同时生成有刺激性气味的SO₂和黄色S沉淀",
+    "phenomenon": "溶液由澄清逐渐变浑浊、出现黄色沉淀并有刺激性气体逸出。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-013",
+    "chapter": "X1",
+    "title": "草酸与酸性高锰酸钾",
+    "detail": "2MnO₄⁻＋5H₂C₂O₄＋6H⁺＝2Mn²⁺＋10CO₂↑＋8H₂O；存在诱导期与Mn²⁺自催化（E11、E12）。",
+    "reactantFeatures": "酸性MnO₄⁻为紫色强氧化剂，草酸为还原剂，生成的Mn²⁺有自催化作用",
+    "productFeatures": "Mn²⁺近无色并放出CO₂",
+    "phenomenon": "起初紫色褪去较慢，随后明显加快，同时持续产生气泡。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-014",
+    "chapter": "X1",
+    "title": "镁与酸测速",
+    "detail": "Mg＋2H⁺＝Mg²⁺＋H₂↑；用H₂体积—时间曲线比较温度、浓度、颗粒度（E11）。",
+    "reactantFeatures": "Mg较活泼，酸中H⁺浓度、温度和镁的表面积都会影响速率",
+    "productFeatures": "Mg²⁺无色，H₂可燃",
+    "phenomenon": "镁逐渐溶解并冒出气泡，可由气体体积—时间曲线比较快慢。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-015",
+    "chapter": "X1",
+    "title": "合成氨平衡",
+    "detail": "N₂＋3H₂⇌2NH₃。加压、降温均使平衡右移，但工业条件须兼顾速率（E08、E11）。",
+    "reactantFeatures": "N₂、H₂为无色气体，正反应分子数减少且放热",
+    "productFeatures": "NH₃为无色有刺激性气味的气体，反应受平衡限制",
+    "phenomenon": "无颜色变化，加压或降温后平衡组成改变，可通过氨的含量而非瞬时外观判断。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-016",
+    "chapter": "X1",
+    "title": "二氧化氮二聚",
+    "detail": "2NO₂(g)⇌N₂O₄(g) ΔH＜0。降温颜色变浅（E11）。",
+    "reactantFeatures": "NO₂为红棕色气体，N₂O₄近无色，二聚反应放热且气体分子数减少",
+    "productFeatures": "低温、高压有利于N₂O₄",
+    "phenomenon": "降温或加压时颜色变浅，升温或减压时红棕色加深。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-017",
+    "chapter": "X1",
+    "title": "铁(Ⅲ)—硫氰酸根平衡",
+    "detail": "Fe³⁺＋SCN⁻⇌[Fe(SCN)]²⁺。改变反应物浓度或移除Fe³⁺观察红色深浅（E06、E11）。",
+    "reactantFeatures": "Fe³⁺与SCN⁻形成有色配离子并处于可逆平衡",
+    "productFeatures": "[Fe(SCN)]²⁺呈血红色",
+    "phenomenon": "增加任一反应物浓度时红色加深，移除Fe³⁺或SCN⁻时红色变浅。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-018",
+    "chapter": "X1",
+    "title": "钴配离子平衡",
+    "detail": "[Co(H₂O)₆]²⁺＋4Cl⁻⇌[CoCl₄]²⁻＋6H₂O。粉红色⇌蓝色（E11、E20）。",
+    "reactantFeatures": "[Co(H₂O)₆]²⁺呈粉红色，Cl⁻浓度增大可置换水配体",
+    "productFeatures": "[CoCl₄]²⁻呈蓝色",
+    "phenomenon": "加浓盐酸或Cl⁻时由粉红变蓝，加水稀释时由蓝变粉红，温度变化也会使颜色可逆改变。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-019",
+    "chapter": "X1",
+    "title": "铬酸根—重铬酸根平衡",
+    "detail": "2CrO₄²⁻＋2H⁺⇌Cr₂O₇²⁻＋H₂O。黄色⇌橙色（E11、E12、E20）。",
+    "reactantFeatures": "CrO₄²⁻呈黄色，酸化使其缩合",
+    "productFeatures": "Cr₂O₇²⁻呈橙色",
+    "phenomenon": "加酸时黄色转橙色，加碱消耗H⁺后又由橙色转黄。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-020",
+    "chapter": "X1",
+    "title": "酯化平衡",
+    "detail": "CH₃COOH＋C₂H₅OH⇌CH₃COOC₂H₅＋H₂O（浓H₂SO₄、加热）（E11、E15、E17）。",
+    "reactantFeatures": "乙酸、乙醇在浓H₂SO₄催化吸水下发生可逆酯化",
+    "productFeatures": "乙酸乙酯是有香味、难溶于水的油状液体",
+    "phenomenon": "加热后出现酯香并可见分层，移除水或酯可推动平衡右移。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-021",
+    "chapter": "X1",
+    "title": "二氧化硫催化氧化平衡",
+    "detail": "2SO₂(g)＋O₂(g)⇌2SO₃(g) ΔH＜0（E07、E11）。",
+    "reactantFeatures": "SO₂、O₂均为无色气体，反应放热且气体分子数减少",
+    "productFeatures": "SO₃无色、易吸水形成酸雾",
+    "phenomenon": "无直接颜色变化，降温或加压有利于平衡右移，但温度过低会使速率下降。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-022",
+    "chapter": "X1",
+    "title": "碘化氢生成平衡",
+    "detail": "H₂(g)＋I₂(g)⇌2HI(g)（E05、E11）。",
+    "reactantFeatures": "H₂无色，I₂蒸气呈紫色，反应前后气体分子总数不变",
+    "productFeatures": "HI为无色气体且平衡转化不完全",
+    "phenomenon": "紫色碘蒸气颜色变浅但通常不完全消失，达到平衡后颜色保持稳定。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-023",
+    "chapter": "X1",
+    "title": "水的电离",
+    "detail": "H₂O＋H₂O⇌H₃O⁺＋OH⁻，简写H₂O⇌H⁺＋OH⁻（E12）。",
+    "reactantFeatures": "纯水既可给出H⁺又可接受H⁺，电离程度极小",
+    "productFeatures": "H₃O⁺与OH⁻等量生成",
+    "phenomenon": "无肉眼可见变化，电导率很低，温度改变会使离子积和pH随之变化。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-024",
+    "chapter": "X1",
+    "title": "醋酸电离",
+    "detail": "CH₃COOH⇌CH₃COO⁻＋H⁺（E12、E15）。",
+    "reactantFeatures": "CH₃COOH是弱酸，只部分电离",
+    "productFeatures": "CH₃COO⁻与H⁺处于动态平衡",
+    "phenomenon": "无沉淀或气泡，溶液显酸性，稀释时电离度增大但H⁺浓度降低。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-025",
+    "chapter": "X1",
+    "title": "一水合氨电离",
+    "detail": "NH₃·H₂O⇌NH₄⁺＋OH⁻（E08、E12）。",
+    "reactantFeatures": "NH₃·H₂O是弱碱，只部分电离",
+    "productFeatures": "NH₄⁺与OH⁻处于动态平衡",
+    "phenomenon": "无肉眼可见变化，溶液使红色石蕊变蓝，稀释会改变平衡组成。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-026",
+    "chapter": "X1",
+    "title": "碳酸分步电离",
+    "detail": "H₂CO₃⇌H⁺＋HCO₃⁻；HCO₃⁻⇌H⁺＋CO₃²⁻（E03、E12）。",
+    "reactantFeatures": "H₂CO₃是二元弱酸，且易分解为CO₂和水",
+    "productFeatures": "逐级生成HCO₃⁻、CO₃²⁻，后一步电离更弱",
+    "phenomenon": "单纯电离无明显现象，体系pH和各含碳粒子比例随酸碱条件改变。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-027",
+    "chapter": "X1",
+    "title": "磷酸分步电离",
+    "detail": "H₃PO₄⇌H⁺＋H₂PO₄⁻；H₂PO₄⁻⇌H⁺＋HPO₄²⁻；HPO₄²⁻⇌H⁺＋PO₄³⁻（E12）。",
+    "reactantFeatures": "H₃PO₄是三元中强酸，可分三级电离且逐级变弱",
+    "productFeatures": "依次形成H₂PO₄⁻、HPO₄²⁻、PO₄³⁻",
+    "phenomenon": "无宏观沉淀或气泡，滴定曲线可出现多个缓冲区和当量点。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-028",
+    "chapter": "X1",
+    "title": "醋酸根水解",
+    "detail": "CH₃COO⁻＋H₂O⇌CH₃COOH＋OH⁻（E12、E15）。",
+    "reactantFeatures": "CH₃COO⁻是弱酸的共轭碱，可从水中夺取H⁺",
+    "productFeatures": "生成弱电解质CH₃COOH和OH⁻",
+    "phenomenon": "通常无可见变化，乙酸盐溶液显碱性，使指示剂呈碱性颜色。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-029",
+    "chapter": "X1",
+    "title": "铵根水解",
+    "detail": "NH₄⁺＋H₂O⇌NH₃·H₂O＋H⁺（E08、E12）。",
+    "reactantFeatures": "NH₄⁺是弱碱的共轭酸，可向水提供H⁺",
+    "productFeatures": "生成弱电解质NH₃·H₂O和H⁺",
+    "phenomenon": "无肉眼可见变化，铵盐溶液显酸性。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-030",
+    "chapter": "X1",
+    "title": "碳酸根分步水解",
+    "detail": "CO₃²⁻＋H₂O⇌HCO₃⁻＋OH⁻；HCO₃⁻＋H₂O⇌H₂CO₃＋OH⁻（E03、E12）。",
+    "reactantFeatures": "CO₃²⁻是二元弱酸的共轭碱，第一步水解较明显",
+    "productFeatures": "逐步生成HCO₃⁻、H₂CO₃并释放OH⁻",
+    "phenomenon": "通常无明显变化，碳酸盐溶液显较强碱性，酚酞可变红。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-031",
+    "chapter": "X1",
+    "title": "铝离子水解",
+    "detail": "Al³⁺＋3H₂O⇌Al(OH)₃＋3H⁺（E06、E12）。",
+    "reactantFeatures": "Al³⁺电荷高、半径小，强烈极化配位水而发生水解",
+    "productFeatures": "生成Al(OH)₃胶体并释放H⁺",
+    "phenomenon": "稀释或加热可促进水解，溶液酸性增强，条件合适时出现白色胶状沉淀。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-032",
+    "chapter": "X1",
+    "title": "铁(Ⅲ)离子水解",
+    "detail": "Fe³⁺＋3H₂O⇌Fe(OH)₃＋3H⁺（E06、E12）。",
+    "reactantFeatures": "Fe³⁺电荷高，水解倾向强",
+    "productFeatures": "生成红褐色Fe(OH)₃胶体并释放H⁺",
+    "phenomenon": "黄色溶液经稀释或加热后颜色加深并可能出现红褐色浑浊，溶液显酸性。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-033",
+    "chapter": "X1",
+    "title": "泡沫灭火器",
+    "detail": "Al³⁺＋3HCO₃⁻＝Al(OH)₃↓＋3CO₂↑（E03、E12）。",
+    "reactantFeatures": "Al³⁺、HCO₃⁻分别促进彼此水解，生成物同时从体系中以沉淀和气体移出",
+    "productFeatures": "Al(OH)₃为白色胶状沉淀，CO₂无色",
+    "phenomenon": "产生大量气泡并形成白色絮状沉淀。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-034",
+    "chapter": "X1",
+    "title": "氯化铵除锈",
+    "detail": "NH₄⁺＋H₂O⇌NH₃·H₂O＋H⁺；Fe₂O₃＋6H⁺＝2Fe³⁺＋3H₂O（E06、E12）。",
+    "reactantFeatures": "NH₄⁺水解使氯化铵溶液呈酸性，H⁺可溶解铁锈Fe₂O₃",
+    "productFeatures": "铁锈转化为可溶Fe³⁺盐和水",
+    "phenomenon": "红棕色锈层逐渐溶解，溶液可呈黄色，加热时可能闻到轻微氨味。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-035",
+    "chapter": "X1",
+    "title": "氯化银溶解平衡",
+    "detail": "AgCl(s)⇌Ag⁺(aq)＋Cl⁻(aq)（E12）。",
+    "reactantFeatures": "AgCl是白色难溶固体，固液间存在微观动态平衡",
+    "productFeatures": "饱和溶液中仅有极少量Ag⁺、Cl⁻",
+    "phenomenon": "平衡本身无可见变化，加入同离子时沉淀增多，移除离子时固体可逐渐溶解。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-036",
+    "chapter": "X1",
+    "title": "氢氧化镁溶解平衡",
+    "detail": "Mg(OH)₂(s)⇌Mg²⁺＋2OH⁻（E10、E12）。",
+    "reactantFeatures": "Mg(OH)₂为白色难溶碱，存在溶解平衡",
+    "productFeatures": "饱和溶液含Mg²⁺、OH⁻并显弱碱性",
+    "phenomenon": "静置时为白色悬浊体系，加酸消耗OH⁻后沉淀逐渐溶解。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-037",
+    "chapter": "X1",
+    "title": "碳酸钙溶解平衡",
+    "detail": "CaCO₃(s)⇌Ca²⁺＋CO₃²⁻（E03、E12）。",
+    "reactantFeatures": "CaCO₃为白色难溶盐",
+    "productFeatures": "饱和溶液中含少量Ca²⁺、CO₃²⁻",
+    "phenomenon": "平衡本身不明显，加入酸消耗CO₃²⁻时固体溶解并放出CO₂。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-038",
+    "chapter": "X1",
+    "title": "氯化银转化碘化银",
+    "detail": "AgCl(s)＋I⁻＝AgI(s)＋Cl⁻（E05、E12）。",
+    "reactantFeatures": "AgCl为白色沉淀，I⁻能形成溶度积更小的AgI",
+    "productFeatures": "AgI为黄色、更难溶的沉淀",
+    "phenomenon": "白色AgCl逐渐转为黄色AgI。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-039",
+    "chapter": "X1",
+    "title": "碘化银转化硫化银",
+    "detail": "2AgI(s)＋S²⁻＝Ag₂S(s)＋2I⁻（E12）。",
+    "reactantFeatures": "AgI虽难溶，但S²⁻能生成更难溶的Ag₂S",
+    "productFeatures": "Ag₂S为黑色沉淀",
+    "phenomenon": "黄色AgI逐渐转变为黑色固体。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-040",
+    "chapter": "X1",
+    "title": "锅炉水垢转化",
+    "detail": "CaSO₄(s)＋CO₃²⁻＝CaCO₃(s)＋SO₄²⁻；再用酸除去CaCO₃（E10、E12）。",
+    "reactantFeatures": "CaSO₄水垢较难溶，CO₃²⁻可将其转化为更易被酸处理的CaCO₃",
+    "productFeatures": "CaCO₃仍为白色固体，但遇酸可放出CO₂",
+    "phenomenon": "转化阶段外观变化不明显，随后加酸时白色垢层溶解并产生气泡。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-041",
+    "chapter": "X1",
+    "title": "沉淀转化除重金属",
+    "detail": "FeS(s)＋Hg²⁺＝HgS(s)＋Fe²⁺（E10、E12）。",
+    "reactantFeatures": "FeS为黑色难溶固体，Hg²⁺可形成溶解度更小的硫化物",
+    "productFeatures": "HgS为更稳定的黑色沉淀，Fe²⁺进入溶液",
+    "phenomenon": "固体颜色变化不明显，但溶液中Hg²⁺浓度显著降低。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-042",
+    "chapter": "X1",
+    "title": "高锰酸钾滴定亚铁",
+    "detail": "MnO₄⁻＋5Fe²⁺＋8H⁺＝Mn²⁺＋5Fe³⁺＋4H₂O（E06、E12）。",
+    "reactantFeatures": "酸性MnO₄⁻呈紫色且为强氧化剂，Fe²⁺为还原剂",
+    "productFeatures": "Mn²⁺近无色，Fe³⁺呈黄色",
+    "phenomenon": "滴加的紫色高锰酸钾迅速褪去，终点时出现持久的浅粉红色。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-043",
+    "chapter": "X1",
+    "title": "重铬酸钾滴定亚铁",
+    "detail": "Cr₂O₇²⁻＋6Fe²⁺＋14H⁺＝2Cr³⁺＋6Fe³⁺＋7H₂O（E06、E12）。",
+    "reactantFeatures": "Cr₂O₇²⁻呈橙色、在酸中氧化性强，Fe²⁺为还原剂",
+    "productFeatures": "Cr³⁺呈绿色，Fe³⁺呈黄色",
+    "phenomenon": "滴定过程中橙色逐渐转为绿色，终点通常需借助指示剂判断。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-044",
+    "chapter": "X1",
+    "title": "碘量法",
+    "detail": "I₂＋2S₂O₃²⁻＝2I⁻＋S₄O₆²⁻（E05、E12）。",
+    "reactantFeatures": "I₂有颜色且能与淀粉形成蓝色复合物，S₂O₃²⁻为还原剂",
+    "productFeatures": "I⁻、S₄O₆²⁻均无色",
+    "phenomenon": "碘的棕黄色逐渐褪去，加淀粉后蓝色在终点消失。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-045",
+    "chapter": "X1",
+    "title": "铜—锌双液电池",
+    "detail": "负极：Zn－2e⁻＝Zn²⁺；正极：Cu²⁺＋2e⁻＝Cu；总反应：Zn＋Cu²⁺＝Zn²⁺＋Cu（E13）。",
+    "reactantFeatures": "Zn较活泼作负极，蓝色Cu²⁺在正极得电子",
+    "productFeatures": "Zn²⁺无色，Cu为红色固体",
+    "phenomenon": "锌极溶解、质量下降，铜极析铜、质量增加，蓝色溶液变浅并有电流。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-046",
+    "chapter": "X1",
+    "title": "铜—银原电池",
+    "detail": "负极：Cu－2e⁻＝Cu²⁺；正极：2Ag⁺＋2e⁻＝2Ag；总反应：Cu＋2Ag⁺＝Cu²⁺＋2Ag（E13）。",
+    "reactantFeatures": "Cu可被Ag⁺氧化，Ag⁺溶液无色",
+    "productFeatures": "Cu²⁺使溶液变蓝，Ag为银白色晶体",
+    "phenomenon": "铜电极逐渐溶解，正极析出银白色树枝状晶体，溶液由无色变蓝。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-047",
+    "chapter": "X1",
+    "title": "铅蓄电池放电",
+    "detail": "负极：Pb＋SO₄²⁻－2e⁻＝PbSO₄；正极：PbO₂＋4H⁺＋SO₄²⁻＋2e⁻＝PbSO₄＋2H₂O；总反应：Pb＋PbO₂＋2H₂SO₄＝2PbSO₄＋2H₂O（E13）。",
+    "reactantFeatures": "放电时Pb和PbO₂分别作负、正极，H₂SO₄既参与反应又作电解质",
+    "productFeatures": "两极均转化为白色PbSO₄并生成水",
+    "phenomenon": "外电路有电流，电极表面覆上PbSO₄，硫酸浓度和电解液密度下降。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-048",
+    "chapter": "X1",
+    "title": "锌锰碱性电池",
+    "detail": "负极：Zn＋2OH⁻－2e⁻＝Zn(OH)₂；正极：2MnO₂＋2H₂O＋2e⁻＝2MnO(OH)＋2OH⁻；总反应：Zn＋2MnO₂＋2H₂O＝Zn(OH)₂＋2MnO(OH)（E13）。",
+    "reactantFeatures": "Zn在碱性介质中失电子，MnO₂在正极被还原",
+    "productFeatures": "生成Zn(OH)₂和MnO(OH)等固体",
+    "phenomenon": "密闭电池内部通常无肉眼可见现象，工作时输出电流，锌逐渐消耗。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-049",
+    "chapter": "X1",
+    "title": "氢氧燃料电池（碱性）",
+    "detail": "负极：2H₂＋4OH⁻－4e⁻＝4H₂O；正极：O₂＋2H₂O＋4e⁻＝4OH⁻；总反应：2H₂＋O₂＝2H₂O（E13）。",
+    "reactantFeatures": "H₂在负极被氧化，O₂在正极被还原，OH⁻在电极间循环",
+    "productFeatures": "总产物为水",
+    "phenomenon": "通常无颜色变化，气体持续被消耗并对外供电、放热。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-050",
+    "chapter": "X1",
+    "title": "甲烷燃料电池（酸性）",
+    "detail": "负极：CH₄＋2H₂O－8e⁻＝CO₂＋8H⁺；正极：2O₂＋8H⁺＋8e⁻＝4H₂O；总反应：CH₄＋2O₂＝CO₂＋2H₂O（E13、E14）。",
+    "reactantFeatures": "CH₄为燃料并在负极完全氧化，O₂在正极还原",
+    "productFeatures": "生成CO₂和水，同时电子经外电路转移",
+    "phenomenon": "正常电池中无火焰，持续输出电流并放热，可检测到CO₂。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-051",
+    "chapter": "X1",
+    "title": "电解熔融氯化钠",
+    "detail": "阴极：Na⁺＋e⁻＝Na；阳极：2Cl⁻－2e⁻＝Cl₂↑；总反应：2NaCl(熔融)→2Na＋Cl₂↑（E04、E13）。",
+    "reactantFeatures": "熔融NaCl含Na⁺、Cl⁻而不含水，便于直接放电",
+    "productFeatures": "阴极得到液态Na，阳极得到Cl₂",
+    "phenomenon": "阴极析出银白色熔融钠，阳极放出黄绿色有刺激性气味的气体。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-052",
+    "chapter": "X1",
+    "title": "电解氯化铜溶液",
+    "detail": "阴极：Cu²⁺＋2e⁻＝Cu；阳极：2Cl⁻－2e⁻＝Cl₂↑；总反应：CuCl₂→Cu＋Cl₂↑（E13）。",
+    "reactantFeatures": "CuCl₂溶液中Cu²⁺呈蓝绿色，Cl⁻在惰性阳极可放电",
+    "productFeatures": "阴极为红色Cu，阳极为Cl₂",
+    "phenomenon": "阴极析出红色铜，阳极放出黄绿色气体，溶液蓝绿色逐渐变浅。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-053",
+    "chapter": "X1",
+    "title": "惰性电极电解硫酸铜",
+    "detail": "阴极：2Cu²⁺＋4e⁻＝2Cu；阳极：2H₂O－4e⁻＝O₂↑＋4H⁺；总反应：2CuSO₄＋2H₂O→2Cu＋O₂↑＋2H₂SO₄（E13）。",
+    "reactantFeatures": "CuSO₄溶液中Cu²⁺优先在阴极还原，惰性阳极处水被氧化",
+    "productFeatures": "生成Cu、O₂和H₂SO₄",
+    "phenomenon": "阴极析出红色铜，阳极产生无色气泡，蓝色溶液变浅且酸性增强。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-054",
+    "chapter": "X1",
+    "title": "电解饱和食盐水",
+    "detail": "阴极：2H₂O＋2e⁻＝H₂↑＋2OH⁻；阳极：2Cl⁻－2e⁻＝Cl₂↑；总反应：2NaCl＋2H₂O→2NaOH＋H₂↑＋Cl₂↑（E04、E13）。",
+    "reactantFeatures": "饱和食盐水中Cl⁻浓度高，阴极水比Na⁺易还原",
+    "productFeatures": "阴极生成H₂、OH⁻，阳极生成Cl₂，溶液形成NaOH",
+    "phenomenon": "两极均冒气泡，阳极气体黄绿色，阴极气体可燃，阴极附近指示剂显碱性。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-055",
+    "chapter": "X1",
+    "title": "电镀铜",
+    "detail": "镀件阴极：Cu²⁺＋2e⁻＝Cu；铜阳极：Cu－2e⁻＝Cu²⁺，电解液Cu²⁺浓度近似不变（E13）。",
+    "reactantFeatures": "铜阳极可溶解补充Cu²⁺，镀件作为阴极接受Cu²⁺",
+    "productFeatures": "镀件表面形成致密红色铜层",
+    "phenomenon": "镀件质量增加、表面逐渐呈铜色，铜阳极质量相应减小，电解液蓝色基本稳定。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-056",
+    "chapter": "X1",
+    "title": "电解精炼铜",
+    "detail": "粗铜阳极：Cu－2e⁻＝Cu²⁺；纯铜阴极：Cu²⁺＋2e⁻＝Cu；比铜活泼杂质入液，Ag/Au形成阳极泥（E10、E13）。",
+    "reactantFeatures": "粗铜阳极中Cu和较活泼杂质可失电子，纯铜阴极只沉积Cu",
+    "productFeatures": "得到高纯铜，Ag、Au等形成阳极泥",
+    "phenomenon": "阳极逐渐溶解，阴极红色铜层增厚，槽底出现阳极泥。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-057",
+    "chapter": "X1",
+    "title": "钢铁析氢腐蚀",
+    "detail": "负极：Fe－2e⁻＝Fe²⁺；正极：2H⁺＋2e⁻＝H₂↑（E13）。",
+    "reactantFeatures": "酸性环境中Fe作负极失电子，杂质或较惰性区域作正极还原H⁺",
+    "productFeatures": "Fe²⁺进入溶液并生成H₂",
+    "phenomenon": "铁表面局部出现气泡、金属逐渐腐蚀，酸性越强通常越明显。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-058",
+    "chapter": "X1",
+    "title": "钢铁吸氧腐蚀",
+    "detail": "负极：2Fe－4e⁻＝2Fe²⁺；正极：O₂＋2H₂O＋4e⁻＝4OH⁻；总反应：2Fe＋O₂＋2H₂O＝2Fe(OH)₂（E13）。",
+    "reactantFeatures": "中性潮湿环境中Fe作负极，溶解氧在正极还原",
+    "productFeatures": "先生成Fe(OH)₂，后续易形成铁锈",
+    "phenomenon": "铁逐渐锈蚀，先有灰绿色沉积，随后转为红褐色。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-059",
+    "chapter": "X1",
+    "title": "牺牲阳极保护",
+    "detail": "以锌保护钢铁时：Zn－2e⁻＝Zn²⁺；钢铁表面主要发生O₂＋2H₂O＋4e⁻＝4OH⁻（E13）。",
+    "reactantFeatures": "Zn比Fe活泼，连接后优先作牺牲阳极失电子",
+    "productFeatures": "Zn²⁺进入溶液，钢铁成为阴极而受到保护",
+    "phenomenon": "锌逐渐腐蚀、质量减小，钢铁表面的锈蚀明显减缓。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X1-060",
+    "chapter": "X1",
+    "title": "电解水",
+    "detail": "阴极：2H₂O＋2e⁻＝H₂↑＋2OH⁻；阳极：2H₂O－4e⁻＝O₂↑＋4H⁺；总反应：2H₂O→2H₂↑＋O₂↑（E13、E21）。",
+    "reactantFeatures": "水在外加电能作用下分别在两极发生还原和氧化",
+    "productFeatures": "阴极生成H₂，阳极生成O₂，体积比约为2∶1",
+    "phenomenon": "两极均产生无色气泡，阴极气体点燃有爆鸣声，阳极气体使带火星木条复燃。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X2-001",
+    "chapter": "X2",
+    "title": "铵根形成",
+    "detail": "NH₃＋H⁺＝NH₄⁺。NH₃提供孤电子对形成配位键（E20）。",
+    "reactantFeatures": "NH₃分子中N有孤电子对，H⁺具有空轨道、可接受电子对",
+    "productFeatures": "NH₄⁺四个N—H键等效，其中新键按配位键形成",
+    "phenomenon": "通常无颜色或沉淀变化，氨的刺激性气味减弱，体系酸碱性改变。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X2-002",
+    "chapter": "X2",
+    "title": "水合氢离子形成",
+    "detail": "H₂O＋H⁺＝H₃O⁺。H₂O提供孤电子对（E20）。",
+    "reactantFeatures": "H₂O分子中的O有孤电子对，H⁺是电子对接受体",
+    "productFeatures": "H₃O⁺中的三个O—H键在形成后等效",
+    "phenomenon": "无肉眼可见变化，主要表现为溶液酸性和导电性增强。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X2-003",
+    "chapter": "X2",
+    "title": "氨—三氟化硼加合物",
+    "detail": "NH₃＋BF₃＝H₃N→BF₃。用于判断路易斯酸碱与配位键方向（E20）。",
+    "reactantFeatures": "NH₃是路易斯碱、提供孤电子对，缺电子的BF₃是路易斯酸",
+    "productFeatures": "形成较稳定的H₃N→BF₃加合物，配位键方向由N指向B",
+    "phenomenon": "通常无显著颜色变化，可表现为气体被结合、体系挥发性下降或生成固态加合物。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X2-004",
+    "chapter": "X2",
+    "title": "氯化铝二聚",
+    "detail": "2AlCl₃⇌Al₂Cl₆。气相/非极性介质中可通过桥氯配位成键（E20）。",
+    "reactantFeatures": "AlCl₃分子缺电子，Al原子可接受桥氯的孤电子对",
+    "productFeatures": "Al₂Cl₆通过两个桥氯形成二聚结构，二聚平衡受温度和介质影响",
+    "phenomenon": "体系通常无颜色变化，可由蒸气密度、分子量等物理量变化判断。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X2-005",
+    "chapter": "X2",
+    "title": "离子晶体形成示意",
+    "detail": "2Na＋Cl₂＝2NaCl；可拆成Na－e⁻＝Na⁺与Cl₂＋2e⁻＝2Cl⁻讨论晶格能（E04、E20）。",
+    "reactantFeatures": "Na易失电子，Cl₂易得电子，二者电负性差大",
+    "productFeatures": "NaCl由Na⁺、Cl⁻构成白色离子晶体，晶格能较大",
+    "phenomenon": "钠在氯气中剧烈燃烧，呈黄色火焰并产生白烟。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X2-006",
+    "chapter": "X2",
+    "title": "金刚石燃烧",
+    "detail": "C(s，金刚石)＋O₂＝CO₂；与石墨燃烧焓不同，用于说明同素异形体能量差（E11、E20）。",
+    "reactantFeatures": "金刚石为三维共价晶体，化学稳定但可在O₂中燃烧",
+    "productFeatures": "生成无色CO₂并放热，其ΔH与石墨燃烧略有差异",
+    "phenomenon": "高温点燃后金刚石逐渐消耗，生成气体使石灰水变浑浊。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X2-007",
+    "chapter": "X2",
+    "title": "石墨燃烧",
+    "detail": "C(s，石墨)＋O₂＝CO₂；与X2-006组成盖斯循环（E11、E20）。",
+    "reactantFeatures": "石墨是层状共价晶体且比金刚石能量略低",
+    "productFeatures": "完全燃烧生成无色CO₂",
+    "phenomenon": "石墨灼热并逐渐消耗，逸出气体使石灰水变浑浊。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X2-008",
+    "chapter": "X2",
+    "title": "四氨合铜(Ⅱ)离子",
+    "detail": "Cu²⁺＋4NH₃⇌[Cu(NH₃)₄]²⁺。溶液由浅蓝变深蓝（E20）。",
+    "reactantFeatures": "Cu²⁺水合离子呈浅蓝色，NH₃以N的孤电子对作配体",
+    "productFeatures": "[Cu(NH₃)₄]²⁺为深蓝色配离子",
+    "phenomenon": "加入过量氨水后溶液由浅蓝色变为深蓝色。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X2-009",
+    "chapter": "X2",
+    "title": "氢氧化铜溶于过量氨",
+    "detail": "Cu(OH)₂＋4NH₃⇌[Cu(NH₃)₄]²⁺＋2OH⁻（E20）。",
+    "reactantFeatures": "Cu(OH)₂为浅蓝色沉淀，过量NH₃可与Cu²⁺强配位",
+    "productFeatures": "生成可溶、深蓝色的[Cu(NH₃)₄]²⁺",
+    "phenomenon": "浅蓝色沉淀逐渐溶解，得到深蓝色澄清溶液。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X2-010",
+    "chapter": "X2",
+    "title": "四氨合铜硫酸盐晶体",
+    "detail": "[Cu(NH₃)₄]²⁺＋SO₄²⁻＋H₂O→[Cu(NH₃)₄]SO₄·H₂O↓（乙醇促晶析）（E20）。",
+    "reactantFeatures": "深蓝色[Cu(NH₃)₄]²⁺与SO₄²⁻在水中可溶，乙醇降低离子型配合物的溶解度",
+    "productFeatures": "[Cu(NH₃)₄]SO₄·H₂O为深蓝色晶体",
+    "phenomenon": "加入乙醇并冷却后析出深蓝色晶体。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X2-011",
+    "chapter": "X2",
+    "title": "二氨合银离子",
+    "detail": "Ag⁺＋2NH₃⇌[Ag(NH₃)₂]⁺（E12、E20）。",
+    "reactantFeatures": "Ag⁺可接受NH₃中N的孤电子对，NH₃为配体",
+    "productFeatures": "[Ag(NH₃)₂]⁺为无色、较稳定的线形配离子",
+    "phenomenon": "单独配位通常无颜色变化，但可使含银沉淀的溶解度增大。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X2-012",
+    "chapter": "X2",
+    "title": "氯化银溶于氨水",
+    "detail": "AgCl＋2NH₃⇌[Ag(NH₃)₂]⁺＋Cl⁻（E05、E12、E20）。",
+    "reactantFeatures": "AgCl为白色难溶固体，NH₃与Ag⁺形成稳定配离子并降低游离Ag⁺浓度",
+    "productFeatures": "[Ag(NH₃)₂]⁺、Cl⁻均在无色溶液中",
+    "phenomenon": "白色AgCl沉淀在过量氨水中逐渐溶解。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X2-013",
+    "chapter": "X2",
+    "title": "银氨配离子酸化",
+    "detail": "[Ag(NH₃)₂]⁺＋2H⁺＋Cl⁻＝AgCl↓＋2NH₄⁺（E05、E20）。",
+    "reactantFeatures": "H⁺把NH₃转化为NH₄⁺，使银氨配离子解离，同时体系有Cl⁻",
+    "productFeatures": "重新生成白色AgCl沉淀",
+    "phenomenon": "原澄清银氨溶液酸化后出现白色沉淀。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X2-014",
+    "chapter": "X2",
+    "title": "铁硫氰酸配离子",
+    "detail": "Fe³⁺＋SCN⁻⇌[Fe(SCN)]²⁺（E06、E11、E20）。",
+    "reactantFeatures": "Fe³⁺可接受SCN⁻配位，二者形成可逆配位平衡",
+    "productFeatures": "[Fe(SCN)]²⁺呈血红色",
+    "phenomenon": "溶液迅速显血红色，改变浓度时红色深浅可逆变化。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X2-015",
+    "chapter": "X2",
+    "title": "六氰合铁酸盐检验Fe³⁺",
+    "detail": "4Fe³⁺＋3[Fe(CN)₆]⁴⁻＝Fe₄[Fe(CN)₆]₃↓（普鲁士蓝，按教材常用计量式）（E06、E20）。",
+    "reactantFeatures": "Fe³⁺与[Fe(CN)₆]⁴⁻形成难溶的混合价配位化合物",
+    "productFeatures": "普鲁士蓝为深蓝色沉淀",
+    "phenomenon": "立即出现深蓝色沉淀或蓝色胶体，可用于检验Fe³⁺。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X2-016",
+    "chapter": "X2",
+    "title": "铁氰化物检验Fe²⁺",
+    "detail": "Fe²⁺＋K⁺＋[Fe(CN)₆]³⁻＝KFe[Fe(CN)₆]↓（蓝色沉淀）（E06、E20）。",
+    "reactantFeatures": "Fe²⁺与[Fe(CN)₆]³⁻及K⁺形成难溶配位化合物",
+    "productFeatures": "KFe[Fe(CN)₆]为蓝色沉淀",
+    "phenomenon": "溶液出现深蓝色沉淀，可作为Fe²⁺的检验现象。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X2-017",
+    "chapter": "X2",
+    "title": "四氯合钴酸根平衡",
+    "detail": "[Co(H₂O)₆]²⁺＋4Cl⁻⇌[CoCl₄]²⁻＋6H₂O（E11、E20）。",
+    "reactantFeatures": "[Co(H₂O)₆]²⁺呈粉红色，高浓度Cl⁻可置换水配体",
+    "productFeatures": "[CoCl₄]²⁻呈蓝色",
+    "phenomenon": "加Cl⁻或适当升温时粉红转蓝，加水稀释时蓝色又转粉红。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X2-018",
+    "chapter": "X2",
+    "title": "四氯合铜酸根形成",
+    "detail": "[Cu(H₂O)₆]²⁺＋4Cl⁻⇌[CuCl₄]²⁻＋6H₂O（E20）。",
+    "reactantFeatures": "[Cu(H₂O)₆]²⁺呈蓝色，高浓度Cl⁻可参与配位",
+    "productFeatures": "[CuCl₄]²⁻常呈黄绿至棕黄色，与水合离子混合时可显绿色",
+    "phenomenon": "增加Cl⁻浓度后溶液由蓝色向绿色或黄绿色转变，加水后颜色回蓝。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X2-019",
+    "chapter": "X2",
+    "title": "四羰基镍形成",
+    "detail": "Ni＋4CO⇌Ni(CO)₄。CO为配体，产物有毒且易挥发（E20）。",
+    "reactantFeatures": "Ni可接受CO中C端孤电子对并形成羰基配合物，CO和产物均剧毒",
+    "productFeatures": "Ni(CO)₄为无色、易挥发液体或蒸气，受热可分解",
+    "phenomenon": "镍在CO中逐渐转化并生成挥发性物质，通常无颜色变化，但存在严重中毒危险。"
+  },
+  {
+    "module": "inorganic",
+    "code": "X2-020",
+    "chapter": "X2",
+    "title": "配离子解离总括",
+    "detail": "[MLₙ]ᵐ⁺⇌Mᵐ⁺＋nL；通过加入沉淀剂或酸碱改变配位平衡（E12、E20）。",
+    "reactantFeatures": "配离子由中心离子M和配体L构成，稳定性受配体浓度、酸碱性和竞争反应影响",
+    "productFeatures": "解离后形成游离金属离子和配体",
+    "phenomenon": "具体可表现为颜色改变、沉淀生成或沉淀溶解，取决于M、L及所加试剂。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-001",
+    "chapter": "X3",
+    "title": "维勒合成尿素",
+    "detail": "NH₄OCN→NH₂CONH₂（加热）。说明无机物可转化为有机物（E17）。",
+    "reactantFeatures": "NH₄OCN是由无机离子构成的白色盐，加热可发生原子重排",
+    "productFeatures": "尿素是含酰胺基的有机物，组成与反应物相同但结构不同",
+    "phenomenon": "通常仍表现为白色固体，宏观变化不明显，需用熔点或结构检验确认。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-002",
+    "chapter": "X3",
+    "title": "有机物燃烧通式",
+    "detail": "CₓHᵧO_z＋(x＋y/4－z/2)O₂→xCO₂＋y/2H₂O；用于元素分析与分子式确定（E21）。",
+    "reactantFeatures": "有机物含C、H并可能含O，足量O₂使其完全氧化",
+    "productFeatures": "碳、氢分别转化为CO₂和H₂O",
+    "phenomenon": "燃烧放热，冷表面出现水珠，尾气使石灰水变浑浊，缺氧时还可能出现黑烟或CO。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-003",
+    "chapter": "X3",
+    "title": "烷烃完全燃烧",
+    "detail": "CₙH₂ₙ₊₂＋(3n＋1)/2O₂→nCO₂＋(n＋1)H₂O（E14）。",
+    "reactantFeatures": "烷烃是饱和烃，可燃但碳链越长越不易充分气化",
+    "productFeatures": "完全燃烧生成CO₂和水",
+    "phenomenon": "低级烷烃多呈蓝色火焰，碳链增长时火焰更明亮且更易出现黑烟。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-004",
+    "chapter": "X3",
+    "title": "甲烷逐级氯代",
+    "detail": "CH₄＋Cl₂→CH₃Cl＋HCl；CH₃Cl＋Cl₂→CH₂Cl₂＋HCl；CH₂Cl₂＋Cl₂→CHCl₃＋HCl；CHCl₃＋Cl₂→CCl₄＋HCl（光照）（E14）。",
+    "reactantFeatures": "甲烷的C—H键在光照下发生自由基取代，Cl₂可连续取代多个H",
+    "productFeatures": "得到CH₃Cl、CH₂Cl₂、CHCl₃、CCl₄和HCl的混合物",
+    "phenomenon": "氯气黄绿色逐渐褪去，潮湿空气中出现HCl白雾，产物常为混合物。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-005",
+    "chapter": "X3",
+    "title": "乙烷溴代",
+    "detail": "CH₃CH₃＋Br₂→CH₃CH₂Br＋HBr（光照）（E14、E17）。",
+    "reactantFeatures": "乙烷是饱和烃，Br₂在光照下进行自由基取代",
+    "productFeatures": "生成溴乙烷和HBr，继续反应可有多溴代物",
+    "phenomenon": "溴的红棕色在光照下逐渐变浅，并可见HBr酸雾。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-006",
+    "chapter": "X3",
+    "title": "长链烷烃裂化",
+    "detail": "C₁₆H₃₄→C₈H₁₈＋C₈H₁₆（催化剂、加热；代表式）（E14、E10）。",
+    "reactantFeatures": "长链烷烃沸点高，在催化加热下C—C键断裂",
+    "productFeatures": "生成较短链烷烃和含C＝C的烯烃混合物",
+    "phenomenon": "液态重质烃转化并产生较多气态产物，所得气体可使溴水褪色。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-007",
+    "chapter": "X3",
+    "title": "乙烯加氢",
+    "detail": "CH₂＝CH₂＋H₂→CH₃CH₃（Ni）（E14）。",
+    "reactantFeatures": "乙烯含活泼C＝C，H₂在Ni表面加成",
+    "productFeatures": "乙烷是饱和无色气体",
+    "phenomenon": "通常无颜色变化，气体体积减小，产物不再使溴水或酸性高锰酸钾褪色。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-008",
+    "chapter": "X3",
+    "title": "乙烯加卤素",
+    "detail": "CH₂＝CH₂＋Br₂→CH₂BrCH₂Br（E14、E21）。",
+    "reactantFeatures": "乙烯π键电子密度高，Br₂有橙黄色",
+    "productFeatures": "1,2-二溴乙烷为无色油状液体",
+    "phenomenon": "溴水或溴的有机溶液迅速褪色，可形成无色油层。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-009",
+    "chapter": "X3",
+    "title": "乙烯加卤化氢",
+    "detail": "CH₂＝CH₂＋HCl→CH₃CH₂Cl（催化剂）（E14、E17）。",
+    "reactantFeatures": "乙烯C＝C可与极性HCl发生加成",
+    "productFeatures": "氯乙烷是无色、易挥发的卤代烃",
+    "phenomenon": "一般无明显颜色变化，气体被消耗并形成可冷凝有机物。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-010",
+    "chapter": "X3",
+    "title": "乙烯水合",
+    "detail": "CH₂＝CH₂＋H₂O→CH₃CH₂OH（酸催化、加热加压）（E14、E17）。",
+    "reactantFeatures": "乙烯C＝C在酸催化、高温高压下加水",
+    "productFeatures": "乙醇为无色、可与水互溶的液体",
+    "phenomenon": "通常无直接颜色变化，乙烯气体被消耗，冷凝后得到液态产物。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-011",
+    "chapter": "X3",
+    "title": "丙烯加溴化氢",
+    "detail": "CH₃CH＝CH₂＋HBr→CH₃CHBrCH₃（主要产物，马氏规则）（E17、E22）。",
+    "reactantFeatures": "丙烯是不对称烯烃，HBr按马氏规则主要加到能形成更稳定中间体的位置",
+    "productFeatures": "主要生成无色2-溴丙烷",
+    "phenomenon": "通常无明显颜色变化，烯烃被消耗，产物不再表现C＝C的加成褪色性。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-012",
+    "chapter": "X3",
+    "title": "乙烯被酸性高锰酸钾氧化",
+    "detail": "5CH₂＝CH₂＋12MnO₄⁻＋36H⁺→10CO₂＋12Mn²⁺＋28H₂O（完全氧化写法）（E14、E21）。",
+    "reactantFeatures": "乙烯具有还原性，酸性MnO₄⁻呈紫色且氧化性强",
+    "productFeatures": "完全氧化生成CO₂、近无色Mn²⁺和水",
+    "phenomenon": "紫色高锰酸钾迅速褪去并有CO₂气泡，气体可使石灰水变浑浊。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-013",
+    "chapter": "X3",
+    "title": "聚乙烯",
+    "detail": "nCH₂＝CH₂→[—CH₂—CH₂—]ₙ（E19）。",
+    "reactantFeatures": "乙烯单体含C＝C，聚合时π键打开",
+    "productFeatures": "聚乙烯为白色、化学性质较稳定的饱和高分子",
+    "phenomenon": "气态或液化单体转化为白色树脂，体系黏度增加，产物不使溴水褪色。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-014",
+    "chapter": "X3",
+    "title": "聚丙烯",
+    "detail": "nCH₂＝CHCH₃→[—CH₂—CH(CH₃)—]ₙ（E19）。",
+    "reactantFeatures": "丙烯含C＝C和甲基侧基，可发生加聚",
+    "productFeatures": "聚丙烯为白色热塑性固体，主链饱和",
+    "phenomenon": "单体逐渐转化为固态树脂，体系黏度上升，C＝C特征反应消失。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-015",
+    "chapter": "X3",
+    "title": "乙炔燃烧",
+    "detail": "2HC≡CH＋5O₂→4CO₂＋2H₂O（E14）。",
+    "reactantFeatures": "乙炔含碳量高、含C≡C且易燃",
+    "productFeatures": "完全燃烧生成CO₂和水",
+    "phenomenon": "空气中燃烧火焰明亮并带浓黑烟，氧气中火焰温度很高。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-016",
+    "chapter": "X3",
+    "title": "乙炔加氢",
+    "detail": "HC≡CH＋H₂→CH₂＝CH₂；继续加氢：CH₂＝CH₂＋H₂→CH₃CH₃（催化剂）（E14）。",
+    "reactantFeatures": "乙炔的C≡C可分两步加氢，催化剂和氢气用量决定停留在烯烃还是烷烃",
+    "productFeatures": "先得乙烯，继续加氢得乙烷",
+    "phenomenon": "通常无颜色变化，气体体积减少，产物使溴水褪色的能力由强到弱直至消失。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-017",
+    "chapter": "X3",
+    "title": "乙炔加溴",
+    "detail": "HC≡CH＋Br₂→CHBr＝CHBr；继续加成：CHBr＝CHBr＋Br₂→CHBr₂CHBr₂（E14）。",
+    "reactantFeatures": "乙炔C≡C可连续加成两分子Br₂",
+    "productFeatures": "先生成二溴乙烯，最终生成四溴乙烷",
+    "phenomenon": "加入一当量或过量溴时红棕色均可褪去，是否仍含不饱和键取决于溴的用量。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-018",
+    "chapter": "X3",
+    "title": "乙炔加氯化氢",
+    "detail": "HC≡CH＋HCl→CH₂＝CHCl（HgCl₂等催化剂）；产物可制PVC（E14、E19）。",
+    "reactantFeatures": "乙炔C≡C可在HgCl₂等催化下加成HCl",
+    "productFeatures": "氯乙烯是无色、有毒、可聚合的气体",
+    "phenomenon": "一般无颜色变化，反应后气体组成和体积改变，产物可进一步聚合成PVC。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-019",
+    "chapter": "X3",
+    "title": "乙炔水合",
+    "detail": "HC≡CH＋H₂O→CH₃CHO（Hg²⁺/H⁺）（E15、E17）。",
+    "reactantFeatures": "乙炔在Hg²⁺、酸作用下先加水形成烯醇并迅速互变",
+    "productFeatures": "最终得到易挥发、有刺激性气味的乙醛",
+    "phenomenon": "乙炔被吸收，生成液体具有醛的特征气味，并能发生银镜或砖红Cu₂O反应。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-020",
+    "chapter": "X3",
+    "title": "乙炔三聚",
+    "detail": "3HC≡CH→C₆H₆（催化剂、加热）（E14）。",
+    "reactantFeatures": "乙炔含高能C≡C，在催化加热下三分子环化",
+    "productFeatures": "苯为无色、有特殊气味、难溶于水的液体",
+    "phenomenon": "气态乙炔被消耗并形成可冷凝液体，通常无特征颜色变化。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-021",
+    "chapter": "X3",
+    "title": "1,3-丁二烯1,2-加成",
+    "detail": "CH₂＝CH—CH＝CH₂＋Br₂→CH₂Br—CHBr—CH＝CH₂（低温代表）（E14、E22）。",
+    "reactantFeatures": "1,3-丁二烯含共轭双键，低温时可发生动力学控制的1,2-加成",
+    "productFeatures": "产物仍保留一个C＝C",
+    "phenomenon": "溴的颜色褪去，但产物仍可继续使溴水或酸性高锰酸钾褪色。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-022",
+    "chapter": "X3",
+    "title": "1,3-丁二烯1,4-加成",
+    "detail": "CH₂＝CH—CH＝CH₂＋Br₂→CH₂Br—CH＝CH—CH₂Br（E14、E22）。",
+    "reactantFeatures": "共轭二烯的π电子可离域，Br₂可发生1,4-加成",
+    "productFeatures": "新双键移到中间位置，产物仍不饱和",
+    "phenomenon": "溴的颜色褪去，所得产物仍能发生烯键检验。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-023",
+    "chapter": "X3",
+    "title": "聚丁二烯",
+    "detail": "nCH₂＝CH—CH＝CH₂→[—CH₂—CH＝CH—CH₂—]ₙ（E19）。",
+    "reactantFeatures": "1,3-丁二烯含共轭双键，可按1,4方式连续加聚",
+    "productFeatures": "聚丁二烯为有弹性的高分子，主链仍含C＝C",
+    "phenomenon": "单体转为黏稠或弹性固体，产物仍可使溴水褪色并可进一步硫化。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-024",
+    "chapter": "X3",
+    "title": "狄尔斯—阿尔德反应通式",
+    "detail": "共轭二烯＋亲双烯体→六元环加成产物（保留一个C＝C）；具体结构按题给信息迁移（E22）。",
+    "reactantFeatures": "共轭二烯提供4π电子体系，亲双烯体含受活化C＝C",
+    "productFeatures": "协同形成六元环和两个新σ键，同时保留一个C＝C且不脱小分子",
+    "phenomenon": "一般无通用颜色或气体现象，主要由产物结构、放热或反应物不饱和度降低来判断。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-025",
+    "chapter": "X3",
+    "title": "苯燃烧",
+    "detail": "2C₆H₆＋15O₂→12CO₂＋6H₂O（E14）。",
+    "reactantFeatures": "苯含碳量高且易燃，芳香环虽稳定但可完全氧化",
+    "productFeatures": "生成CO₂和水",
+    "phenomenon": "燃烧火焰明亮并伴大量黑烟。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-026",
+    "chapter": "X3",
+    "title": "苯溴代",
+    "detail": "C₆H₆＋Br₂→C₆H₅Br＋HBr（FeBr₃）（E14）。",
+    "reactantFeatures": "苯环稳定，需FeBr₃活化Br₂后发生亲电取代",
+    "productFeatures": "溴苯为无色油状液体，HBr遇湿形成白雾",
+    "phenomenon": "溴的红棕色逐渐变浅并出现分层油状产物，普通溴水在无催化剂时不发生此反应。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-027",
+    "chapter": "X3",
+    "title": "苯硝化",
+    "detail": "C₆H₆＋HNO₃→C₆H₅NO₂＋H₂O（浓H₂SO₄、加热）（E14、E17）。",
+    "reactantFeatures": "苯与浓HNO₃在浓H₂SO₄作用下发生亲电取代",
+    "productFeatures": "硝基苯为淡黄色油状、有毒液体",
+    "phenomenon": "水浴加热后形成与水分层的油状产物。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-028",
+    "chapter": "X3",
+    "title": "苯磺化",
+    "detail": "C₆H₆＋H₂SO₄(浓)⇌C₆H₅SO₃H＋H₂O（加热）（E14、E17）。",
+    "reactantFeatures": "苯与浓H₂SO₄在加热下发生可逆磺化",
+    "productFeatures": "苯磺酸酸性强、易溶于水，磺酸基可在适当条件下脱除",
+    "phenomenon": "通常无气体或特征颜色变化，苯层逐渐减少，产物进入酸性液相。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-029",
+    "chapter": "X3",
+    "title": "苯加氢",
+    "detail": "C₆H₆＋3H₂→C₆H₁₂（Ni、加热加压）（E14、E21）。",
+    "reactantFeatures": "苯芳香环稳定，需Ni、高温高压才能加氢",
+    "productFeatures": "环己烷为无色饱和环烃",
+    "phenomenon": "通常无颜色变化，H₂被消耗，产物不再具有芳香环的取代特征。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-030",
+    "chapter": "X3",
+    "title": "甲苯侧链氧化",
+    "detail": "C₆H₅CH₃＋2KMnO₄→C₆H₅COOK＋2MnO₂＋KOH＋H₂O（碱性条件代表式）；酸化得C₆H₅COOH（E17）。",
+    "reactantFeatures": "甲苯侧链苄位H易被KMnO₄氧化，碱性MnO₄⁻呈紫色",
+    "productFeatures": "先生成可溶苯甲酸钾和棕色MnO₂，酸化后析出苯甲酸",
+    "phenomenon": "紫色褪去并产生棕色沉淀，过滤酸化后可析出白色苯甲酸晶体。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-031",
+    "chapter": "X3",
+    "title": "甲苯硝化",
+    "detail": "C₆H₅CH₃＋3HNO₃→CH₃C₆H₂(NO₂)₃＋3H₂O（浓H₂SO₄、加热；代表2,4,6-TNT）（E14）。",
+    "reactantFeatures": "甲苯的甲基活化苯环，强硝化条件下可连续引入三个NO₂",
+    "productFeatures": "2,4,6-TNT为淡黄色晶体且具有爆炸性",
+    "phenomenon": "反应后可析出淡黄色固体，过程强放热并需严格控温。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-032",
+    "chapter": "X3",
+    "title": "溴乙烷水解",
+    "detail": "CH₃CH₂Br＋NaOH→CH₃CH₂OH＋NaBr（水溶液、加热）（E17）。",
+    "reactantFeatures": "溴乙烷为难溶于水的卤代烃，水溶NaOH提供OH⁻进行取代",
+    "productFeatures": "乙醇与NaBr均可进入水相",
+    "phenomenon": "加热后有机层逐渐减少，酸化再加AgNO₃可生成浅黄色AgBr沉淀。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-033",
+    "chapter": "X3",
+    "title": "溴乙烷消去",
+    "detail": "CH₃CH₂Br＋NaOH→CH₂＝CH₂↑＋NaBr＋H₂O（乙醇溶液、加热）（E17）。",
+    "reactantFeatures": "溴乙烷在乙醇性强碱、较高温下发生β-消去",
+    "productFeatures": "乙烯为无色可燃气体，同时生成NaBr和水",
+    "phenomenon": "放出气体，该气体能使溴水褪色并可燃烧。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-034",
+    "chapter": "X3",
+    "title": "卤代烃卤素检验前处理",
+    "detail": "R—X＋OH⁻→R—OH＋X⁻（加热）；酸化后Ag⁺＋X⁻→AgX↓（E17）。",
+    "reactantFeatures": "卤代烃需先水解释放X⁻，直接加AgNO₃通常不能有效检验共价卤素",
+    "productFeatures": "AgCl白色、AgBr浅黄色、AgI黄色且均难溶",
+    "phenomenon": "水解液酸化后加AgNO₃出现相应颜色沉淀，酸化可避免OH⁻干扰。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-035",
+    "chapter": "X3",
+    "title": "乙醇与钠",
+    "detail": "2CH₃CH₂OH＋2Na→2CH₃CH₂ONa＋H₂↑（E15、E17）。",
+    "reactantFeatures": "乙醇羟基H可被Na置换，但酸性弱、反应比水缓和",
+    "productFeatures": "乙醇钠溶于乙醇并放出H₂",
+    "phenomenon": "钠逐渐消失并产生气泡，生成气体点燃可有爆鸣声。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-036",
+    "chapter": "X3",
+    "title": "乙醇分子内脱水",
+    "detail": "CH₃CH₂OH→CH₂＝CH₂↑＋H₂O（浓H₂SO₄、170 ℃）（E15、E17、E21）。",
+    "reactantFeatures": "乙醇在浓H₂SO₄、170 ℃下优先分子内脱水",
+    "productFeatures": "乙烯为无色可燃且能发生加成的气体",
+    "phenomenon": "持续产生气体，气体可使溴水褪色，温度控制不当可能伴随炭化。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-037",
+    "chapter": "X3",
+    "title": "乙醇分子间脱水",
+    "detail": "2CH₃CH₂OH→CH₃CH₂OCH₂CH₃＋H₂O（浓H₂SO₄、约140 ℃）（E15、E17）。",
+    "reactantFeatures": "较低温度下两分子乙醇在浓H₂SO₄作用下发生分子间脱水",
+    "productFeatures": "乙醚为无色、极易挥发、易燃且微溶于水的液体",
+    "phenomenon": "生成具有醚味的挥发性液体，冷凝液常与水分层。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-038",
+    "chapter": "X3",
+    "title": "乙醇催化氧化",
+    "detail": "2CH₃CH₂OH＋O₂→2CH₃CHO＋2H₂O（Cu/Ag、加热）（E15、E17）。",
+    "reactantFeatures": "乙醇可被O₂温和氧化，Cu或Ag催化电子转移",
+    "productFeatures": "乙醛为无色、易挥发且有刺激性气味的液体",
+    "phenomenon": "铜丝可呈红—黑—红变化，并闻到乙醛刺激性气味。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-039",
+    "chapter": "X3",
+    "title": "乙醇被重铬酸钾氧化",
+    "detail": "3CH₃CH₂OH＋2Cr₂O₇²⁻＋16H⁺→3CH₃COOH＋4Cr³⁺＋11H₂O（E12、E15）。",
+    "reactantFeatures": "乙醇是还原剂，酸性Cr₂O₇²⁻呈橙色且氧化性强",
+    "productFeatures": "乙醇被深度氧化为乙酸，Cr³⁺呈绿色",
+    "phenomenon": "溶液由橙色逐渐变绿色，并可能出现乙酸的酸味。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-040",
+    "chapter": "X3",
+    "title": "2-丙醇氧化",
+    "detail": "(CH₃)₂CHOH＋CuO→(CH₃)₂CO＋Cu＋H₂O（加热）（E15、E17）。",
+    "reactantFeatures": "2-丙醇是仲醇，可把黑色CuO还原",
+    "productFeatures": "生成丙酮、红色Cu和水",
+    "phenomenon": "黑色CuO逐渐变红，管壁有水珠并可闻到丙酮气味。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-041",
+    "chapter": "X3",
+    "title": "苯酚弱酸性",
+    "detail": "C₆H₅OH＋NaOH＝C₆H₅ONa＋H₂O（E16）。",
+    "reactantFeatures": "苯酚因苯环吸电子作用而显弱酸性，能与强碱反应",
+    "productFeatures": "苯酚钠为可溶性离子化合物",
+    "phenomenon": "乳浊或分层的苯酚在NaOH中逐渐溶解，溶液变澄清。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-042",
+    "chapter": "X3",
+    "title": "苯酚与钠",
+    "detail": "2C₆H₅OH＋2Na＝2C₆H₅ONa＋H₂↑（E16）。",
+    "reactantFeatures": "苯酚羟基H可被Na置换，酸性强于醇但仍为弱酸",
+    "productFeatures": "生成可溶苯酚钠和H₂",
+    "phenomenon": "钠逐渐溶解并产生无色气泡。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-043",
+    "chapter": "X3",
+    "title": "苯酚钠酸化",
+    "detail": "C₆H₅ONa＋CO₂＋H₂O＝C₆H₅OH＋NaHCO₃（E16）。",
+    "reactantFeatures": "苯酚钠溶液含C₆H₅O⁻，碳酸酸性强于苯酚",
+    "productFeatures": "生成溶解度较小的苯酚和NaHCO₃",
+    "phenomenon": "通入CO₂后溶液出现乳白色浑浊或析出油状苯酚。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-044",
+    "chapter": "X3",
+    "title": "苯酚溴代",
+    "detail": "C₆H₅OH＋3Br₂＝2,4,6-C₆H₂Br₃OH↓＋3HBr。白色沉淀（E16）。",
+    "reactantFeatures": "苯酚的—OH强烈活化邻、对位，常温即可与溴水发生三取代",
+    "productFeatures": "2,4,6-三溴苯酚为白色难溶固体",
+    "phenomenon": "溴水迅速褪色并生成白色沉淀。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-045",
+    "chapter": "X3",
+    "title": "乙醛加氢",
+    "detail": "CH₃CHO＋H₂→CH₃CH₂OH（Ni）（E15、E17）。",
+    "reactantFeatures": "乙醛含可还原的C＝O，H₂在Ni表面加成",
+    "productFeatures": "乙醇为无色液体",
+    "phenomenon": "通常无颜色变化，H₂被消耗，产物的银镜反应等醛基性质消失。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-046",
+    "chapter": "X3",
+    "title": "乙醛催化氧化",
+    "detail": "2CH₃CHO＋O₂→2CH₃COOH（催化剂）（E15、E17）。",
+    "reactantFeatures": "乙醛的醛基易被O₂氧化",
+    "productFeatures": "乙酸含羧基、酸性增强",
+    "phenomenon": "通常无明显颜色变化，可观察到乙醛刺激性气味减弱、酸味和酸性增强。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-047",
+    "chapter": "X3",
+    "title": "乙醛银镜反应",
+    "detail": "CH₃CHO＋2[Ag(NH₃)₂]OH→CH₃COONH₄＋2Ag↓＋3NH₃＋H₂O（水浴加热）（E15、E16）。",
+    "reactantFeatures": "乙醛具有还原性，银氨配离子是温和氧化剂且器皿必须洁净",
+    "productFeatures": "乙醛被氧化为乙酸铵，Ag⁺还原为银",
+    "phenomenon": "水浴加热后试管内壁形成光亮银镜，条件不佳时也可见黑色银沉淀。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-048",
+    "chapter": "X3",
+    "title": "乙醛与新制氢氧化铜",
+    "detail": "CH₃CHO＋2Cu(OH)₂＋NaOH→CH₃COONa＋Cu₂O↓＋3H₂O（加热）（E15、E16）。",
+    "reactantFeatures": "乙醛还原性强，新制Cu(OH)₂为蓝色且在碱性加热条件下作氧化剂",
+    "productFeatures": "生成乙酸钠和砖红色Cu₂O",
+    "phenomenon": "加热后蓝色悬浊物转变为砖红色沉淀。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-049",
+    "chapter": "X3",
+    "title": "甲醛银镜反应总括",
+    "detail": "HCHO可被连续氧化为HCOOH、最终CO₂；1 mol HCHO理论上最多还原4 mol Ag⁺（E16、E18）。",
+    "reactantFeatures": "甲醛只有一个碳且还原性强，可依次氧化为甲酸和CO₂",
+    "productFeatures": "每摩尔甲醛理论上可还原4 mol Ag⁺",
+    "phenomenon": "银氨反应可形成大量银镜或银沉淀，并可能伴随CO₂生成。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-050",
+    "chapter": "X3",
+    "title": "乙酸电离",
+    "detail": "CH₃COOH⇌CH₃COO⁻＋H⁺（E12、E15）。",
+    "reactantFeatures": "乙酸含羧基，是弱电解质",
+    "productFeatures": "只部分生成CH₃COO⁻和H⁺",
+    "phenomenon": "无沉淀或气泡，溶液显酸性并使指示剂变色。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-051",
+    "chapter": "X3",
+    "title": "乙酸与钠",
+    "detail": "2CH₃COOH＋2Na＝2CH₃COONa＋H₂↑（E15）。",
+    "reactantFeatures": "乙酸羧基H较活泼，Na还原H⁺",
+    "productFeatures": "生成可溶乙酸钠和H₂",
+    "phenomenon": "钠较快溶解并产生气泡，反应通常比钠与乙醇更快。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-052",
+    "chapter": "X3",
+    "title": "乙酸与碳酸钠",
+    "detail": "2CH₃COOH＋Na₂CO₃＝2CH₃COONa＋CO₂↑＋H₂O（E15）。",
+    "reactantFeatures": "乙酸酸性强于碳酸，CO₃²⁻可接受两个H⁺",
+    "productFeatures": "生成乙酸钠、水和CO₂",
+    "phenomenon": "碳酸钠固体或溶液迅速产生大量无色气泡。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-053",
+    "chapter": "X3",
+    "title": "乙酸乙酯生成",
+    "detail": "CH₃COOH＋CH₃CH₂OH⇌CH₃COOCH₂CH₃＋H₂O（浓H₂SO₄、加热）（E15、E17）。",
+    "reactantFeatures": "乙酸和乙醇在浓H₂SO₄催化、吸水并加热时发生可逆酯化",
+    "productFeatures": "乙酸乙酯为有香味、难溶于水的油状液体",
+    "phenomenon": "反应后有酯香，洗涤静置可见有机层与水层分层。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-054",
+    "chapter": "X3",
+    "title": "乙酸乙酯酸性水解",
+    "detail": "CH₃COOCH₂CH₃＋H₂O⇌CH₃COOH＋CH₃CH₂OH（H⁺、加热）（E15、E17）。",
+    "reactantFeatures": "乙酸乙酯是难溶于水的酯，酸催化水解可逆",
+    "productFeatures": "生成乙酸和乙醇，二者更亲水",
+    "phenomenon": "加热过程中酯香和油层逐渐减弱，体系酸性增强，但因可逆通常不能完全水解。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-055",
+    "chapter": "X3",
+    "title": "乙酸乙酯碱性水解",
+    "detail": "CH₃COOCH₂CH₃＋NaOH→CH₃COONa＋CH₃CH₂OH（加热）（E15、E17）。",
+    "reactantFeatures": "乙酸乙酯与NaOH发生不可逆皂化，OH⁻被消耗",
+    "productFeatures": "乙酸钠、乙醇均易溶于水",
+    "phenomenon": "加热后油状酯层逐渐消失，混合物趋于均一，酯香减弱。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-056",
+    "chapter": "X3",
+    "title": "酯交换通式",
+    "detail": "RCOOR′＋R″OH⇌RCOOR″＋R′OH（酸或碱催化，按信息题使用）（E17、E22）。",
+    "reactantFeatures": "酯与另一种醇在酸或碱催化下交换烷氧基，反应常可逆",
+    "productFeatures": "形成新酯和新醇",
+    "phenomenon": "通常无通用颜色、气体或沉淀现象，需用沸点、色谱或光谱判断组成变化。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-057",
+    "chapter": "X3",
+    "title": "葡萄糖银镜反应",
+    "detail": "HOCH₂(CHOH)₄CHO＋2[Ag(NH₃)₂]OH→HOCH₂(CHOH)₄COONH₄＋2Ag↓＋3NH₃＋H₂O（E16、E18）。",
+    "reactantFeatures": "葡萄糖开链结构含醛基并具有还原性，银氨配离子作温和氧化剂",
+    "productFeatures": "葡萄糖被氧化为葡萄糖酸铵，Ag⁺还原为银",
+    "phenomenon": "水浴加热后出现光亮银镜或黑色银沉淀。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-058",
+    "chapter": "X3",
+    "title": "葡萄糖与新制氢氧化铜",
+    "detail": "C₆H₁₂O₆＋2Cu(OH)₂＋NaOH→C₆H₁₁O₇Na＋Cu₂O↓＋3H₂O（加热）（E16、E18）。",
+    "reactantFeatures": "葡萄糖在碱性加热条件下还原新制蓝色Cu(OH)₂",
+    "productFeatures": "生成葡萄糖酸钠和砖红色Cu₂O",
+    "phenomenon": "加热后蓝色悬浊物转为砖红色沉淀。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-059",
+    "chapter": "X3",
+    "title": "葡萄糖发酵",
+    "detail": "C₆H₁₂O₆→2C₂H₅OH＋2CO₂↑（酶）（E18）。",
+    "reactantFeatures": "葡萄糖在缺氧和酶作用下可发酵",
+    "productFeatures": "乙醇可溶于水，CO₂为无色气体",
+    "phenomenon": "发酵液持续冒泡并出现酒精气味。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-060",
+    "chapter": "X3",
+    "title": "蔗糖水解",
+    "detail": "C₁₂H₂₂O₁₁＋H₂O→C₆H₁₂O₆(葡萄糖)＋C₆H₁₂O₆(果糖)（酸/酶）（E18）。",
+    "reactantFeatures": "蔗糖为非还原性二糖，糖苷键在酸或酶作用下断裂",
+    "productFeatures": "得到葡萄糖和果糖，水解液具有还原性",
+    "phenomenon": "水解本身无明显现象，中和后做银氨或Cu(OH)₂实验可呈阳性。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-061",
+    "chapter": "X3",
+    "title": "麦芽糖水解",
+    "detail": "C₁₂H₂₂O₁₁＋H₂O→2C₆H₁₂O₆(葡萄糖)（酸/酶）（E18）。",
+    "reactantFeatures": "麦芽糖是可水解的还原性二糖",
+    "productFeatures": "一分子麦芽糖生成两分子葡萄糖",
+    "phenomenon": "水解过程通常无明显现象，水解前后均可有还原糖反应，但水解后还原性物质的量增大。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-062",
+    "chapter": "X3",
+    "title": "淀粉水解",
+    "detail": "(C₆H₁₀O₅)ₙ＋nH₂O→nC₆H₁₂O₆（酸/酶）（E18）。",
+    "reactantFeatures": "淀粉由葡萄糖单元构成，糖苷键需酸或淀粉酶催化水解",
+    "productFeatures": "最终得到可溶性葡萄糖",
+    "phenomenon": "淀粉糊逐渐变稀，与碘的蓝色逐渐减弱直至消失，水解液呈还原糖阳性。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-063",
+    "chapter": "X3",
+    "title": "纤维素水解",
+    "detail": "(C₆H₁₀O₅)ₙ＋nH₂O→nC₆H₁₂O₆（酸/酶）（E18）。",
+    "reactantFeatures": "纤维素是结构致密的多糖，较淀粉更难水解",
+    "productFeatures": "充分水解最终得到葡萄糖",
+    "phenomenon": "纤维状固体逐渐被破坏或溶解，反应本身无气泡，水解液可呈还原糖阳性。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-064",
+    "chapter": "X3",
+    "title": "油脂酸性水解",
+    "detail": "(RCOO)₃C₃H₅＋3H₂O⇌C₃H₅(OH)₃＋3RCOOH（H⁺、加热）（E18）。",
+    "reactantFeatures": "油脂是难溶于水的甘油三酯，酸催化水解可逆",
+    "productFeatures": "生成亲水的甘油和高级脂肪酸，后者可能为油状或固体",
+    "phenomenon": "加热乳化后油层逐渐减少并发生分层组成变化，通常无气体。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-065",
+    "chapter": "X3",
+    "title": "油脂皂化",
+    "detail": "(RCOO)₃C₃H₅＋3NaOH→C₃H₅(OH)₃＋3RCOONa（加热）（E18）。",
+    "reactantFeatures": "油脂与强碱加热发生不可逆酯键水解",
+    "productFeatures": "生成甘油和具有表面活性的脂肪酸钠",
+    "phenomenon": "油层逐渐消失、体系乳化变稠，盐析后可分离出肥皂。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-066",
+    "chapter": "X3",
+    "title": "不饱和油脂氢化",
+    "detail": "—CH＝CH—＋H₂→—CH₂—CH₂—（Ni、加热）（E18）。",
+    "reactantFeatures": "不饱和油脂含C＝C，H₂在Ni表面加成",
+    "productFeatures": "双键转为单键，饱和度和熔点提高",
+    "phenomenon": "液态油逐渐变稠或固化，溴水褪色能力减弱或消失。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-067",
+    "chapter": "X3",
+    "title": "氨基酸与酸",
+    "detail": "H₂N—CHR—COOH＋HCl＝[H₃N—CHR—COOH]Cl（E18）。",
+    "reactantFeatures": "氨基酸含碱性—NH₂，可接受H⁺",
+    "productFeatures": "形成含—NH₃⁺的盐酸盐，通常水溶性增大",
+    "phenomenon": "一般无气泡或沉淀，固体可溶解，溶液酸碱性发生变化。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-068",
+    "chapter": "X3",
+    "title": "氨基酸与碱",
+    "detail": "H₂N—CHR—COOH＋NaOH＝H₂N—CHR—COONa＋H₂O（E18）。",
+    "reactantFeatures": "氨基酸含酸性—COOH，能与NaOH中和",
+    "productFeatures": "生成可溶的羧酸钠盐和水",
+    "phenomenon": "通常无肉眼可见变化，氨基酸固体可逐渐溶解，pH升高。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-069",
+    "chapter": "X3",
+    "title": "二肽形成",
+    "detail": "2H₂N—CH₂—COOH→H₂N—CH₂—CO—NH—CH₂—COOH＋H₂O（代表甘氨酸缩合）（E18、E19）。",
+    "reactantFeatures": "两个氨基酸分子分别以—COOH和—NH₂缩合",
+    "productFeatures": "形成含肽键—CO—NH—的二肽并脱去水",
+    "phenomenon": "通常无特征颜色或气体变化，需加热或催化并用色谱、双缩脲等方法判断产物。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-070",
+    "chapter": "X3",
+    "title": "肽键水解",
+    "detail": "—CO—NH—＋H₂O→—COOH＋—NH₂（酸、碱或酶催化）（E18）。",
+    "reactantFeatures": "肽键可在酸、碱或酶作用下加水断裂",
+    "productFeatures": "重新形成羧基和氨基，强酸碱条件下常以盐形式存在",
+    "phenomenon": "通常无直接可见现象，大分子逐渐变小，溶解性和检验反应发生改变。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-071",
+    "chapter": "X3",
+    "title": "聚氯乙烯",
+    "detail": "nCH₂＝CHCl→[—CH₂—CHCl—]ₙ（E19）。",
+    "reactantFeatures": "氯乙烯含C＝C和Cl取代基，可发生加聚",
+    "productFeatures": "PVC为白色热塑性固体，受热分解可放HCl",
+    "phenomenon": "单体转化为白色树脂、体系黏度增加，产物不再具有烯键加成现象。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-072",
+    "chapter": "X3",
+    "title": "聚苯乙烯",
+    "detail": "nCH₂＝CHC₆H₅→[—CH₂—CH(C₆H₅)—]ₙ（E19）。",
+    "reactantFeatures": "苯乙烯含可聚合的乙烯基和苯基",
+    "productFeatures": "聚苯乙烯为无色透明或白色、较脆的热塑性固体",
+    "phenomenon": "单体逐渐变黏并固化成树脂，C＝C特征反应消失。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-073",
+    "chapter": "X3",
+    "title": "聚四氟乙烯",
+    "detail": "nCF₂＝CF₂→[—CF₂—CF₂—]ₙ（E19）。",
+    "reactantFeatures": "四氟乙烯含C＝C，F原子使单体和聚合物具有特殊电子效应",
+    "productFeatures": "聚四氟乙烯为白色、耐热耐腐蚀且表面能低的固体",
+    "phenomenon": "单体聚合生成白色树脂，通常无气体或颜色变化。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-074",
+    "chapter": "X3",
+    "title": "聚丙烯腈",
+    "detail": "nCH₂＝CHCN→[—CH₂—CH(CN)—]ₙ（E19）。",
+    "reactantFeatures": "丙烯腈含可聚合C＝C和极性—CN",
+    "productFeatures": "聚丙烯腈为白色高分子，是腈纶和碳纤维前体",
+    "phenomenon": "单体逐渐转为黏稠或固态聚合物，烯键检验转阴性。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-075",
+    "chapter": "X3",
+    "title": "聚甲基丙烯酸甲酯",
+    "detail": "nCH₂＝C(CH₃)COOCH₃→[—CH₂—C(CH₃)(COOCH₃)—]ₙ（E19）。",
+    "reactantFeatures": "甲基丙烯酸甲酯含C＝C和酯基，可自由基加聚",
+    "productFeatures": "PMMA为无色透明、较硬的热塑性材料",
+    "phenomenon": "单体黏度不断增大并固化为透明树脂，反应伴随放热。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-076",
+    "chapter": "X3",
+    "title": "天然橡胶/聚异戊二烯",
+    "detail": "nCH₂＝C(CH₃)—CH＝CH₂→[—CH₂—C(CH₃)＝CH—CH₂—]ₙ（E19）。",
+    "reactantFeatures": "异戊二烯为共轭二烯，可按1,4方式加聚",
+    "productFeatures": "聚异戊二烯具有弹性且主链仍含C＝C",
+    "phenomenon": "单体转化为黏弹性橡胶状固体，产物仍能使溴水褪色并可硫化。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-077",
+    "chapter": "X3",
+    "title": "聚对苯二甲酸乙二酯",
+    "detail": "nHOOC—C₆H₄—COOH＋nHO—CH₂CH₂—OH→[—OC—C₆H₄—COO—CH₂CH₂—O—]ₙ＋(2n－1)H₂O（代表式）（E19）。",
+    "reactantFeatures": "对苯二甲酸含两个—COOH，乙二醇含两个—OH，均为双官能团单体",
+    "productFeatures": "缩聚形成含酯键的PET并脱水",
+    "phenomenon": "加热过程中有水被移出，体系黏度不断增大，冷却得到坚韧聚酯。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-078",
+    "chapter": "X3",
+    "title": "尼龙-66",
+    "detail": "nHOOC(CH₂)₄COOH＋nH₂N(CH₂)₆NH₂→[—OC(CH₂)₄CONH(CH₂)₆NH—]ₙ＋(2n－1)H₂O（代表式）（E19）。",
+    "reactantFeatures": "己二酸含两个羧基，己二胺含两个氨基，可连续缩合",
+    "productFeatures": "尼龙-66主链含酰胺键并生成水",
+    "phenomenon": "界面缩聚时可拉出连续丝状物，熔融缩聚时体系逐渐增黏并放出水。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-079",
+    "chapter": "X3",
+    "title": "酚醛树脂",
+    "detail": "苯酚＋甲醛→线型或网状酚醛树脂＋H₂O（酸/碱催化；结构按缩合位置表达）（E16、E19）。",
+    "reactantFeatures": "苯酚邻、对位活泼，甲醛可提供亚甲基桥，酸或碱催化缩合",
+    "productFeatures": "形成线型或网状酚醛树脂并脱水",
+    "phenomenon": "体系逐渐增黏、颜色常由浅变黄褐并最终固化，反应放热。"
+  },
+  {
+    "module": "organic",
+    "code": "X3-080",
+    "chapter": "X3",
+    "title": "可降解聚乳酸",
+    "detail": "nHO—CH(CH₃)—COOH→[—O—CH(CH₃)—CO—]ₙ＋(n－1)H₂O（缩聚）（E19）。",
+    "reactantFeatures": "乳酸同时含—OH和—COOH，可自缩聚",
+    "productFeatures": "聚乳酸主链含酯键并生成水，材料可水解降解",
+    "phenomenon": "加热并移水时体系黏度上升，最终形成固态聚合物，通常无气体或特征颜色变化。"
+  }
+]

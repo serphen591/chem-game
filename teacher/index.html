@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; img-src 'self' data:; connect-src 'self' https://*.supabase.co https://*.supabase.in http://localhost:* http://127.0.0.1:*; object-src 'none'; base-uri 'none'; form-action 'self'">
+  <title>化学实验台 · 教师管理端</title>
+  <link rel="stylesheet" href="./teacher.css">
+  <script src="../config.js"></script>
+</head>
+<body>
+  <section class="login-view" id="login-view">
+    <div class="login-card">
+      <span class="brand-mark">化</span>
+      <p class="eyebrow">CHEM LAB CONSOLE</p>
+      <h1>教师管理端</h1>
+      <p>查看班级完成率、答案公开率、六类知识卡点与实验过程回放。</p>
+      <form id="teacher-login-form">
+        <label>教师登录邮箱<input name="email" type="email" autocomplete="email" required></label>
+        <label>密码<input name="password" type="password" autocomplete="current-password" required></label>
+        <button type="submit">登录教师端</button>
+      </form>
+      <p class="form-message" id="login-message" aria-live="polite"></p>
+      <a href="../">返回学生实验台</a>
+    </div>
+  </section>
+
+  <div class="dashboard" id="dashboard" hidden>
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">化</span><div><strong>化学实验台</strong><small>教师学习诊断中心</small></div></div>
+      <div class="top-actions"><span id="teacher-alias"></span><a href="../">学生端</a><button id="sign-out" type="button">退出</button></div>
+    </header>
+    <div class="shell">
+      <aside class="sidebar">
+        <div class="sidebar-title"><div><p class="eyebrow">CLASSROOMS</p><h2>我的班级</h2></div><span id="class-count">0</span></div>
+        <form class="create-class" id="create-class-form"><input name="name" maxlength="80" placeholder="新班级名称" required><button type="submit">＋</button></form>
+        <nav class="class-list" id="class-list"></nav>
+        <p class="sidebar-note">班级邀请码仅用于建立归属关系；教师端不要求在仓库中保存真实姓名或学号。</p>
+      </aside>
+      <main class="main" id="main-content">
+        <section class="empty-state"><span>⌬</span><h1>选择一个班级</h1><p>开始查看完成情况、知识卡点和关键步骤回放。</p></section>
+      </main>
+    </div>
+  </div>
+
+  <dialog id="detail-dialog">
+    <button class="dialog-close" id="dialog-close" type="button" aria-label="关闭">×</button>
+    <div id="dialog-content"></div>
+  </dialog>
+  <div class="toast" id="toast" hidden></div>
+
+  <script src="../assets/js/supabase-rest.js"></script>
+  <script src="./teacher.js"></script>
+</body>
+</html>
+
