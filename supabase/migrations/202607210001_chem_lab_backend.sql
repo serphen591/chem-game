@@ -814,7 +814,7 @@ begin
     'event_id', e.event_id, 'event_type', e.event_type, 'step_key', e.step_key,
     'stage', e.stage, 'step_error_count', e.step_error_count, 'severity', e.severity,
     'tags', e.tags, 'expected', e.expected, 'actual', e.actual,
-    'message', e.message, 'occurred_at', e.occurred_at
+    'message', e.message, 'payload', e.payload, 'occurred_at', e.occurred_at
   ) order by e.occurred_at, e.received_at), '[]'::jsonb)
   into v_events from public.step_events e where e.attempt_id = p_attempt_id;
   return jsonb_build_object('attempt', to_jsonb(v_attempt), 'events', v_events);

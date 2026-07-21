@@ -49,14 +49,16 @@
     return [...merged.values()].filter((item) => item.completedAt).sort((a, b) => String(b.completedAt).localeCompare(String(a.completedAt))).slice(0, 10);
   }
 
-  function replayTimeline(events) {
-    return events.map((event) => {
-      const eventType = event.eventType || event.event_type || '';
+  function replayTimeline(events, fallback = {}) {
+    const errors = (events || []).filter((event) => (event.eventType || event.event_type) === 'step_error');
+    return errors.map((event) => {
       const stepKey = event.stepKey || event.step_key || event.stage || '';
-      const tags = Array.isArray(event.tags) ? event.tags.join('、') : '';
-      const expected = event.expected || null, actual = event.actual || null;
-      return `<div class="student-replay-event" data-severity="${esc(event.severity || '')}"><small>${esc(formatReplayTime(event.occurredAt || event.occurred_at))}</small><div><strong>${esc(replayEventNames[eventType] || eventType)}${stepKey ? ` · ${esc(stepKey)}` : ''}</strong><p>${esc(tags || event.message || '关键步骤已记录')}</p>${expected || actual ? `<pre>期望：${esc(JSON.stringify(expected, null, 2))}\n实际：${esc(JSON.stringify(actual, null, 2))}</pre>` : ''}</div></div>`;
-    }).join('') || '<p class="student-replay-empty">暂无关键步骤。</p>';
+      const count = Number(event.stepErrorCount || event.step_error_count || 1);
+      const evidence = window.ChemLabReplayEvidence?.eventEvidence(event, fallback) || {};
+      const analysis = evidence.analysis || { title:'本步骤判断有误', reason:event.message || '错误步骤已记录。', suggestion:'对照正确目标重新完成本步骤。' };
+      const image = evidence.snapshot?.dataUrl || '';
+      return `<article class="student-error-evidence" data-severity="${esc(event.severity || '')}"><div class="student-evidence-head"><span>第 ${count} 次错误 · ${esc(stepKey)}</span><small>${esc(formatReplayTime(event.occurredAt || event.occurred_at))}</small></div>${image ? `<img src="${esc(image)}" alt="${esc(stepKey)}错误发生时的实验界面截图">` : ''}<div class="student-cause"><strong>${esc(analysis.title)}</strong><p>${esc(analysis.reason)}</p><div><b>下一次这样做</b>${esc(analysis.suggestion)}</div></div></article>`;
+    }).join('') || '<div class="student-replay-perfect"><strong>本次实验没有错误截图</strong><p>所有关键步骤均未触发错误记录。</p></div>';
   }
 
   async function showStudentReplay(attemptId) {
@@ -66,7 +68,8 @@
     try {
       const local = window.ChemLabConnection?.getLocalReplay?.(attemptId);
       const data = local?.events?.length ? { attempt:{ experiment_code:local.experimentCode }, events:local.events } : await client.api(`/student/attempts/${encodeURIComponent(attemptId)}/replay`);
-      detail.innerHTML = `<div class="student-replay-detail-head"><strong>${esc(experimentTitle(data.attempt?.experiment_code || local?.experimentCode))}</strong><button type="button" id="student-replay-close">收起</button></div><div class="student-replay-timeline">${replayTimeline(data.events || [])}</div>`;
+      const code=data.attempt?.experiment_code || local?.experimentCode,title=experimentTitle(code);
+      detail.innerHTML = `<div class="student-replay-detail-head"><div><strong>${esc(title)}</strong><small>只回放做错的界面，并给出针对性错因分析</small></div><button type="button" id="student-replay-close">收起</button></div><div class="student-replay-timeline">${replayTimeline(data.events || [],{experimentCode:code,experimentTitle:title})}</div>`;
       detail.querySelector('#student-replay-close').onclick = () => { detail.hidden = true; detail.innerHTML = ''; };
     } catch (error) { detail.innerHTML = `<p class="student-replay-empty">${esc(error.message || '暂时无法读取回放。')}</p>`; }
   }

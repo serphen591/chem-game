@@ -60,6 +60,15 @@
     return JSON.stringify(actual).slice(0, 100);
   }
 
+  function teacherEvidenceCard(event, attempt) {
+    const evidence = window.ChemLabReplayEvidence?.eventEvidence(event, {experimentCode:attempt.experiment_code,experimentTitle:attempt.experiment_code}) || {};
+    const analysis = evidence.analysis || {title:'错误步骤已记录',reason:event.message || '需要结合学生实际选择进一步判断。',suggestion:'请教师结合本步骤目标进行讲解。'};
+    const eventTags = (evidence.tags || event.tags || []).filter((tag) => tags.includes(tag));
+    const count = Number(event.step_error_count || 1);
+    const image = evidence.snapshot?.dataUrl || '';
+    return `<article class="teacher-error-evidence" data-severity="${esc(event.severity || '')}"><div class="teacher-evidence-head"><div><strong>第 ${count} 次错误 · ${esc(event.step_key || event.stage || '未知步骤')}</strong>${eventTags.map((tag) => `<span class="knowledge-tag">${esc(tag)}</span>`).join('')}</div><small>${formatTime(event.occurred_at)}</small></div>${image ? `<img src="${esc(image)}" alt="${esc(event.step_key || event.stage || '实验步骤')}错误发生时的学生界面截图">` : ''}<div class="teacher-evidence-analysis"><section><h3>${esc(analysis.title)}</h3><p>${esc(analysis.reason)}</p></section><section><h3>教学介入建议</h3><p>${esc(analysis.suggestion)}</p></section></div></article>`;
+  }
+
   function renderOverview(overview, students) {
     const recent = overview.recent_attempts || [];
     const errors = overview.common_errors || [];
@@ -107,7 +116,8 @@
     dialogContent.innerHTML = '<h2>正在加载关键步骤…</h2>'; dialog.showModal();
     try {
       const data = await client.api(`/teacher/attempts/${encodeURIComponent(attemptId)}/replay`);
-      dialogContent.innerHTML = `<div class="dialog-title"><p class="eyebrow">ATTEMPT REPLAY</p><h2>${esc(data.attempt.experiment_code)} · 实验过程回放</h2><p>只展示学生实际确认过的关键步骤，不记录鼠标轨迹或基础准备动作。</p></div><div class="timeline">${data.events.map((event) => `<div class="timeline-item"><span class="timeline-time">${formatTime(event.occurred_at)}</span><div class="timeline-card"><strong>${event.severity ? `<i class="severity-dot ${event.severity}"></i>` : ''}${esc(event.event_type)} · ${esc(event.step_key || event.stage || '')}</strong><p>${esc((event.tags || []).join('、') || event.message || '步骤记录')}</p>${event.expected || event.actual ? `<pre>期望：${esc(JSON.stringify(event.expected, null, 2))}\n实际：${esc(JSON.stringify(event.actual, null, 2))}</pre>` : ''}</div></div>`).join('') || '<p>暂无事件。</p>'}</div>`;
+      const errors=(data.events || []).filter((event) => event.event_type === 'step_error');
+      dialogContent.innerHTML = `<div class="dialog-title"><p class="eyebrow">ERROR EVIDENCE REPLAY</p><h2>${esc(data.attempt.experiment_code)} · 错误截图与知识标签</h2><p>只展示学生做错的界面截图；系统依据实际操作归入六类知识标签，并保留第1、2、3次错误的绿、橙、红等级。</p></div><div class="timeline">${errors.map((event) => teacherEvidenceCard(event,data.attempt)).join('') || '<div class="teacher-no-errors"><strong>本次实验没有错误截图</strong><p>学生未触发六类错误标签。</p></div>'}</div>`;
     } catch (error) { dialogContent.innerHTML = `<h2>无法读取回放</h2><p>${esc(error.message)}</p>`; }
   }
 
@@ -138,4 +148,3 @@
     message.textContent = error.message; message.dataset.kind = 'error';
   });
 })();
-

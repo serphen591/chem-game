@@ -97,7 +97,7 @@ Deno.serve(async (request) => {
       if (!attempt) return json(request, { error: '没有找到该实验回放。' }, 404);
       const { data: events, error: eventsError } = await supabase
         .from('step_events')
-        .select('event_id,event_type,step_key,stage,step_error_count,severity,tags,expected,actual,message,occurred_at')
+        .select('event_id,event_type,step_key,stage,step_error_count,severity,tags,expected,actual,message,payload,occurred_at')
         .eq('attempt_id', attemptId)
         .eq('student_id', authData.user.id)
         .order('occurred_at', { ascending: true });
