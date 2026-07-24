@@ -43,6 +43,9 @@ if (!html.includes('ChemLabReplayEvidence')) throw new Error('学生端没有生
 if (!html.includes('canonicalSupplyList')) throw new Error('实验用品未启用全局标准化与去重。');
 if (html.includes("'稀HCl溶液':['liquid','HCl']")) throw new Error('用品库仍保留重复的稀HCl溶液实体。');
 if (!html.includes('equation-mode') || !html.includes('equation-workspace')) throw new Error('方程式拼图尚未切换为全宽工作区。');
+if (!html.includes('function catalogPageSize') || !html.includes('data-catalog-page') || !html.includes('catalogPaginationMarkup')) throw new Error('实验目录尚未启用响应式分页。');
+if (!html.includes('function quickPuzzleModel') || !html.includes('sameMultiset(quickState.reactantSelection,model.reactants)') || !html.includes('sameMultiset(quickState.productSelection,model.products)')) throw new Error('快速闯关拼图尚未按方程式两侧进行无序判定。');
+if (html.includes("quickState.answer.join('|')===q.parts.join('|')") || html.includes('按正确顺序放入答案槽')) throw new Error('快速闯关仍在使用卡片顺序作为判定条件。');
 if (!html.includes('function combustionProfileFor')) throw new Error('燃烧实验尚未启用固体、液体、气体专用分流。');
 if (!html.includes("'坩埚':['apparatus','坩埚']") || !html.includes("'大药匙':['apparatus','大药匙']")) throw new Error('燃烧专用承载器材未加入用品库。');
 if (!html.includes("combustion.kind==='gas'") || !html.includes("combustion.kind==='liquid'")) throw new Error('燃烧状态分类不完整。');

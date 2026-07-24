@@ -5,7 +5,7 @@ window.CHEM_LAB_CONFIG=Object.freeze({
   "apiBaseUrl": "https://odcnrtafzcvirmzxzsfx.supabase.co/functions/v1/chem-lab-api",
   "apiPath": "",
   "syncEnabled": true,
-  "appVersion": "7.5.4-combustion-safety",
+  "appVersion": "7.5.5-pagination-unordered-puzzle",
   "requestTimeoutMs": 10000,
   "queueLimit": 1200
 });

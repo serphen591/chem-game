@@ -11,7 +11,7 @@ const config = {
   apiBaseUrl: `${url}/functions/v1/chem-lab-api`,
   apiPath: '',
   syncEnabled: true,
-  appVersion: '7.5.4-combustion-safety',
+  appVersion: '7.5.5-pagination-unordered-puzzle',
   requestTimeoutMs: 10000,
   queueLimit: 1200
 };
