@@ -21,7 +21,7 @@ if (configured) {
     apiBaseUrl: `${url}/functions/v1/chem-lab-api`,
     apiPath: '',
     syncEnabled: true,
-    appVersion: '7.5.5-pagination-unordered-puzzle',
+    appVersion: '7.6.0-comprehensive-workflow',
     requestTimeoutMs: 10000,
     queueLimit: 1200
   }, null, 2)});\n`;

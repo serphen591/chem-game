@@ -6,11 +6,11 @@
   <meta name="referrer" content="no-referrer">
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self' https://*.supabase.co https://*.supabase.in http://localhost:* http://127.0.0.1:*; object-src 'none'; base-uri 'none'; form-action 'self'">
   <title>化学实验台</title>
-  <script src="./config.js?v=7.5.5"></script>
-  <script src="./assets/js/replay-evidence.js?v=7.5.5"></script>
+  <script src="./config.js?v=7.6.0"></script>
+  <script src="./assets/js/replay-evidence.js?v=7.6.0"></script>
   <link rel="stylesheet" href="./assets/css/student-account.css">
-  <link rel="stylesheet" href="./assets/css/replay-evidence.css?v=7.5.5">
-  <link rel="stylesheet" href="./assets/css/interface-fixes.css?v=7.5.5">
+  <link rel="stylesheet" href="./assets/css/replay-evidence.css?v=7.6.0">
+  <link rel="stylesheet" href="./assets/css/interface-fixes.css?v=7.6.0">
   <script>
     try{
       const progressResetVersion='chem-lab-v7-1-reset-20260720-1';
@@ -214,17 +214,31 @@
     @keyframes tubeReach{from{opacity:0;transform:scaleX(.05)}to{opacity:1;transform:scaleX(1)}}@keyframes metalFreshness{to{filter:brightness(.82) saturate(.55)}}@keyframes sodiumSkate{0%,100%{transform:translateX(-25px) scale(.75)}25%{transform:translateX(19px) scale(1)}48%{transform:translateX(-5px) scale(.88)}72%{transform:translateX(27px) scale(.62)}}@keyframes layerSeparate{0%,12%{height:8px;opacity:.55;transform:translateY(21px)}58%,100%{height:32px;opacity:1;transform:none}}@keyframes interfaceSettle{0%,12%{opacity:0;transform:translateY(22px) scaleX(.5)}58%,100%{opacity:1;transform:none}}@keyframes polymerGrow{0%,12%{opacity:.15;transform:scaleY(.12);transform-origin:bottom}58%,100%{opacity:.92;transform:scaleY(1)}}@keyframes dissolveMass{0%,12%{opacity:1;transform:scale(1)}70%,100%{opacity:.1;transform:scale(.18)}}@keyframes heatRise{0%{opacity:0;transform:translateY(24px) scaleY(.55)}35%{opacity:.72}100%{opacity:0;transform:translateY(-42px) scaleY(1.25)}}@keyframes photoDarken{0%,35%{background:#f3f2e8}72%,100%{background:#8b7b91}}@keyframes ferrousAge{0%,24%{background:#f2f0e6}48%,69%{background:#71856f}88%,100%{background:#87492f}}@keyframes orangeToGreen{0%,28%{background:#dc8437}70%,100%{background:#5b9a6b}}
     .gas-transfer-tube{transform:rotate(var(--tube-angle,0deg));animation-name:tubeReachV72}.assembly-lock-pulse{position:absolute;z-index:43;width:18px;height:18px;border:4px solid var(--accent);border-radius:50%;transform:translate(-50%,-50%);box-shadow:0 0 18px var(--theme-glow);animation:assemblyLockPulse .9s ease-out both;pointer-events:none}@keyframes tubeReachV72{from{opacity:0;transform:rotate(var(--tube-angle,0deg)) scaleX(.05)}to{opacity:1;transform:rotate(var(--tube-angle,0deg)) scaleX(1)}}@keyframes assemblyLockPulse{0%{opacity:0;transform:translate(-50%,-50%) scale(.25)}35%{opacity:1}100%{opacity:0;transform:translate(-50%,-50%) scale(2.5)}}
     .completion-stack{position:absolute;z-index:4;right:15px;top:47px;display:flex;flex-direction:column;align-items:flex-end;gap:5px;pointer-events:none}.completion-check{display:grid;width:27px;height:27px;place-items:center;border:3px solid rgba(255,255,255,.92);border-radius:50%;background:#16a36f;color:#fff;font-size:17px;font-style:normal;font-weight:1000;line-height:1;box-shadow:0 5px 13px rgba(12,119,79,.28),0 0 0 2px rgba(22,163,111,.13);animation:completionPop .5s cubic-bezier(.18,.85,.25,1) both}.redo-badge{padding:4px 8px;border:1px solid rgba(210,116,26,.34);border-radius:999px;background:#fff2da;color:#a5530d;font-size:10px;font-weight:1000;white-space:nowrap;box-shadow:0 4px 10px rgba(123,71,17,.12)}.completion-stack~h3{min-height:42px;padding-right:78px}.experiment-card[data-needs-redo="true"]{box-shadow:inset 0 0 0 2px rgba(226,139,53,.18),var(--game-shadow)}@keyframes completionPop{0%{opacity:0;transform:scale(.4) rotate(-18deg)}70%{transform:scale(1.12) rotate(3deg)}100%{opacity:1;transform:scale(1)}}
+    /* 7.6：22套综合实验、证据循环与 1280×720 低高画面 */
+    .lab-grid{grid-template-columns:minmax(300px,1fr) minmax(0,2fr)}
+    .sequence-stage{position:sticky;top:-17px;z-index:2;display:block;margin:8px 0 3px;padding:6px 8px;border-radius:9px;background:var(--green-dark);color:#fff;font-size:10px;font-weight:1000;letter-spacing:.06em}
+    .comprehensive-mode .sequence-step span{line-height:1.48}.comprehensive-mode .bench-objects{grid-template-columns:repeat(5,minmax(86px,1fr));gap:7px}.comprehensive-mode .bench-object{min-height:124px}.comprehensive-mode .bench-object .chem-visual{transform:scale(1.16)}.comprehensive-mode .bench-object:hover .chem-visual{transform:scale(1.23)}
+    .investigation-workspace{position:relative;z-index:4;display:grid;height:100%;min-height:520px;padding:24px;grid-template-rows:auto 1fr auto;gap:16px}.investigation-workspace>header{padding:15px 18px;border:1px solid var(--line);border-radius:18px;background:var(--surface-strong)}.investigation-workspace>header span{color:var(--green-dark);font-size:10px;font-weight:1000;letter-spacing:.12em}.investigation-workspace>header h2{margin:3px 0 5px;font-size:23px}.investigation-workspace>header p{margin:0;color:var(--muted);font-size:12px}
+    .probe-layout{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(210px,.7fr);gap:17px;min-height:0}.probe-bank{display:grid;grid-template-columns:repeat(3,minmax(120px,1fr));gap:10px;align-content:center}.probe-reagent{min-height:145px;padding:9px;border:2px solid var(--line);border-radius:18px;background:var(--surface-strong);color:var(--ink);cursor:grab;transition:.22s}.probe-reagent:hover,.probe-reagent.active{border-color:var(--green);transform:translateY(-4px);box-shadow:0 12px 24px var(--theme-glow)}.probe-reagent.used{opacity:.45;cursor:not-allowed;filter:grayscale(.5)}.probe-reagent .chem-visual{transform:scale(1.05)}.probe-reagent strong,.probe-reagent small{display:block}.probe-reagent strong{font-size:12px}.probe-reagent small{margin-top:3px;color:var(--muted);font-size:10px}
+    .unknown-sample{display:grid;place-items:center;align-content:center;min-height:260px;padding:18px;border:3px dashed color-mix(in srgb,var(--green) 55%,var(--line));border-radius:26px;background:radial-gradient(circle at 50% 42%,rgba(83,211,168,.18),transparent 43%),var(--surface-soft);text-align:center;cursor:pointer;transition:.24s}.unknown-sample:hover{border-style:solid;box-shadow:inset 0 0 0 5px rgba(24,167,124,.08),0 16px 35px var(--theme-glow)}.unknown-sample .chem-visual{transform:scale(1.75);margin:28px auto 30px}.unknown-sample strong,.unknown-sample small{display:block}.unknown-sample small{margin-top:6px;color:var(--muted);font-size:11px}
+    .probe-observation{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:center;padding:13px 16px;border:1px solid var(--line);border-radius:16px;background:var(--surface-strong)}.probe-observation span{padding:6px 9px;border-radius:999px;background:var(--surface-soft);color:var(--green-dark);font-size:11px;font-weight:1000}.probe-observation strong{font-size:13px;line-height:1.55}.probe-observation.positive{border-color:rgba(24,167,124,.42)}.probe-observation.negative{border-color:rgba(101,121,113,.3)}
+    .evidence-trace-list{display:grid;gap:7px;margin-top:12px}.evidence-trace{display:grid;grid-template-columns:24px 1fr;gap:8px;padding:8px;border:1px solid var(--line);border-radius:12px;background:var(--surface-strong)}.evidence-trace>i{display:grid;width:23px;height:23px;place-items:center;border-radius:50%;background:var(--surface-soft);color:var(--green-dark);font-size:10px;font-style:normal;font-weight:1000}.evidence-trace p{margin:0;color:var(--muted);font-size:10px;line-height:1.5}.evidence-trace strong{display:block;color:var(--ink);font-size:11px}.evidence-trace.positive{border-left:4px solid var(--green)}.evidence-trace.negative{border-left:4px solid #9aa9a3}.evidence-empty{padding:14px;border:1px dashed var(--line);border-radius:12px;color:var(--muted);font-size:11px;text-align:center}.investigation-conclusion{display:grid;gap:7px;margin-top:12px}.investigation-conclusion>strong{font-size:12px}.investigation-conclusion .quick-option{padding:9px;font-size:11px;text-align:left}
+    @media(min-width:981px) and (max-height:760px){
+      html,body{height:720px;min-height:720px;overflow:hidden}.app{width:min(1280px,100%);height:720px;min-height:720px;padding:8px 14px 10px;overflow:hidden}.topbar{min-height:50px;padding:3px 3px 7px}.brand-mark{width:40px;height:40px;font-size:21px}.brand strong{font-size:17px}.topbar.game-hud{padding:7px 10px}.view{max-height:602px}.lab-view{display:grid;height:602px;grid-template-rows:auto minmax(0,1fr)}.lab-taskbar{min-height:58px;margin-bottom:9px;padding:8px 12px}.lab-taskbar small{display:block;max-width:720px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.lab-grid{height:100%;min-height:0;grid-template-columns:minmax(300px,1fr) minmax(0,2fr);gap:10px}.lab-side,.lab-main,.bench,.equation-mode .lab-main,.equation-mode .bench{height:100%;min-height:0!important}.lab-side{max-height:none;padding:13px}.lab-main{overflow:hidden}.bench{padding:13px}.bench-objects{top:54px;bottom:2px}.investigation-workspace{min-height:0;padding:14px;gap:10px}.investigation-workspace>header{padding:10px 13px}.investigation-workspace>header h2{font-size:19px}.probe-reagent{min-height:112px}.probe-reagent .chem-visual{transform:scale(.86);margin-top:-5px}.unknown-sample{min-height:210px}.unknown-sample .chem-visual{transform:scale(1.45);margin:20px auto 22px}.probe-observation{padding:9px 12px}.comprehensive-mode .bench-objects{grid-template-columns:repeat(5,minmax(78px,1fr));gap:4px}.comprehensive-mode .bench-object{min-height:104px}.comprehensive-mode .bench-object .chem-visual{transform:scale(.96)}.comprehensive-mode .bench-object:hover .chem-visual{transform:scale(1.03)}.comprehensive-mode .bench-object b{bottom:0;font-size:9px}.catalog-view{height:602px;min-height:0}.catalog-view .experiment-card{min-height:154px}.catalog-pagination{margin-top:8px;padding:7px 12px}.home-grid{height:602px;min-height:0}.module-card{min-height:230px}.quick-shell{height:602px;overflow:auto}
+    }
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
   </style>
 </head>
 <body>
   <main class="app" id="app" aria-live="polite"></main>
   <script src="./data/experiments.js"></script>
+  <script src="./data/comprehensive-experiments.js"></script>
   <script>
   (()=>{
     'use strict';
     const SOURCE={title:'高中化学方程式题库',documentId:'HCNQdEQvvo9lWwxfNxScqGoKnZg',revision:337,total:323,inorganic:219,organic:104,experiments:22};
     const FULL_REACTION_BANK=Array.isArray(window.CHEM_LAB_EXPERIMENTS)?window.CHEM_LAB_EXPERIMENTS:[];
+    const COMPREHENSIVE_DATA=window.CHEM_LAB_COMPREHENSIVE&&Array.isArray(window.CHEM_LAB_COMPREHENSIVE.experiments)?window.CHEM_LAB_COMPREHENSIVE:{version:'missing',experiments:[]};
     const CATEGORY_NAMES={apparatus:'反应器材',solid:'固体样品',liquid:'液体药品',gas:'气体药品',heat:'热源'};
     const SUPPLY={
       '烧杯':['apparatus','烧杯'],'试管':['apparatus','试管'],'坩埚':['apparatus','坩埚'],'大药匙':['apparatus','大药匙'],'集气瓶':['apparatus','集气瓶'],'储气瓶':['apparatus','储气'],'导气管':['apparatus','导气管'],'带孔橡胶塞':['apparatus','橡胶塞'],'燃气导流装置':['apparatus','储气·导气'],'燃气反应装置':['apparatus','燃烧装置'],'锥形瓶':['apparatus','锥形瓶'],'蒸馏装置':['apparatus','蒸馏'],'反应器':['apparatus','反应器'],'盐桥':['apparatus','盐桥'],'有色布条':['solid','布条'],'催化剂':['solid','cat.'],'酵母':['solid','酵母'],
@@ -287,14 +301,32 @@
       polymer:[{source:"乙烯",target:"反应器",action:"gas",prompt:"先向反应器中充入乙烯"},{source:"催化剂",target:"反应器",action:"add",prompt:"再加入催化剂并密闭反应器"}],
       diels:[{source:"1,3-丁二烯",target:"反应器",action:"gas",prompt:"先向反应器加入1,3-丁二烯"},{source:"乙烯",target:"反应器",action:"gas",prompt:"再加入乙烯完成环加成"}]
     };
-    const ACTION_NAMES={pour:'倾倒',add:'加入固体',gas:'通入气体',ignite:'点燃',heat:'加热',connect:'连接',dip:'浸入',wet:'润湿','insert-burning-vessel':'移入反应气氛'};
+    function inferredComprehensiveSupply(name){
+      const value=String(name||'').trim();
+      const apparatus=/装置|反应器|反应瓶|烧瓶|烧杯|试管|滴定管|移液管|量气管|水准管|分液漏斗|漏斗|抽滤瓶|洗气瓶|吸收塔|干燥塔|冷凝管|蒸馏|坩埚|水槽|水浴|试管架|电子天平|温度传感器|秒表|比色皿|盐桥|导线|电流表|电源|电极|电解槽|研钵|玻璃棒|滤纸|称量纸|药匙|滴管|洗耳球|薄层板|旋转蒸发|回收盘|谱图卡|熔点仪|观察皿|收集舟|熔制皿|接收瓶|石蕊试纸|pH试纸|木条|布条|空气泵|吹气装置|玻璃瓶/.test(value);
+      const heat=/酒精灯|火柴|电炉|加热装置/.test(value);
+      const gas=/储气瓶/.test(value);
+      const liquid=/溶液|卤水|盐水|氯水|溴水|氨水|蒸馏水|冰水|乙醇|乙酸|乙醛|环己醇|乙醚|石蜡油|浓盐酸|稀盐酸|稀硫酸|浓硫酸|浓磷酸|未知.*溶液|植物油|有机原料|反应试剂|展开剂/.test(value);
+      const kind=apparatus?'apparatus':heat?'heat':gas?'gas':liquid?'liquid':'solid';
+      const symbol=value.replace(/储气瓶$/,'').replace(/溶液$/,'').slice(0,12);
+      return[kind,symbol||value];
+    }
+    function registerComprehensiveExperiments(){
+      COMPREHENSIVE_DATA.experiments.forEach(exp=>{
+        const names=new Set([...(exp.supplies||[]),...(exp.steps||[]).flatMap(item=>[item.source,item.target]),...((exp.investigation&&exp.investigation.probes)||[]).map(item=>item.reagent),exp.investigation&&exp.investigation.target].filter(Boolean));
+        names.forEach(name=>{if(!SUPPLY[name])SUPPLY[name]=inferredComprehensiveSupply(name)});
+        const supplies=[...names],presetId=exp.presetId||`comprehensive_${exp.code}`;
+        PRESETS[presetId]={...exp,code:exp.code,presetId,supplies,effect:exp.effect||'⚗️',comprehensive:true};
+        STEP_PLANS[presetId]=(exp.steps||[]).map((item,index)=>({...item,id:item.id||`${exp.code}.operation.${String(index+1).padStart(2,'0')}`}));
+      });
+    }
+    registerComprehensiveExperiments();
+    const ACTION_NAMES={pour:'倾倒',add:'加入固体',gas:'通入气体',ignite:'点燃',heat:'加热',connect:'连接',dip:'浸入',wet:'润湿',sample:'分样',inspect:'检查',measure:'测量',filter:'过滤',wash:'洗涤',separate:'分离',titrate:'滴定',grind:'研磨',cool:'冷却','insert-burning-vessel':'移入反应气氛'};
     const REACTIONS=[
       ['inorganic','B1-004','铜离子沉淀','蓝色沉淀与离子反应',1,'cuoh2'],['inorganic','B1-015','钠与水','浮、熔、游、响、红',1,'sodium'],['inorganic','B1-008','铁置换铜','金属活动性与置换',1,'ironCopper'],['inorganic','B1-031','氯气与水','次氯酸与漂白证据',2,'chlorineWater'],['inorganic','B2-046','过氧化氢分解','催化、制氧与检验',1,'peroxide'],['inorganic','B2-025','氨与氯化氢','气体相遇生成白烟',1,'ammonia'],['inorganic','B2-011','SO₂的还原性','酸性高锰酸钾褪色',2,'so2'],['inorganic','B1-073','镁与二氧化碳','反常燃烧现象',2,'mgco2'],
       ['organic','B2-055','乙烯加溴','加成反应与溴水褪色',1,'ethylene'],['organic','B2-065','乙醇催化氧化','铜丝红黑变化',2,'ethanol'],['organic','B2-068','乙酸与碳酸氢钠','官能团与酸性比较',1,'acetate'],['organic','B2-069','乙酸乙酯制备','酯化、加热与分离',2,'ester'],['organic','B2-070','葡萄糖发酵','生活中的生物化学',1,'ferment'],['organic','E21','环己烯制备','脱水、纯化与波谱',3,'cyclohexene'],['organic','E19','聚乙烯合成','加聚与高分子结构',2,'polymer'],['organic','E22','[4＋2]环加成','题给信息迁移',3,'diels']
     ].map(([module,code,title,summary,difficulty,preset])=>({module,code,title,summary,difficulty,preset}));
-    const E_TITLES=['无标签溶液的证据链鉴别','钠及其含氧化合物的定量探究','侯氏制碱与碳酸盐滴定','氯气制备、净化、性质与尾气处理','海水提溴与卤素氧化性','铁、铝及其化合物的连续转化','硫酸工业、SO₂性质与烟气脱硫','合成氨—硝酸工业链','从石英砂到高纯硅与玻璃','多矿物联合工艺流程','反应热—速率—平衡联动探究','滴定、盐类水解与沉淀平衡','电池、电解、腐蚀与资源回收','煤、石油裂化与烃的性质','乙醇—乙醛—乙酸—乙酸乙酯连续实验','未知有机物官能团检验','有机合成路线与条件选择','糖类、油脂、氨基酸与蛋白质','高分子材料辨识、合成与回收','结构、配位与晶体综合','环己烯制备、纯化与波谱证据','信息迁移：狄尔斯—阿尔德与选择性合成'];
-    const E_PRESETS=['cuoh2','sodium','acetate','chlorinePrep','chlorineWater','ironCopper','so2','ammonia','silicate','mgco2','peroxide','cuoh2','zncell','ethylene','ester','acetate','ethanol','ferment','polymer','complex','cyclohexene','diels'];
-    const COMPREHENSIVE=E_TITLES.map((title,i)=>({module:'comprehensive',code:`E${String(i+1).padStart(2,'0')}`,title,summary:['证据链、装置、方程式与评价','真实流程中的多步实验任务','浙江选考风格一境多问'][i%3],difficulty:i<6?1:i<16?2:3,preset:E_PRESETS[i]}));
+    const COMPREHENSIVE=COMPREHENSIVE_DATA.experiments.map(exp=>({module:'comprehensive',code:exp.code,title:exp.title,summary:exp.summary,difficulty:exp.difficulty,preset:exp.presetId||`comprehensive_${exp.code}`}));
     const MATCH_POOL=[
       {difficulty:1,source:'B1-004',category:'inorganic',prompt:'CuSO₄溶液与NaOH溶液混合，最明显的现象是？',options:['产生蓝色沉淀','产生白烟','发出耀眼白光'],answer:'产生蓝色沉淀'},
       {difficulty:1,source:'B1-015',category:'inorganic',prompt:'钠投入水中，正确的现象组合是？',options:['浮、熔、游、响','沉、静、冷、蓝','只产生白烟'],answer:'浮、熔、游、响'},
@@ -336,7 +368,7 @@
     ];
     const app=document.getElementById('app');
     let currentModule='home',difficultyFilter=0,catalogPage=1,currentLab=null,labState=null,quickState=null,drawerModule='inorganic'
-    const NETWORK_CONFIG=Object.freeze({apiBaseUrl:'',apiPath:'/api/v1',syncEnabled:false,appVersion:'7.5.5-pagination-unordered-puzzle',requestTimeoutMs:8000,queueLimit:800,replayLimit:30,...(window.CHEM_LAB_CONFIG||{})});
+    const NETWORK_CONFIG=Object.freeze({apiBaseUrl:'',apiPath:'/api/v1',syncEnabled:false,appVersion:'7.6.0-comprehensive-workflow',requestTimeoutMs:8000,queueLimit:800,replayLimit:30,...(window.CHEM_LAB_CONFIG||{})});
     const DATA_KEYS={identity:'chemLabStudentIdentity',token:'chemLabAccessToken',eventQueue:'chemLabEventQueue',replayArchive:'chemLabReplayArchive'};
     const dataSessionId=createClientId('session');
     let syncPromise=null,syncState=NETWORK_CONFIG.syncEnabled&&NETWORK_CONFIG.apiBaseUrl?'waiting':'local',syncError='';
@@ -409,7 +441,16 @@
       }catch(error){const reason=error&&error.name==='AbortError'?'timeout':error&&error.status===401?'auth-required':'network-error';setSyncState(reason==='auth-required'?'waiting':'offline',error&&error.message||reason);return{ok:false,reason,error:syncError,sent,queued:readEventQueue().length}}finally{syncPromise=null}})();
       return syncPromise;
     }
-    function currentStepKey(state=labState){if(!state)return'unknown';if(state.phase==='select')return'supplies';if(state.phase==='combine')return`combine.${state.stepIndex+1}`;if(state.phase==='observe')return'observation';if(state.phase==='equation')return state.equationStage==='balance'?'equation.balance':'equation.species';return state.phase||'unknown'}
+    function currentStepKey(state=labState){
+      if(!state)return'unknown';
+      const code=currentLab&&(currentLab.displayCode||currentLab.code)||'experiment';
+      if(state.phase==='select')return`${code}.supplies`;
+      if(state.phase==='combine'){const step=(STEP_PLANS[currentLab.presetId]||[])[state.stepIndex];return step&&step.id?step.id:`${code}.operation.${state.stepIndex+1}`}
+      if(state.phase==='investigate')return`${code}.investigation.${state.investigationMode==='conclusion'?'conclusion':Math.max(1,state.investigationAttempts.length+1)}`;
+      if(state.phase==='observe')return`${code}.observation`;
+      if(state.phase==='equation')return`${code}.${state.equationStage==='balance'?'equation.balance':'equation.species'}`;
+      return`${code}.${state.phase||'unknown'}`
+    }
     function severityForErrors(errors){return errors>=3?'red':errors===2?'orange':'green'}
     function syncStatus(){return{state:syncState,enabled:Boolean(NETWORK_CONFIG.syncEnabled&&NETWORK_CONFIG.apiBaseUrl),queued:readEventQueue().length,error:syncError,identity:publicStudentIdentity()}}
     function setAccessToken(accessToken=''){try{if(accessToken)sessionStorage.setItem(DATA_KEYS.token,String(accessToken));else sessionStorage.removeItem(DATA_KEYS.token)}catch(_){}}
@@ -627,19 +668,33 @@
       const hydrated=hydratePresetFromBank(PRESETS[presetId],code),preset={...hydrated,supplies:canonicalSupplyList(hydrated.supplies)},eqModel=equationModel(preset.equation),attemptId=createClientId('attempt');
       STEP_PLANS[presetId]=(STEP_PLANS[presetId]||preset.steps||[]).map(canonicalStep);
       currentLab={...preset,options:shuffle(preset.options),presetId,from,displayCode:code};
-      labState={attemptId,startedAt:new Date().toISOString(),phase:'select',errors:0,totalErrors:0,stepPraise:null,stepRatings:[],selected:[],activeCategory:SUPPLY[preset.supplies[0]][0],pool:suppliesFor(preset),combined:[],completedSteps:[],stepIndex:0,tapSource:null,locked:false,cancelled:false,observation:null,answer:[],revealed:false,equationStage:'species',eqModel,speciesChoices:speciesChoicesFor(eqModel),reactantSelection:[],productSelection:[],coefficients:{}};
+      labState={attemptId,startedAt:new Date().toISOString(),phase:'select',errors:0,totalErrors:0,stepPraise:null,stepRatings:[],selected:[],activeCategory:SUPPLY[preset.supplies[0]][0],pool:suppliesFor(preset),combined:[],completedSteps:[],stepIndex:0,tapSource:null,locked:false,cancelled:false,observation:null,answer:[],revealed:false,equationStage:'species',eqModel,speciesChoices:speciesChoicesFor(eqModel),reactantSelection:[],productSelection:[],coefficients:{},investigationAttempts:[],investigationEvidence:[],investigationMode:'probe',activeProbe:null};
       queueLearningEvent('attempt_started',{attemptId,experimentCode:code,experimentTitle:preset.title,module:from,difficulty:difficultyForEntry(FULL_REACTION_BANK.find(item=>item.code===code)||{chapter:'B1',code})});renderLab();
     }
-    function labStageName(){return{select:'选择用品',combine:'组合实验',reaction:'观察反应',observe:'判断现象',equation:'方程式拼图',complete:'完成'}[labState.phase]}
-    function renderLab(){const p=currentLab,s=labState,equationMode=s.phase==='equation';app.innerHTML=header()+`<section class="view"><div class="lab-taskbar"><button class="back-btn" id="lab-back">← 实验列表</button><div><strong>${p.displayCode||p.code} · ${p.title}</strong><small>${p.task}</small></div><span class="stage-pill">${labStageName()}</span><span class="error-pill">本步错误 ${Math.min(s.errors,3)} / 3</span></div><div class="lab-grid ${equationMode?'equation-mode':''}"><aside class="lab-side"><h2 id="side-title">${s.phase==='select'?'本题用品':s.phase==='combine'?'操作顺序':s.phase==='reaction'?'反应进行中':s.phase==='observe'?'实验现象':'任务提示'}</h2><p id="side-copy">${sideCopy()}</p><div id="side-body">${sideBody()}</div>${equationMode?equationTaskHint():reactionEvidencePanel()}<div class="feedback ${s.feedbackKind||''}" id="feedback">${s.feedback||''}</div></aside><section class="lab-main"><div class="bench" id="bench">${benchBody()}${stepPraiseOverlay()}</div></section></div></section>`;bindLab()}
+    function labStageName(){if(labState.phase==='combine'){const step=(STEP_PLANS[currentLab.presetId]||[])[labState.stepIndex];return step&&step.stage?step.stage:'组合实验'}return{select:'选择用品',investigate:'证据查证',reaction:'观察反应',observe:'判断现象',equation:'方程式拼图',complete:'完成'}[labState.phase]}
+    function renderLab(){const p=currentLab,s=labState,equationMode=s.phase==='equation';app.innerHTML=header()+`<section class="view lab-view"><div class="lab-taskbar"><button class="back-btn" id="lab-back">← 实验列表</button><div><strong>${p.displayCode||p.code} · ${p.title}</strong><small>${p.task}</small></div><span class="stage-pill">${labStageName()}</span><span class="error-pill">本步错误 ${Math.min(s.errors,3)} / 3</span></div><div class="lab-grid ${equationMode?'equation-mode':''} ${p.comprehensive?'comprehensive-mode':''}"><aside class="lab-side"><h2 id="side-title">${s.phase==='select'?'本题用品':s.phase==='combine'?'完整实验流程':s.phase==='investigate'?'离子 / 官能团查证':s.phase==='reaction'?'反应进行中':s.phase==='observe'?'实验现象':'任务提示'}</h2><p id="side-copy">${sideCopy()}</p><div id="side-body">${sideBody()}</div>${equationMode?equationTaskHint():reactionEvidencePanel()}<div class="feedback ${s.feedbackKind||''}" id="feedback">${s.feedback||''}</div></aside><section class="lab-main"><div class="bench" id="bench">${benchBody()}${stepPraiseOverlay()}</div></section></div></section>`;bindLab()}
     function equationTaskHint(){return`<section class="equation-task-hint"><span>本题任务</span><strong>${esc(currentLab.task)}</strong><small>${labState.equationStage==='species'?'先判断物质属于哪一侧，同侧顺序不计分。':'再调整系数，保证反应前后原子守恒。'}</small></section>`}
     function stepPraiseOverlay(){const p=labState.stepPraise;if(!p)return'';return`<div class="center-message step-rating" data-rating="${p.rating}"><strong>${p.rating}</strong><small>${esc(p.label)} · ${p.errors?`本步出现 ${p.errors} 次错误`:'本步一次正确'}</small></div>`}
-    function sideCopy(){const s=labState;if(s.phase==='select')return `按分类找到${currentLab.supplies.length}件核心用品，干扰项不要选。`;if(s.phase==='combine')return'按真实实验顺序，把源物品拖到目标物品上；先后颠倒也算错误。';if(s.phase==='reaction')return'组合用品已经收起，只保留最终反应容器。请直接观察容器内部的变化。';if(s.phase==='observe')return'根据容器中正在发生的真实变化，选择最准确的实验现象。';if(s.phase==='equation')return'在左侧大工作区完成物质归类与系数配平。';return'本题已完成。'}
-    function sideBody(){const s=labState;if(s.phase==='select'){return`<div class="category-row">${Object.entries(CATEGORY_NAMES).map(([id,n])=>`<button class="category-btn" data-category="${id}" aria-pressed="${s.activeCategory===id}">${n}</button>`).join('')}</div><div class="supply-grid">${supplyCards()}</div><div class="side-actions"><button class="soft-btn" id="clear-items">清空</button><button class="primary-btn" id="check-items">选择完成</button></div>`}if(s.phase==='combine'){const steps=STEP_PLANS[currentLab.presetId]||[];return`<div class="sequence-list">${steps.map((st,i)=>`<div class="sequence-step ${i<s.stepIndex?'done':i===s.stepIndex?'active':''}"><i>${i<s.stepIndex?'✓':i+1}</i><span>${i<s.stepIndex?'已完成':i===s.stepIndex?esc(st.prompt):'完成上一步后解锁'}</span></div>`).join('')}</div><div class="drag-tip">${s.tapSource?`已拿起“${esc(s.tapSource)}”，现在点击目标物品。`:'按住物品拖到目标上；触屏也可先后点击两个物品。'}</div>`}if(s.phase==='reaction')return'<div class="drag-tip">实验用品已完成组合。只呈现本反应真实可见的变化；没有肉眼可见现象时，容器会保持稳定。</div>';if(s.phase==='observe')return`<div class="quick-options">${currentLab.options.map(o=>`<button class="quick-option" data-observation="${esc(o)}">${esc(o)}</button>`).join('')}</div>`;return''}
+    function sideCopy(){const s=labState;if(s.phase==='select')return `按分类找到${currentLab.supplies.length}件核心用品，干扰项不要选。`;if(s.phase==='combine')return'按高考综合实验要求完成装配、检查、反应、分离与成品检验；每一步都要遵循先后顺序。';if(s.phase==='investigate')return currentLab.investigation.instruction;if(s.phase==='reaction')return'完整流程已经结束，系统把主证据集中呈现在最终装置中，请观察变化。';if(s.phase==='observe')return'根据完整实验过程和装置内变化，选择最准确的综合现象。';if(s.phase==='equation')return'在左侧大工作区完成物质归类与系数配平。';return'本题已完成。'}
+    function investigationSideBody(){
+      const s=labState,model=currentLab.investigation,attempts=s.investigationAttempts;
+      const evidence=attempts.length?attempts.map((item,index)=>`<div class="evidence-trace ${item.positive?'positive':'negative'}"><i>${index+1}</i><p><strong>${esc(item.reagent)}</strong>${esc(item.result)}</p></div>`).join(''):'<div class="evidence-empty">尚未进行检验。每次都使用新的分样。</div>';
+      const conclusion=s.investigationMode==='conclusion'?`<div class="investigation-conclusion"><strong>根据全部证据推断组成</strong>${model.conclusionOptions.map(option=>`<button class="quick-option" data-investigation-conclusion="${esc(option)}">${esc(option)}</button>`).join('')}</div>`:'<div class="drag-tip">阴性结果不会扣分，它能排除假设。收集足够的阳性证据后再作结论。</div>';
+      return`<div class="evidence-trace-list">${evidence}</div>${conclusion}`
+    }
+    function sideBody(){const s=labState;if(s.phase==='select'){return`<div class="category-row">${Object.entries(CATEGORY_NAMES).map(([id,n])=>`<button class="category-btn" data-category="${id}" aria-pressed="${s.activeCategory===id}">${n}</button>`).join('')}</div><div class="supply-grid">${supplyCards()}</div><div class="side-actions"><button class="soft-btn" id="clear-items">清空</button><button class="primary-btn" id="check-items">选择完成</button></div>`}if(s.phase==='combine'){const steps=STEP_PLANS[currentLab.presetId]||[];let previousStage='';return`<div class="sequence-list">${steps.map((st,i)=>{const stage=st.stage!==previousStage?`<small class="sequence-stage">${esc(st.stage||'实验操作')}</small>`:'';previousStage=st.stage;return`${stage}<div class="sequence-step ${i<s.stepIndex?'done':i===s.stepIndex?'active':''}"><i>${i<s.stepIndex?'✓':i+1}</i><span>${i<s.stepIndex?esc(st.prompt):i===s.stepIndex?esc(st.prompt):'完成上一步后解锁'}</span></div>`}).join('')}</div><div class="drag-tip">${s.tapSource?`已拿起“${esc(s.tapSource)}”，现在点击目标物品。`:'按住物品拖到目标上；触屏也可先后点击两个物品。'}</div>`}if(s.phase==='investigate')return investigationSideBody();if(s.phase==='reaction')return'<div class="drag-tip">装配、检验、分离和成品检查均已完成。请复盘整个证据链。</div>';if(s.phase==='observe')return`<div class="quick-options">${currentLab.options.map(o=>`<button class="quick-option" data-observation="${esc(o)}">${esc(o)}</button>`).join('')}</div>`;return''}
     function reactionEvidencePanel(){if(!currentLab.reactantFeatures&&!currentLab.productFeatures)return'';const revealOutcome=['equation','complete'].includes(labState.phase);return`<section class="reaction-evidence"><div class="evidence-kicker"><span>飞书题库实验档案</span><b>R${SOURCE.revision}</b></div>${currentLab.reactantFeatures?`<div class="evidence-item"><i>入</i><p><strong>反应物实物线索</strong>${esc(currentLab.reactantFeatures)}</p></div>`:''}${revealOutcome&&currentLab.productFeatures?`<div class="evidence-item outcome"><i>出</i><p><strong>生成物实物线索</strong>${esc(currentLab.productFeatures)}</p></div><div class="evidence-phenomenon"><strong>教材现象复盘</strong>${esc(currentLab.phenomenon)}</div>`:'<div class="evidence-lock">完成现象判断后解锁生成物档案</div>'}</section>`}
     function displaySupplyName(name){return SUPPLY[name]&&SUPPLY[name][0]==='gas'&&!/储气瓶|集气瓶/.test(name)?`${name}储气瓶`:name}
     function supplyCards(){const s=labState;const visible=s.pool.filter(n=>SUPPLY[n][0]===s.activeCategory);if(!visible.length)return `<div class="empty-box">本题暂无${CATEGORY_NAMES[s.activeCategory]}</div>`;return visible.map(n=>`<button class="supply-card" data-supply="${esc(n)}" aria-pressed="${s.selected.includes(n)}">${visual(n)}<span>${esc(displaySupplyName(n))}</span></button>`).join('')}
     const SHAPE_MAP={'烧杯':'beaker','试管':'tube','坩埚':'crucible','大药匙':'large-spoon','集气瓶':'jar','二氧化碳集气瓶':'jar','储气瓶':'gas-reservoir','导气管':'delivery-tube','带孔橡胶塞':'rubber-stopper','燃气导流装置':'gas-rig','燃气反应装置':'gas-atmosphere-rig','锥形瓶':'flask','蒸馏装置':'distill','反应器':'reactor','盐桥':'bridge','有色布条':'cloth','火柴':'match'};
+    Object.assign(SHAPE_MAP,{
+      '圆底烧瓶':'flask','反应瓶':'flask','硬质试管':'tube','左半电池烧杯':'beaker','右半电池烧杯':'beaker',
+      '洗气瓶':'gas-rig','吸收塔':'gas-rig','干燥塔':'gas-rig','催化反应管':'tube','聚合反应器':'reactor',
+      '分液漏斗':'flask','布氏漏斗':'beaker','抽滤瓶':'flask','量气管':'tube','水准管':'tube','滴定管':'tube',
+      '酸式滴定管':'tube','碱式滴定管':'tube','移液管':'delivery-tube','直形冷凝管':'delivery-tube','冷凝管':'delivery-tube',
+      '回流冷凝管':'delivery-tube','牛角管':'delivery-tube','蒸馏头':'distill','试管架':'reactor','电解槽':'beaker',
+      '比色皿':'tube','接收瓶':'flask','晶体观察皿':'beaker','高纯硅收集舟':'crucible','玻璃熔制皿':'crucible'
+    });
     function storageProfile(name,kind){
       if(kind!=='liquid'&&kind!=='solid')return{bottle:'none',stopper:'none',note:''};
       if(kind==='liquid'&&/NaOH|氢氧化钠/.test(name))return{bottle:'amber-glass',stopper:'wood',note:'棕色木塞瓶'};
@@ -665,17 +720,54 @@
     function visual(name,assemblyStage=0){const [kind,symbol]=SUPPLY[name]||['solid','?'];let shape=SHAPE_MAP[name]||(kind==='apparatus'?'beaker':kind==='gas'?'gas-reservoir':kind);if(kind==='gas'&&assemblyStage>=2)shape='gas-rig';const storage=storageProfile(name,kind),tone=reagentColor(name),sample=sampleAppearance(name,kind),bottled=(kind==='liquid'||kind==='solid')&&shape!=='cloth';return `<div class="chem-visual" data-kind="${kind}" data-shape="${shape}" data-assembly-stage="${assemblyStage}" data-bottle="${storage.bottle}" data-stopper="${storage.stopper}" data-reagent-color="${tone.id}" data-sample-form="${sample.form}" aria-label="${esc(name)}${storage.note?`，${esc(storage.note)}`:''}" style="--liquid-color:${tone.color};--liquid-deep:${tone.deep};--sample-color:${sample.color};--sample-deep:${sample.deep};--sample-sparkle:${sample.sparkle}"><i class="shape"></i><i class="liquid-fill"></i><i class="detail"></i><i class="model-glint"></i><i class="model-graduations"></i>${bottled?`<i class="reagent-label">${esc(symbol)}</i>`:''}<span class="symbol">${esc(symbol)}</span></div>`}
     function benchFillLevel(name,count){if(!count)return 0;const shape=SHAPE_MAP[name]||'beaker';if(shape==='tube')return Math.min(28,8+count*8);if(shape==='flask'||shape==='reactor')return Math.min(34,12+count*9);if(shape==='jar')return Math.min(38,14+count*10);return Math.min(42,14+count*10)}
     function isAssemblyAction(action){return action==='connect'}
+    function investigationBench(){
+      const s=labState,model=currentLab.investigation,used=new Set(s.investigationAttempts.map(item=>item.reagent));
+      const cards=model.probes.map(probe=>`<button class="probe-reagent ${used.has(probe.reagent)?'used':''} ${s.activeProbe===probe.reagent?'active':''}" draggable="${!used.has(probe.reagent)}" data-probe-reagent="${esc(probe.reagent)}" ${used.has(probe.reagent)?'disabled':''}>${visual(probe.reagent)}<strong>${esc(probe.reagent)}</strong><small>${used.has(probe.reagent)?'已在一份样品上完成':'拖到新的分样'}</small></button>`).join('');
+      const last=s.investigationAttempts.at(-1),result=last?`<div class="probe-observation ${last.positive?'positive':'negative'}"><span>${last.positive?'出现有效现象':'无明显现象'}</span><strong>${esc(last.result)}</strong></div>`:'<div class="probe-observation waiting"><span>等待检验</span><strong>选择一种试剂，与新的未知液分样组合</strong></div>';
+      return`<section class="investigation-workspace"><header><span>EVIDENCE LAB</span><h2>一份样品，只做一次检验</h2><p>阴性结果保留在证据板中；换新分样继续，不把检验试剂混在一起。</p></header><div class="probe-layout"><div class="probe-bank">${cards}</div><div class="unknown-sample" data-probe-target="${esc(model.target)}">${visual(model.target)}<strong>${esc(model.target)} · 新分样</strong><small>${s.activeProbe?`已拿起 ${esc(s.activeProbe)}，点击此处完成组合`:'拖动试剂到这里'}</small></div></div>${result}</section>`
+    }
     function benchBody(){
       const s=labState;
       if(s.phase==='reaction'||s.phase==='observe')return finalResultScene();
+      if(s.phase==='investigate')return investigationBench();
       if(s.phase==='equation')return`<section class="equation-workspace"><header><span>SYMBOL LAB</span><h2>从实验回到符号</h2><p>先辨物质，再补齐最简计量关系。</p></header><div class="equation-puzzle-content">${equationPuzzleBody()}</div></section>`;
       if(s.phase==='complete'){
         const counts=s.stepRatings.reduce((map,x)=>(map[x.rating]=(map[x.rating]||0)+1,map),{}),summary=['完美','很好','棒','加油'].filter(x=>counts[x]).map(x=>`<span>${x} × ${counts[x]}</span>`).join('');
         const syncState=s.completionSync||'syncing',syncText={syncing:'正在实时同步本次实验与关键回放…',synced:'已实时同步到云端，教师端可查看关键回放。',queued:'网络暂不可用，回放已保存在本机，联网后自动补传。',login:'回放已保存在本机；登录学生账号后会自动同步。'}[syncState]||'本次实验回放已保存。';
         return`<div class="complete-card"><div class="rating">实验完成</div><h2>${esc(currentLab.title)}完成</h2><div class="step-summary">${summary||'<span>全部步骤完成</span>'}</div><div class="equation">${esc(currentLab.equation)}</div><p>本实验的每一步都按独立三次机会完成，用品、现象与方程式已经连成同一条证据链。</p><div class="completion-sync" data-state="${syncState}">${syncText}</div><div class="side-actions"><button class="soft-btn" id="again">再做一次</button><button class="primary-btn" id="next-list">选择其他实验</button></div></div>`;
       }
-      const hiddenAssemblyParts=new Set(s.completedSteps.filter(st=>isAssemblyAction(st.action)).map(st=>st.source)),baseNames=s.phase==='select'?s.selected:currentLab.supplies,names=s.phase==='select'?baseNames:baseNames.filter(n=>!hiddenAssemblyParts.has(n)),currentStep=(STEP_PLANS[currentLab.presetId]||[])[s.stepIndex];
+      const plan=STEP_PLANS[currentLab.presetId]||[],futureNames=new Set(plan.slice(s.stepIndex).flatMap(st=>[st.source,st.target])),hiddenAssemblyParts=new Set(s.completedSteps.filter(st=>isAssemblyAction(st.action)&&!futureNames.has(st.source)).map(st=>st.source)),baseNames=s.phase==='select'?s.selected:currentLab.supplies,names=s.phase==='select'?baseNames:baseNames.filter(n=>!hiddenAssemblyParts.has(n)),currentStep=plan[s.stepIndex];
       return`<div class="bench-hint">${s.phase==='select'?'选中的用品会摆到实验台':currentStep?`第${s.stepIndex+1}步 · ${esc(currentStep.prompt)}`:'实验操作完成'}</div><div class="bench-objects">${names.map(n=>{const receivedSteps=s.completedSteps.filter(st=>st.target===n),received=receivedSteps.map(st=>st.action).join(' '),assemblyStage=receivedSteps.filter(st=>isAssemblyAction(st.action)).length,fillCount=receivedSteps.filter(st=>st.action==='pour'||st.action==='wet'||st.action==='gas').length,done=s.completedSteps.some(st=>st.source===n||st.target===n);return`<div class="bench-object ${done?'step-done':''} ${assemblyStage?'assembled-target':''} ${s.tapSource===n?'selected-source':''}" draggable="${s.phase==='combine'&&!s.locked}" data-bench-supply="${esc(n)}" data-received="${received}" data-assembly-stage="${assemblyStage}" data-fill-count="${fillCount}" style="--fill-level:${benchFillLevel(n,fillCount)}px">${visual(n,assemblyStage)}<b>${esc(displaySupplyName(n))}</b></div>`}).join('')}</div>`;
+    }
+    function investigationReady(){
+      const model=currentLab.investigation,evidence=new Set(labState.investigationEvidence);
+      return model.requiredEvidence.every(key=>evidence.has(key))
+    }
+    function safeStepFragment(value){return String(value||'probe').replace(/[^\w\u4e00-\u9fa5]+/g,'_').slice(0,36)}
+    function completeInvestigationProbe(probe,auto=false){
+      const s=labState;if(s.locked||s.cancelled)return;
+      const used=Math.min(s.errors,3),rating=ratingForStep(used),code=currentLab.displayCode||currentLab.code,stepKey=`${code}.investigation.probe.${safeStepFragment(probe.evidence||probe.reagent)}`;
+      const record={...probe,auto,at:new Date().toISOString()};s.investigationAttempts.push(record);if(probe.evidence&&!s.investigationEvidence.includes(probe.evidence))s.investigationEvidence.push(probe.evidence);
+      s.activeProbe=null;s.stepPraise={label:`${probe.reagent}检验`,rating,errors:used};s.stepRatings.push({stepKey,label:`${probe.reagent}检验`,rating,errors:used});s.locked=true;s.feedback=probe.positive?`出现有效现象：${probe.result}`:`无明显现象已记录为阴性证据，请换新分样继续查证。`;s.feedbackKind=probe.positive?'success':'';
+      queueLearningEvent('step_completed',{stepKey,stage:'investigate',label:`${probe.reagent}检验`,stepErrorCount:used,severity:used?severityForErrors(used):null,rating,answerRevealed:Boolean(auto),result:probe.positive?'positive':'no_observation',evidence:probe.evidence,expected:{reagent:probe.reagent,target:currentLab.investigation.target},actual:{reagent:probe.reagent,target:currentLab.investigation.target,observation:probe.result}});
+      renderLab();
+      setTimeout(()=>{if(labState!==s||s.cancelled)return;s.stepPraise=null;s.errors=0;s.revealed=false;s.feedback='';s.feedbackKind='';s.locked=false;if(investigationReady())s.investigationMode='conclusion';renderLab()},1250)
+    }
+    function attemptInvestigationProbe(reagent){
+      const s=labState,model=currentLab.investigation,probe=model.probes.find(item=>item.reagent===reagent);if(!probe||s.locked)return;
+      if(s.investigationAttempts.some(item=>item.reagent===reagent)){s.feedback='这份试剂已经用过，请换一份未知液并选择其他试剂。';s.feedbackKind='';s.activeProbe=null;renderLab();return}
+      if(probe.requires&&!s.investigationEvidence.includes(probe.requires)){
+        registerStepError('检验顺序会引入干扰：应先用稀酸记录阴性证据，再检验对应阴离子。',()=>completeInvestigationProbe(probe,true),{tags:['步骤顺序错误'],expected:{prerequisite:probe.requires,reagent:probe.reagent},actual:{evidence:[...s.investigationEvidence],reagent:probe.reagent}});return
+      }
+      completeInvestigationProbe(probe,false)
+    }
+    function advanceFromInvestigation(){
+      const s=labState;s.phase='reaction';setTimeout(()=>{if(labState===s&&!s.cancelled&&s.phase==='reaction'){s.phase='observe';renderLab()}},5200)
+    }
+    function checkInvestigationConclusion(value){
+      const s=labState,model=currentLab.investigation;if(s.locked)return;
+      if(value===model.conclusion)finishEvaluatedStep('未知样品证据链推断',advanceFromInvestigation);
+      else registerStepError('结论与已获得的阳性、阴性证据不一致，请逐条核对后再推断。',()=>finishEvaluatedStep('未知样品证据链推断',advanceFromInvestigation),{tags:['现象混淆'],expected:{conclusion:model.conclusion,evidence:model.requiredEvidence},actual:{conclusion:value,evidence:[...s.investigationEvidence]}})
     }
     function bindLab(){
       const s=labState;
@@ -687,6 +779,10 @@
         document.getElementById('clear-items').onclick=()=>{s.selected=[];s.feedback='';renderLab()};document.getElementById('check-items').onclick=checkSupplies;
       }else if(s.phase==='combine'){
         const objects=[...document.querySelectorAll('[data-bench-supply]')];objects.forEach(el=>{el.ondragstart=e=>{e.dataTransfer.effectAllowed='move';e.dataTransfer.setData('text/plain',el.dataset.benchSupply)};el.ondragover=e=>{e.preventDefault();e.dataTransfer.dropEffect='move'};el.ondrop=e=>{e.preventDefault();const source=e.dataTransfer.getData('text/plain');attemptStep(source,el.dataset.benchSupply)};el.onclick=()=>{const n=el.dataset.benchSupply;if(!s.tapSource){s.tapSource=n;renderLab()}else if(s.tapSource===n){s.tapSource=null;renderLab()}else attemptStep(s.tapSource,n)}});
+      }else if(s.phase==='investigate'){
+        document.querySelectorAll('[data-probe-reagent]').forEach(button=>{button.onclick=()=>{if(button.disabled)return;s.activeProbe=button.dataset.probeReagent;renderLab()};button.ondragstart=event=>{event.dataTransfer.effectAllowed='copy';event.dataTransfer.setData('text/plain',button.dataset.probeReagent)}});
+        const target=document.querySelector('[data-probe-target]');if(target){target.ondragover=event=>{event.preventDefault();event.dataTransfer.dropEffect='copy'};target.ondrop=event=>{event.preventDefault();attemptInvestigationProbe(event.dataTransfer.getData('text/plain'))};target.onclick=()=>{if(s.activeProbe)attemptInvestigationProbe(s.activeProbe)}}
+        document.querySelectorAll('[data-investigation-conclusion]').forEach(button=>button.onclick=()=>checkInvestigationConclusion(button.dataset.investigationConclusion));
       }else if(s.phase==='observe')document.querySelectorAll('[data-observation]').forEach(b=>b.onclick=()=>checkObservation(b.dataset.observation));
       else if(s.phase==='equation')bindEquationPuzzle();
       else if(s.phase==='complete'){document.getElementById('again').onclick=()=>openLab(currentLab.presetId,currentLab.displayCode,currentLab.from);document.getElementById('next-list').onclick=()=>renderCatalog(currentLab.from)}
@@ -694,7 +790,7 @@
     function ratingForStep(errors){return['完美','很好','棒','加油'][Math.min(errors,3)]}
     function finishEvaluatedStep(label,next){
       const s=labState;if(s.cancelled||s.stepPraise)return;
-      const used=Math.min(s.errors,3),rating=ratingForStep(used),stepKey=s.phase==='combine'?`combine.${Math.max(1,s.stepIndex)}`:currentStepKey(s);s.stepPraise={label,rating,errors:used};s.stepRatings.push({stepKey,label,rating,errors:used});s.locked=true;s.feedback=used===3?'本步骤答案已演示，下一步会重新获得3次机会。':`${label}完成，下一步会重新计算错误次数。`;s.feedbackKind='success';
+      const used=Math.min(s.errors,3),rating=ratingForStep(used),plan=STEP_PLANS[currentLab.presetId]||[],completedStep=s.phase==='combine'?plan[Math.max(0,s.stepIndex-1)]:null,stepKey=completedStep&&completedStep.id?completedStep.id:currentStepKey(s);s.stepPraise={label,rating,errors:used};s.stepRatings.push({stepKey,label,rating,errors:used});s.locked=true;s.feedback=used===3?'本步骤答案已演示，下一步会重新获得3次机会。':`${label}完成，下一步会重新计算错误次数。`;s.feedbackKind='success';
       queueLearningEvent('step_completed',{stepKey,stage:s.phase,label,stepErrorCount:used,severity:used?severityForErrors(used):null,rating,answerRevealed:Boolean(s.revealed)});renderLab();
       setTimeout(()=>{if(labState!==s||s.cancelled)return;s.stepPraise=null;s.errors=0;s.revealed=false;s.feedback='';s.feedbackKind='';s.locked=false;next();renderLab()},1050);
     }
@@ -710,10 +806,10 @@
     function checkSupplies(){const s=labState;if(same(s.selected,currentLab.supplies))finishEvaluatedStep('用品选择',()=>{s.phase='combine'});else registerStepError('用品中有干扰项，请按实验目的重新判断。',()=>{s.selected=[...currentLab.supplies];finishEvaluatedStep('用品选择',()=>{s.phase='combine'})},{tags:supplyMismatchTags(s.selected,currentLab.supplies),expected:{supplies:[...currentLab.supplies]},actual:{supplies:[...s.selected]}})}
     function attemptStep(source,target){const s=labState;if(s.locked||!source||!target)return;source=canonicalSupplyName(source);target=canonicalSupplyName(target);if(!SUPPLY[source]||!SUPPLY[target]){s.tapSource=null;s.feedback='没有识别到有效用品，请重新拖动。';s.feedbackKind='error';renderLab();return}const expected=(STEP_PLANS[currentLab.presetId]||[])[s.stepIndex];if(!expected)return;if(source===expected.source&&target===expected.target)performStep(expected,false);else stepMistake(expected,source,target)}
     function combinationErrorTags(expected,source,target){const plan=STEP_PLANS[currentLab.presetId]||[],isLaterStep=plan.slice(labState.stepIndex+1).some(step=>step.source===source&&step.target===target);if(isLaterStep||source===expected.target&&target===expected.source)return['步骤顺序错误'];const categories=[source,target].map(item=>SUPPLY[item]&&SUPPLY[item][0]);if(categories.some(category=>category==='apparatus'||category==='heat'))return['仪器用途混淆'];return['反应物混淆']}
-    function stepMistake(expected,source,target){const s=labState;s.tapSource=null;registerStepError(`顺序或组合不对：不能先把“${source}”用于“${target}”。`,()=>performStep(expected,true),{tags:combinationErrorTags(expected,source,target),expected:{source:expected.source,target:expected.target,action:expected.action,prompt:expected.prompt},actual:{source,target}})}
+    function stepMistake(expected,source,target){const s=labState;s.tapSource=null;registerStepError(`顺序或组合不对：不能先把“${source}”用于“${target}”。`,()=>performStep(expected,true),{tags:Array.isArray(expected.tags)&&expected.tags.length?expected.tags:combinationErrorTags(expected,source,target),expected:{source:expected.source,target:expected.target,action:expected.action,prompt:expected.prompt,stage:expected.stage},actual:{source,target}})}
     async function performStep(step,auto){
       const s=labState;if(s.locked||s.cancelled)return;s.locked=true;s.tapSource=null;const objects=[...document.querySelectorAll('[data-bench-supply]')],sourceEl=objects.find(el=>el.dataset.benchSupply===step.source),targetEl=objects.find(el=>el.dataset.benchSupply===step.target),feedback=document.getElementById('feedback');if(feedback){feedback.className='feedback success';feedback.textContent=auto?'正在演示正确操作…':'顺序正确，观察实验动作。'}objects.forEach(el=>el.style.pointerEvents='none');if(sourceEl&&targetEl)await animateStep(step,sourceEl,targetEl);if(s.cancelled)return;s.completedSteps.push({...step});s.combined.push(`${step.source}→${step.target}`);s.stepIndex++;s.locked=false;s.feedbackKind='success';s.feedback=`第${s.stepIndex}步完成：${step.prompt}`;const finished=s.stepIndex>=(STEP_PLANS[currentLab.presetId]||[]).length,stepNumber=s.stepIndex;
-      finishEvaluatedStep(`实验操作第${stepNumber}步`,()=>{if(finished){s.phase='reaction';setTimeout(()=>{if(labState===s&&!s.cancelled&&s.phase==='reaction'){s.phase='observe';renderLab()}},5200)}});
+      finishEvaluatedStep(`${step.stage||'实验操作'} · 第${stepNumber}步`,()=>{if(finished){if(currentLab.investigation){s.phase='investigate';s.investigationMode='probe'}else{s.phase='reaction';setTimeout(()=>{if(labState===s&&!s.cancelled&&s.phase==='reaction'){s.phase='observe';renderLab()}},5200)}}});
     }
     function animateMove(el,frames,duration){if(el.animate){const player=el.animate(frames,{duration,easing:'cubic-bezier(.22,.78,.28,1)',fill:'forwards'});return player.finished.catch(()=>{})}return new Promise(resolve=>setTimeout(resolve,duration))}
     function targetOpening(targetEl,benchRect){const v=targetEl.querySelector('.chem-visual')||targetEl,r=v.getBoundingClientRect(),assemblyStage=Number(targetEl.dataset.assemblyStage||0),shape=assemblyStage>=2?'gas-rig':v.dataset.shape||'beaker',point={tube:[.5,.08],beaker:[.5,.22],crucible:[.5,.38],'large-spoon':[.33,.47],jar:[.5,.13],flask:[.5,.34],reactor:[.5,.34],'gas-reservoir':[.5,.12],'gas-rig':[.84,.35],'delivery-tube':[.84,.35],'rubber-stopper':[.5,.26]}[shape]||[.5,.18];return{x:r.left-benchRect.left+r.width*point[0],y:r.top-benchRect.top+r.height*point[1],shape}}
@@ -782,7 +878,7 @@
     renderHome();
   })();
   </script>
-  <script src="./assets/js/supabase-rest.js?v=7.5.5"></script>
-  <script src="./assets/js/student-account.js?v=7.5.5"></script>
+  <script src="./assets/js/supabase-rest.js?v=7.6.0"></script>
+  <script src="./assets/js/student-account.js?v=7.6.0"></script>
 </body>
 </html>
