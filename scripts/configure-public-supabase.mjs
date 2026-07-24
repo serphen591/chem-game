@@ -11,7 +11,7 @@ const config = {
   apiBaseUrl: `${url}/functions/v1/chem-lab-api`,
   apiPath: '',
   syncEnabled: true,
-  appVersion: '7.5.3-replay-full-text',
+  appVersion: '7.5.4-combustion-safety',
   requestTimeoutMs: 10000,
   queueLimit: 1200
 };
