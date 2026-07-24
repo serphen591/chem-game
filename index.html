@@ -2,15 +2,15 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="referrer" content="no-referrer">
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self' https://*.supabase.co https://*.supabase.in http://localhost:* http://127.0.0.1:*; object-src 'none'; base-uri 'none'; form-action 'self'">
   <title>化学实验台</title>
-  <script src="./config.js?v=7.6.0"></script>
-  <script src="./assets/js/replay-evidence.js?v=7.6.0"></script>
-  <link rel="stylesheet" href="./assets/css/student-account.css">
-  <link rel="stylesheet" href="./assets/css/replay-evidence.css?v=7.6.0">
-  <link rel="stylesheet" href="./assets/css/interface-fixes.css?v=7.6.0">
+  <script src="./config.js?v=7.6.1"></script>
+  <script src="./assets/js/replay-evidence.js?v=7.6.1"></script>
+  <link rel="stylesheet" href="./assets/css/student-account.css?v=7.6.1">
+  <link rel="stylesheet" href="./assets/css/replay-evidence.css?v=7.6.1">
+  <link rel="stylesheet" href="./assets/css/interface-fixes.css?v=7.6.1">
   <script>
     try{
       const progressResetVersion='chem-lab-v7-1-reset-20260720-1';
@@ -22,6 +22,24 @@
       const savedTheme=localStorage.getItem('chemLabTheme');
       document.documentElement.dataset.theme=['lab','anime','comic','fps','scifi'].includes(savedTheme)?savedTheme:'lab';
     }catch(_){document.documentElement.dataset.theme='lab'}
+    (()=>{
+      let viewportFrame=0;
+      const syncViewport=()=>{
+        viewportFrame=0;
+        const viewport=window.visualViewport;
+        const visibleHeight=Math.round(viewport&&viewport.height?viewport.height:window.innerHeight);
+        document.documentElement.style.setProperty('--app-height',`${visibleHeight}px`);
+        document.documentElement.dataset.compactLandscape=window.innerWidth>=820&&visibleHeight<=820?'true':'false';
+      };
+      const scheduleViewportSync=()=>{
+        if(viewportFrame)return;
+        viewportFrame=requestAnimationFrame(syncViewport);
+      };
+      syncViewport();
+      window.addEventListener('resize',scheduleViewportSync,{passive:true});
+      window.addEventListener('orientationchange',scheduleViewportSync,{passive:true});
+      if(window.visualViewport)window.visualViewport.addEventListener('resize',scheduleViewportSync,{passive:true});
+    })();
   </script>
   <style>
     :root{
@@ -33,7 +51,7 @@
       --shadow:0 18px 46px rgba(30,76,60,.13);--radius:24px;
       font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif;
     }
-    *{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#fff;color:var(--ink)}
+    *{box-sizing:border-box}html{-webkit-text-size-adjust:100%;text-size-adjust:100%}html,body{margin:0;min-height:100%;background:#fff;color:var(--ink)}
     button{font:inherit}button:focus-visible{outline:4px solid rgba(24,167,124,.25);outline-offset:3px}
     body::before{content:"";position:fixed;inset:0;z-index:-3;background:linear-gradient(to bottom,#fff 0 62%,#e5f6eb 62% 100%)}
     body::after{content:"H₂  O₂  Na⁺  Cl⁻  CO₂  Mg  Fe  C₂H₄";position:fixed;z-index:-2;left:3vw;right:3vw;bottom:4vh;color:rgba(12,121,89,.06);font-size:clamp(30px,5.2vw,82px);font-weight:900;letter-spacing:.12em;white-space:nowrap;overflow:hidden}
@@ -223,8 +241,21 @@
     .unknown-sample{display:grid;place-items:center;align-content:center;min-height:260px;padding:18px;border:3px dashed color-mix(in srgb,var(--green) 55%,var(--line));border-radius:26px;background:radial-gradient(circle at 50% 42%,rgba(83,211,168,.18),transparent 43%),var(--surface-soft);text-align:center;cursor:pointer;transition:.24s}.unknown-sample:hover{border-style:solid;box-shadow:inset 0 0 0 5px rgba(24,167,124,.08),0 16px 35px var(--theme-glow)}.unknown-sample .chem-visual{transform:scale(1.75);margin:28px auto 30px}.unknown-sample strong,.unknown-sample small{display:block}.unknown-sample small{margin-top:6px;color:var(--muted);font-size:11px}
     .probe-observation{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:center;padding:13px 16px;border:1px solid var(--line);border-radius:16px;background:var(--surface-strong)}.probe-observation span{padding:6px 9px;border-radius:999px;background:var(--surface-soft);color:var(--green-dark);font-size:11px;font-weight:1000}.probe-observation strong{font-size:13px;line-height:1.55}.probe-observation.positive{border-color:rgba(24,167,124,.42)}.probe-observation.negative{border-color:rgba(101,121,113,.3)}
     .evidence-trace-list{display:grid;gap:7px;margin-top:12px}.evidence-trace{display:grid;grid-template-columns:24px 1fr;gap:8px;padding:8px;border:1px solid var(--line);border-radius:12px;background:var(--surface-strong)}.evidence-trace>i{display:grid;width:23px;height:23px;place-items:center;border-radius:50%;background:var(--surface-soft);color:var(--green-dark);font-size:10px;font-style:normal;font-weight:1000}.evidence-trace p{margin:0;color:var(--muted);font-size:10px;line-height:1.5}.evidence-trace strong{display:block;color:var(--ink);font-size:11px}.evidence-trace.positive{border-left:4px solid var(--green)}.evidence-trace.negative{border-left:4px solid #9aa9a3}.evidence-empty{padding:14px;border:1px dashed var(--line);border-radius:12px;color:var(--muted);font-size:11px;text-align:center}.investigation-conclusion{display:grid;gap:7px;margin-top:12px}.investigation-conclusion>strong{font-size:12px}.investigation-conclusion .quick-option{padding:9px;font-size:11px;text-align:left}
-    @media(min-width:981px) and (max-height:760px){
-      html,body{height:720px;min-height:720px;overflow:hidden}.app{width:min(1280px,100%);height:720px;min-height:720px;padding:8px 14px 10px;overflow:hidden}.topbar{min-height:50px;padding:3px 3px 7px}.brand-mark{width:40px;height:40px;font-size:21px}.brand strong{font-size:17px}.topbar.game-hud{padding:7px 10px}.view{max-height:602px}.lab-view{display:grid;height:602px;grid-template-rows:auto minmax(0,1fr)}.lab-taskbar{min-height:58px;margin-bottom:9px;padding:8px 12px}.lab-taskbar small{display:block;max-width:720px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.lab-grid{height:100%;min-height:0;grid-template-columns:minmax(300px,1fr) minmax(0,2fr);gap:10px}.lab-side,.lab-main,.bench,.equation-mode .lab-main,.equation-mode .bench{height:100%;min-height:0!important}.lab-side{max-height:none;padding:13px}.lab-main{overflow:hidden}.bench{padding:13px}.bench-objects{top:54px;bottom:2px}.investigation-workspace{min-height:0;padding:14px;gap:10px}.investigation-workspace>header{padding:10px 13px}.investigation-workspace>header h2{font-size:19px}.probe-reagent{min-height:112px}.probe-reagent .chem-visual{transform:scale(.86);margin-top:-5px}.unknown-sample{min-height:210px}.unknown-sample .chem-visual{transform:scale(1.45);margin:20px auto 22px}.probe-observation{padding:9px 12px}.comprehensive-mode .bench-objects{grid-template-columns:repeat(5,minmax(78px,1fr));gap:4px}.comprehensive-mode .bench-object{min-height:104px}.comprehensive-mode .bench-object .chem-visual{transform:scale(.96)}.comprehensive-mode .bench-object:hover .chem-visual{transform:scale(1.03)}.comprehensive-mode .bench-object b{bottom:0;font-size:9px}.catalog-view{height:602px;min-height:0}.catalog-view .experiment-card{min-height:154px}.catalog-pagination{margin-top:8px;padding:7px 12px}.home-grid{height:602px;min-height:0}.module-card{min-height:230px}.quick-shell{height:602px;overflow:auto}
+    /* 7.6.1：学习机横屏使用真实可视高度，不再强制 720px 导致底部裁切 */
+    @media(orientation:landscape) and (min-width:820px) and (max-height:820px){
+      html,body{width:100%;height:var(--app-height,100vh);height:var(--app-height,100dvh);min-height:0;overflow:hidden;overscroll-behavior:none}
+      .app{display:flex;flex-direction:column;width:min(1280px,100%);height:var(--app-height,100vh);height:var(--app-height,100dvh);min-height:0;padding:max(6px,env(safe-area-inset-top)) max(10px,env(safe-area-inset-right)) max(6px,env(safe-area-inset-bottom)) max(10px,env(safe-area-inset-left));overflow:hidden}
+      .topbar.game-hud{flex:0 0 auto;min-height:50px;margin-bottom:6px;padding:5px 9px;border-radius:16px}.brand{gap:8px}.brand-mark{width:36px;height:36px;border-width:2px;font-size:19px}.brand strong{font-size:16px}.brand-status{font-size:9px}.brand-status i{width:6px;height:6px}.hud-cluster{gap:6px}.hud-player{min-width:146px;padding:5px 8px;border-radius:11px}.hud-player-top{font-size:9px}.hud-xp{height:4px;margin-top:4px}.theme-status,.source-badge{padding:6px 8px;border-radius:10px;font-size:10px}.theme-status i{width:13px;height:13px;border-radius:4px}
+      .view{flex:1;min-height:0!important;height:auto!important;max-height:none!important;overflow:hidden}
+      .home-grid{grid-template-columns:minmax(238px,.64fr) minmax(0,1.9fr);gap:10px;align-items:stretch}.game-hero{min-height:0;padding:13px;border-radius:18px}.mission-tag{gap:5px;padding:5px 8px;font-size:9px}.mission-tag i{width:6px;height:6px}.game-hero h1{margin:8px 0 7px;font-size:clamp(28px,3.4vw,42px);line-height:.96}.lead{display:-webkit-box;overflow:hidden;margin:7px 0;font-size:10px;line-height:1.42;-webkit-box-orient:vertical;-webkit-line-clamp:2}.hero-rank-row{grid-template-columns:70px 1fr;gap:7px;margin:8px 0}.xp-orb{width:70px;height:70px}.xp-orb::before{inset:6px}.xp-orb strong{font-size:19px}.xp-orb small{font-size:8px}.mission-panel{padding:7px;border-radius:11px}.mission-panel strong{margin-bottom:2px;font-size:11px}.mission-panel p{font-size:9px;line-height:1.35}.mission-reward{margin-top:4px;padding:3px 5px;font-size:8px}.quest-route{gap:4px;margin:7px 0}.quest-node{padding:4px 2px;border-radius:8px;font-size:8px}.quest-node b{width:18px;height:18px;margin-bottom:2px;border-radius:6px}.quest-node:not(:last-child)::after{right:-6px;top:13px}.hero-statline{gap:4px}.hero-statline .stat{padding:6px;border-radius:9px}.hero-statline .stat strong{font-size:15px}.hero-statline .stat span{font-size:8px}.weekly{padding:7px;border-radius:10px}.weekly-row{font-size:9px}.meter{height:6px;margin:5px 0 4px}
+      .module-area{grid-template-rows:auto minmax(0,1fr);gap:5px}.section-title{align-items:center;padding:0 2px}.section-title .eyebrow{margin-bottom:2px;font-size:9px}.section-title h2{font-size:18px}.section-title>p{display:none}.module-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));gap:8px;min-height:0}.module-card{min-height:0;padding:12px 14px;border-radius:17px}.module-card::before{inset:6px;border-radius:12px}.module-card::after{right:11px;top:8px;font-size:31px}.module-copy{max-width:72%}.module-badge{margin-bottom:5px;padding:3px 5px;font-size:8px}.module-card h3{margin:0 0 5px;font-size:20px}.module-card p{font-size:10px;line-height:1.35}.module-card .scene-icon{right:11px;top:25px;transform:scale(.62);transform-origin:top right}.module-card .scene-icon.molecule{transform:rotate(30deg) scale(.62)}.module-reward{left:14px;bottom:30px;font-size:8px}.module-meta{left:14px;bottom:11px;font-size:10px}.module-arrow{right:11px;bottom:9px;width:28px;height:28px;font-size:16px}
+      .bank-drawer-tab,.theme-drawer-tab{padding:10px 7px;border-radius:12px 0 0 12px;font-size:11px}.bank-drawer-tab{top:35%}.theme-drawer-tab{top:calc(35% + 96px)}.bank-drawer,.theme-drawer{height:var(--app-height,100dvh);padding:14px}.theme-grid{gap:6px}.theme-card{grid-template-columns:78px 1fr auto;padding:7px}.theme-preview{height:50px}
+      .catalog-view{display:grid;grid-template-rows:auto auto minmax(0,1fr) auto;min-height:0}.page-head{margin:0 0 7px}.page-head h1{font-size:22px}.page-head p{font-size:10px}.back-btn,.soft-btn,.primary-btn{padding:7px 11px;border-radius:10px;font-size:11px}.progress-chip{font-size:10px}.filter-row{gap:5px;margin-bottom:7px}.filter-btn{padding:5px 9px;font-size:10px}.experiment-grid{grid-auto-rows:minmax(0,1fr);gap:8px;min-height:0}.catalog-view .experiment-card{min-height:0;height:100%;padding:12px 13px}.experiment-card h3{margin:6px 0 4px;font-size:14px}.experiment-card p{font-size:10px;line-height:1.35}.experiment-card .enter{right:11px;bottom:8px;font-size:9px}.difficulty{right:10px;top:9px;padding:3px 6px;font-size:9px}.completion-stack{right:10px;top:33px}.completion-check{width:22px;height:22px;font-size:13px}.catalog-pagination{margin-top:6px;padding:5px 8px;border-radius:12px}.catalog-page-btn{min-width:30px;height:30px;border-radius:8px;font-size:10px}.catalog-page-summary{font-size:9px}
+      .lab-view{display:grid;grid-template-rows:auto minmax(0,1fr);min-height:0}.lab-taskbar{min-height:48px;margin-bottom:6px;padding:6px 9px;gap:8px}.lab-taskbar small{display:block;max-width:58vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.stage-pill,.error-pill{padding:5px 8px;font-size:10px}.lab-grid{height:100%;min-height:0;grid-template-columns:minmax(245px,1fr) minmax(0,2fr);gap:7px}.lab-side,.lab-main,.bench,.equation-mode .lab-main,.equation-mode .bench{height:100%;min-height:0!important}.lab-side{max-height:none;padding:10px}.lab-side h2{font-size:16px}.lab-side>p{margin:5px 0;font-size:10px}.category-row{margin:7px 0}.category-btn{padding:5px 3px;font-size:10px}.supply-grid{gap:5px}.supply-card{min-height:88px;padding:3px}.supply-card .chem-visual{margin:-7px auto -10px;transform:scale(.76) rotateY(-4deg)}.supply-card span{font-size:9px}.lab-main{overflow:hidden}.bench{padding:9px}.bench-objects{top:43px;bottom:0;gap:4px}.bench-object{min-height:98px}.bench-object .chem-visual{transform:scale(.92) rotateY(-7deg) rotateX(2deg)}.bench-object:hover .chem-visual{transform:scale(.98) rotateY(4deg) rotateX(1deg)}.bench-object b{bottom:0;padding:3px 6px;font-size:8px}.comprehensive-mode .bench-objects{grid-template-columns:repeat(5,minmax(68px,1fr));gap:2px}.comprehensive-mode .bench-object{min-height:92px}.comprehensive-mode .bench-object .chem-visual{transform:scale(.82)}.comprehensive-mode .bench-object:hover .chem-visual{transform:scale(.88)}
+      .investigation-workspace{min-height:0;padding:9px;gap:6px}.investigation-workspace>header{padding:7px 9px}.investigation-workspace>header h2{font-size:16px}.probe-layout{grid-template-columns:minmax(0,1.7fr) minmax(180px,.65fr);gap:7px}.probe-bank{gap:5px}.probe-reagent{min-height:88px;padding:4px}.probe-reagent .chem-visual{margin:-8px auto -11px;transform:scale(.7)}.unknown-sample{min-height:150px;padding:8px}.unknown-sample .chem-visual{margin:7px auto 10px;transform:scale(1.12)}.probe-observation{padding:6px 8px}.quick-shell{height:auto;min-height:0;overflow:auto}
+    }
+    @media(orientation:landscape) and (min-width:820px) and (max-height:620px){
+      .topbar.game-hud{min-height:44px}.brand-mark{width:32px;height:32px;font-size:17px}.brand-status,.hud-xp{display:none}.home-grid{grid-template-columns:minmax(215px,.58fr) minmax(0,1.95fr)}.game-hero{padding:10px}.game-hero h1{margin:5px 0;font-size:27px}.lead,.hero-statline{display:none}.hero-rank-row{margin:5px 0}.quest-route{margin:5px 0}.weekly{padding:5px}.section-title .eyebrow{display:none}.section-title h2{font-size:16px}.module-card{padding:9px 12px}.module-card h3{font-size:17px}.module-card p{display:none}.module-card .scene-icon{top:17px;transform:scale(.5)}.module-card .scene-icon.molecule{transform:rotate(30deg) scale(.5)}.module-reward{bottom:27px}.module-meta{bottom:9px}.bank-drawer-tab,.theme-drawer-tab{font-size:10px}.lab-taskbar{min-height:42px}.supply-card{min-height:78px}.bench-object{min-height:84px}
     }
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
   </style>
@@ -368,7 +399,7 @@
     ];
     const app=document.getElementById('app');
     let currentModule='home',difficultyFilter=0,catalogPage=1,currentLab=null,labState=null,quickState=null,drawerModule='inorganic'
-    const NETWORK_CONFIG=Object.freeze({apiBaseUrl:'',apiPath:'/api/v1',syncEnabled:false,appVersion:'7.6.0-comprehensive-workflow',requestTimeoutMs:8000,queueLimit:800,replayLimit:30,...(window.CHEM_LAB_CONFIG||{})});
+    const NETWORK_CONFIG=Object.freeze({apiBaseUrl:'',apiPath:'/api/v1',syncEnabled:false,appVersion:'7.6.1-learning-device-compat',requestTimeoutMs:8000,queueLimit:800,replayLimit:30,...(window.CHEM_LAB_CONFIG||{})});
     const DATA_KEYS={identity:'chemLabStudentIdentity',token:'chemLabAccessToken',eventQueue:'chemLabEventQueue',replayArchive:'chemLabReplayArchive'};
     const dataSessionId=createClientId('session');
     let syncPromise=null,syncState=NETWORK_CONFIG.syncEnabled&&NETWORK_CONFIG.apiBaseUrl?'waiting':'local',syncError='';
@@ -878,7 +909,7 @@
     renderHome();
   })();
   </script>
-  <script src="./assets/js/supabase-rest.js?v=7.6.0"></script>
-  <script src="./assets/js/student-account.js?v=7.6.0"></script>
+  <script src="./assets/js/supabase-rest.js?v=7.6.1"></script>
+  <script src="./assets/js/student-account.js?v=7.6.1"></script>
 </body>
 </html>

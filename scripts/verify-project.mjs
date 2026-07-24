@@ -28,6 +28,7 @@ vm.runInNewContext(comprehensiveSource, comprehensiveSandbox);
 const comprehensive = comprehensiveSandbox.window.CHEM_LAB_COMPREHENSIVE?.experiments || [];
 const migration = await readFile('supabase/migrations/202607210001_chem_lab_backend.sql', 'utf8');
 const comprehensiveMigration = await readFile('supabase/migrations/202607240001_seed_comprehensive_experiments.sql', 'utf8');
+const studentAccountCss = await readFile('assets/css/student-account.css', 'utf8');
 
 const forbidden = [
   /SUPABASE_SERVICE_ROLE_KEY\s*=\s*['"][^'"]+/i,
@@ -60,7 +61,10 @@ if (!html.includes('window.CHEM_LAB_EXPERIMENTS')) throw new Error('实验目录
 if (!html.includes('data/comprehensive-experiments.js') || !html.includes('registerComprehensiveExperiments')) throw new Error('22个综合实验尚未接入独立流程数据。');
 if (!html.includes("phase==='investigate'") || !html.includes('result:probe.positive?\'positive\':\'no_observation\'')) throw new Error('未知样品尚未启用可循环查证与阴性证据记录。');
 if (!html.includes('completedStep&&completedStep.id') || html.includes('stepKey=s.phase===\'combine\'?`combine.')) throw new Error('综合实验操作没有使用稳定步骤键。');
-if (!html.includes('grid-template-columns:minmax(300px,1fr) minmax(0,2fr)') || !html.includes('height:720px') || !html.includes('width:min(1280px,100%)')) throw new Error('页面尚未适配1280×720，并保持实验主区与侧栏2:1。');
+if (!html.includes('grid-template-columns:minmax(300px,1fr) minmax(0,2fr)') || !html.includes('width:min(1280px,100%)')) throw new Error('页面尚未保持1280宽度与实验主区/侧栏2:1。');
+if (!html.includes('window.visualViewport') || !html.includes('--app-height') || !html.includes('orientation:landscape') || !html.includes('max-height:620px')) throw new Error('页面尚未按学习机真实可视高度启用分级横屏布局。');
+if (html.includes('height:720px;min-height:720px')) throw new Error('页面仍强制720px高度，会被学习机系统栏裁切。');
+if (!html.includes('text-size-adjust:100%') || !html.includes('transform:scale(.62)') || !studentAccountCss.includes('orientation:landscape')) throw new Error('学习机文字、模块图标或登录入口尚未完成紧凑适配。');
 if (!html.includes("supabaseClient.api('/events/batch'")) throw new Error('实验事件上传没有复用 Supabase 登录客户端。');
 if (!html.includes('headers.apikey=NETWORK_CONFIG.supabasePublishableKey')) throw new Error('同步降级请求缺少 Supabase apikey。');
 if (!html.includes('ChemLabReplayEvidence')) throw new Error('学生端没有生成错误截图证据。');

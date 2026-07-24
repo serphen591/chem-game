@@ -11,7 +11,7 @@ const config = {
   apiBaseUrl: `${url}/functions/v1/chem-lab-api`,
   apiPath: '',
   syncEnabled: true,
-    appVersion: '7.6.0-comprehensive-workflow',
+    appVersion: '7.6.1-learning-device-compat',
   requestTimeoutMs: 10000,
   queueLimit: 1200
 };
